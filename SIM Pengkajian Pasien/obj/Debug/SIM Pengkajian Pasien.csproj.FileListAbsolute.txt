@@ -1,0 +1,40 @@
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe.config
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.pdb
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csprojAssemblyReference.cache
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form1.resources
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Properties.Resources.resources
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.GenerateResource.cache
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CoreCompileInputs.cache
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CopyComplete
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.pdb
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\erk\source\repos\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.config
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe.config
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.pdb
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu_UI_v1.5.3.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csprojAssemblyReference.cache
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.config
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form1.resources
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form_Close.resources
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Properties.Resources.resources
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.GenerateResource.cache
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CoreCompileInputs.cache
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CopyComplete
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.pdb
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form_Pengkajian.resources
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
