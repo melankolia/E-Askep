@@ -153,5 +153,11 @@
   <ItemGroup>
     <None Include="Resources\warning.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\organ_transplantation_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google_forms_filled_50px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

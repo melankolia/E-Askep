@@ -34,28 +34,38 @@ namespace SIM_Pengkajian_Pasien
                 return -1;
             }
         }
-        /* private void BunifuButton1_Click(object sender, EventArgs e)
-        {
-            double DBD = Math.Round((convertToNumber(CB_Demam.Checked) + convertToNumber(CB_Mual.Checked))/ 2.0 , 2);
-            double DB = Math.Round(convertToNumber(CB_Pegal.Checked) + convertToNumber(CB_SakitKepala.Checked) / 2.0, 2);
-            if (DBD > 0.80)
-            {
-                Label TB = new Label();
-                TB.Name = "Tombol" + leftcontrol.ToString();
-                TB.Text = "DBD :" + DBD.ToString();
-                leftcontrol += 1;
-                flowLayoutPanel1.Controls.Add(TB);
-            }
-            if (DB > 0.80)
-            {
-                Label TB = new Label();
-                TB.Name = "Tombol" + leftcontrol.ToString();
-                TB.Text = "DB :" + DB.ToString() ;
-                leftcontrol += 1;
-                flowLayoutPanel1.Controls.Add(TB);
-            }
 
+        private void BunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            Form_Close FC = new Form_Close();
+            FC.ShowDialog();
         }
-        */
+
+
+
+
+        /* private void BunifuButton1_Click(object sender, EventArgs e)
+{
+   double DBD = Math.Round((convertToNumber(CB_Demam.Checked) + convertToNumber(CB_Mual.Checked))/ 2.0 , 2);
+   double DB = Math.Round(convertToNumber(CB_Pegal.Checked) + convertToNumber(CB_SakitKepala.Checked) / 2.0, 2);
+   if (DBD >= 0.80)
+   {
+       Label TB = new Label();
+       TB.Name = "Tombol" + leftcontrol.ToString();
+       TB.Text = "DBD :" + DBD.ToString();
+       leftcontrol += 1;
+       flowLayoutPanel1.Controls.Add(TB);
+   }
+   if (DB >= 0.80)
+   {
+       Label TB = new Label();
+       TB.Name = "Tombol" + leftcontrol.ToString();
+       TB.Text = "DB :" + DB.ToString() ;
+       leftcontrol += 1;
+       flowLayoutPanel1.Controls.Add(TB);
+   }
+
+}
+*/
     }
 }
