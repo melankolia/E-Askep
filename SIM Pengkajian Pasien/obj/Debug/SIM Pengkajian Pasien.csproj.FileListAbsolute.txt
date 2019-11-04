@@ -38,3 +38,7 @@ D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian P
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form_Pengkajian.resources
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
