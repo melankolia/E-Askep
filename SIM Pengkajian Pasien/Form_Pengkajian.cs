@@ -19,22 +19,38 @@ namespace SIM_Pengkajian_Pasien
             InitializeComponent();
         }
 
+        private int convertToNumber(bool boolValue)
+        {
+            if (boolValue == true)
+            {
+                return 1;
+            }
+            else if (boolValue == false)
+            {
+                return 0;
+            }
+            else
+            {
+                return -1;
+            }
+        }
         private void BunifuButton1_Click(object sender, EventArgs e)
         {
-            
-            if (CB_Demam.Checked == true && CB_Mual.Checked == true)
+            double DBD = Math.Round((convertToNumber(CB_Demam.Checked) + convertToNumber(CB_Mual.Checked))/ 2.0 , 2);
+            double DB = Math.Round(convertToNumber(CB_Pegal.Checked) + convertToNumber(CB_SakitKepala.Checked) / 2.0, 2);
+            if (DBD > 0.80)
             {
-                TextBox TB = new TextBox();
+                Label TB = new Label();
                 TB.Name = "Tombol" + leftcontrol.ToString();
-                TB.Text = "Demam Berdarah Dengue";
+                TB.Text = "DBD :" + DBD.ToString();
                 leftcontrol += 1;
                 flowLayoutPanel1.Controls.Add(TB);
             }
-            if (CB_Pegal.Checked == true && CB_SakitKepala.Checked == true)
+            if (DB > 0.80)
             {
-                TextBox TB = new TextBox();
+                Label TB = new Label();
                 TB.Name = "Tombol" + leftcontrol.ToString();
-                TB.Text = "Demam Berdarah";
+                TB.Text = "DB :" + DB.ToString() ;
                 leftcontrol += 1;
                 flowLayoutPanel1.Controls.Add(TB);
             }
