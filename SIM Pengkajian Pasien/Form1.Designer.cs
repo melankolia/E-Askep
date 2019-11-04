@@ -39,23 +39,23 @@
             this.B_Mulai = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.P_NurseSmiling = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).BeginInit();
+            this.P_NurseSmiling = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -78,11 +78,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(33, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(271, 20);
+            this.label4.Size = new System.Drawing.Size(238, 20);
             this.label4.TabIndex = 35;
             this.label4.Text = "luaran dan intervensi keperawatan.";
             // 
@@ -90,11 +90,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(33, 113);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(401, 20);
+            this.label3.Size = new System.Drawing.Size(361, 20);
             this.label3.TabIndex = 34;
             this.label3.Text = "kesehatan pasien yang terintegrasi dengan diagnosis,";
             // 
@@ -102,11 +102,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(17, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 30);
+            this.label2.Size = new System.Drawing.Size(192, 32);
             this.label2.TabIndex = 33;
             this.label2.Text = "Sistem Informasi";
             // 
@@ -114,19 +114,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(33, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 20);
+            this.label1.Size = new System.Drawing.Size(308, 20);
             this.label1.TabIndex = 31;
             this.label1.Text = "Software ini merupakan software pengkajian ";
             // 
             // B_Keluar
             // 
             this.B_Keluar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(68)))), ((int)(((byte)(36)))));
-            this.B_Keluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B_Keluar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_Keluar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.B_Keluar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B_Keluar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.B_Keluar.Location = new System.Drawing.Point(21, 59);
             this.B_Keluar.Name = "B_Keluar";
@@ -138,10 +138,10 @@
             // 
             // B_Mulai
             // 
-            this.B_Mulai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.B_Mulai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B_Mulai.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B_Mulai.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.B_Mulai.BackColor = System.Drawing.Color.White;
+            this.B_Mulai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.B_Mulai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_Mulai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
             this.B_Mulai.Location = new System.Drawing.Point(21, 14);
             this.B_Mulai.Name = "B_Mulai";
             this.B_Mulai.Size = new System.Drawing.Size(164, 39);
@@ -164,17 +164,39 @@
             this.bunifuDragControl2.TargetControl = this.P_NurseSmiling;
             this.bunifuDragControl2.Vertical = true;
             // 
-            // P_NurseSmiling
+            // label5
             // 
-            this.P_NurseSmiling.BackColor = System.Drawing.Color.Transparent;
-            this.P_NurseSmiling.Dock = System.Windows.Forms.DockStyle.Right;
-            this.P_NurseSmiling.Image = global::SIM_Pengkajian_Pasien.Properties.Resources._5dbe5e1bf1bd2;
-            this.P_NurseSmiling.Location = new System.Drawing.Point(347, 0);
-            this.P_NurseSmiling.Name = "P_NurseSmiling";
-            this.P_NurseSmiling.Size = new System.Drawing.Size(373, 480);
-            this.P_NurseSmiling.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.P_NurseSmiling.TabIndex = 24;
-            this.P_NurseSmiling.TabStop = false;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(199, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 37);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Manajemen";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.B_Mulai);
+            this.panel1.Controls.Add(this.B_Keluar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 360);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(347, 120);
+            this.panel1.TabIndex = 37;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.panel1;
+            this.bunifuDragControl3.Vertical = true;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // pictureBox2
             // 
@@ -238,39 +260,17 @@
             this.pictureBox5.TabIndex = 29;
             this.pictureBox5.TabStop = false;
             // 
-            // label5
+            // P_NurseSmiling
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(212, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 33);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Manajemen";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.B_Mulai);
-            this.panel1.Controls.Add(this.B_Keluar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 360);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 120);
-            this.panel1.TabIndex = 37;
-            // 
-            // bunifuDragControl3
-            // 
-            this.bunifuDragControl3.Fixed = true;
-            this.bunifuDragControl3.Horizontal = true;
-            this.bunifuDragControl3.TargetControl = this.panel1;
-            this.bunifuDragControl3.Vertical = true;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
+            this.P_NurseSmiling.BackColor = System.Drawing.Color.Transparent;
+            this.P_NurseSmiling.Dock = System.Windows.Forms.DockStyle.Right;
+            this.P_NurseSmiling.Image = global::SIM_Pengkajian_Pasien.Properties.Resources._5dbe5e1bf1bd2;
+            this.P_NurseSmiling.Location = new System.Drawing.Point(347, 0);
+            this.P_NurseSmiling.Name = "P_NurseSmiling";
+            this.P_NurseSmiling.Size = new System.Drawing.Size(373, 480);
+            this.P_NurseSmiling.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.P_NurseSmiling.TabIndex = 24;
+            this.P_NurseSmiling.TabStop = false;
             // 
             // Form1
             // 
@@ -294,13 +294,13 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

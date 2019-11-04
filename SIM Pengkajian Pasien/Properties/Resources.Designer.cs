@@ -93,6 +93,106 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_48px {
+            get {
+                object obj = ResourceManager.GetObject("cancel_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circled_chevron_down_50px {
+            get {
+                object obj = ResourceManager.GetObject("circled_chevron_down_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circled_chevron_down_filled_50px {
+            get {
+                object obj = ResourceManager.GetObject("circled_chevron_down_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circled_chevron_down_filled_50px1 {
+            get {
+                object obj = ResourceManager.GetObject("circled_chevron_down_filled_50px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circled_chevron_up_50px {
+            get {
+                object obj = ResourceManager.GetObject("circled_chevron_up_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circled_chevron_up_filled_50px {
+            get {
+                object obj = ResourceManager.GetObject("circled_chevron_up_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circled_chevron_up_filled_50px1 {
+            get {
+                object obj = ResourceManager.GetObject("circled_chevron_up_filled_50px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_window_32px {
+            get {
+                object obj = ResourceManager.GetObject("close_window_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_window_filled_50px {
+            get {
+                object obj = ResourceManager.GetObject("close_window_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dna {
             get {
                 object obj = ResourceManager.GetObject("dna", resourceCulture);
@@ -113,9 +213,49 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flex_biceps_30px {
+            get {
+                object obj = ResourceManager.GetObject("flex_biceps_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap google_forms_filled_50px {
             get {
                 object obj = ResourceManager.GetObject("google_forms_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap groups_50px {
+            get {
+                object obj = ResourceManager.GetObject("groups_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap health_checkup_50px {
+            get {
+                object obj = ResourceManager.GetObject("health_checkup_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap horizontal_line_filled_50px {
+            get {
+                object obj = ResourceManager.GetObject("horizontal_line_filled_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +273,39 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maximize_window_26px {
+            get {
+                object obj = ResourceManager.GetObject("maximize_window_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maximize_window_50px {
+            get {
+                object obj = ResourceManager.GetObject("maximize_window_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medical_kit {
             get {
                 object obj = ResourceManager.GetObject("medical-kit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mental_health_64px {
+            get {
+                object obj = ResourceManager.GetObject("mental_health_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +343,39 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap unchecked_checkbox_32px {
+            get {
+                object obj = ResourceManager.GetObject("unchecked_checkbox_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap up_squared_50px {
+            get {
+                object obj = ResourceManager.GetObject("up_squared_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap warning {
             get {
                 object obj = ResourceManager.GetObject("warning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap xbox_x_filled_50px {
+            get {
+                object obj = ResourceManager.GetObject("xbox_x_filled_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

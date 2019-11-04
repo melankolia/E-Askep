@@ -43,11 +43,23 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
       <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
@@ -58,6 +70,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -158,6 +171,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\google_forms_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbox_x_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_chevron_up_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_chevron_down_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_chevron_up_filled_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_chevron_down_filled_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_chevron_up_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_chevron_down_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_window_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_window_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_line_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_squared_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unchecked_checkbox_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flex_biceps_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mental_health_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groups_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_checkup_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_filled_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

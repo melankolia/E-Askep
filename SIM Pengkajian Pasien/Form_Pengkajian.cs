@@ -41,6 +41,57 @@ namespace SIM_Pengkajian_Pasien
             FC.ShowDialog();
         }
 
+        private void BunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.PageIndex = 0;
+        }
+
+        private void BunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.PageIndex = 1;
+        }
+
+        private void BunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.PageIndex = 2;
+        }
+
+        private void BunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.PageIndex = 3;
+        }
+
+        private void BunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.PageIndex = 4;
+        }
+
+
+        private void B_Maximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized) {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+                
+        }
+
+        private void B_Minimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+
+
+
+
+
+
+
+
 
 
 

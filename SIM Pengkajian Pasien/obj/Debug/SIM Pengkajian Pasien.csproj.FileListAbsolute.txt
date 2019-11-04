@@ -42,3 +42,11 @@ D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinFor
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
