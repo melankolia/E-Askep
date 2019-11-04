@@ -34,7 +34,7 @@ namespace SIM_Pengkajian_Pasien
                 return -1;
             }
         }
-        private void BunifuButton1_Click(object sender, EventArgs e)
+        /* private void BunifuButton1_Click(object sender, EventArgs e)
         {
             double DBD = Math.Round((convertToNumber(CB_Demam.Checked) + convertToNumber(CB_Mual.Checked))/ 2.0 , 2);
             double DB = Math.Round(convertToNumber(CB_Pegal.Checked) + convertToNumber(CB_SakitKepala.Checked) / 2.0, 2);
@@ -56,5 +56,6 @@ namespace SIM_Pengkajian_Pasien
             }
 
         }
+        */
     }
 }
