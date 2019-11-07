@@ -43,6 +43,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
       <HintPath>..\..\..\..\Visual Studio 2019\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\Visual Studio 2019\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
@@ -234,6 +237,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close_window_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical nurse_3848714.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiclipart.com-id_bzfqn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

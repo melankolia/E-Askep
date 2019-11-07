@@ -77,3 +77,5 @@ D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\obj\Debug\SIM 
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CopyComplete
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.pdb
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml

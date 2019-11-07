@@ -253,6 +253,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hiclipart_com_id_bzfqn {
+            get {
+                object obj = ResourceManager.GetObject("hiclipart.com-id_bzfqn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap horizontal_line_filled_50px {
             get {
                 object obj = ResourceManager.GetObject("horizontal_line_filled_50px", resourceCulture);
@@ -296,6 +306,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap medical_kit {
             get {
                 object obj = ResourceManager.GetObject("medical-kit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medical_nurse_3848714 {
+            get {
+                object obj = ResourceManager.GetObject("medical nurse_3848714", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
