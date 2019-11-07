@@ -63,6 +63,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0_2129570515172652822036 {
+            get {
+                object obj = ResourceManager.GetObject("0.2129570515172652822036", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5dbe5e1bf1bd2 {
             get {
                 object obj = ResourceManager.GetObject("5dbe5e1bf1bd2", resourceCulture);
@@ -76,6 +86,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap _5dbe5e1bf1bd21 {
             get {
                 object obj = ResourceManager.GetObject("5dbe5e1bf1bd21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _clipart_1421908 {
+            get {
+                object obj = ResourceManager.GetObject("-clipart-1421908", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap emergency_kit {
             get {
                 object obj = ResourceManager.GetObject("emergency-kit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap family_illustration_3531641 {
+            get {
+                object obj = ResourceManager.GetObject("family illustration_3531641", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -67,22 +67,51 @@ namespace SIM_Pengkajian_Pasien
         }
 
 
-        /* private void B_Maximize_Click(object sender, EventArgs e)
+
+
+        private void B_Minimize_Click(object sender, EventArgs e)
         {
-            if (this.WindowState != FormWindowState.Maximized) {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void B_Maximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
                 this.WindowState = FormWindowState.Maximized;
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
             }
-                
-        } */
-
-        private void B_Minimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
         }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            L_PPSLevel.Text = "Timer is ticking";
+        }
+
+        private void CB_StatusFungsional_onItemSelected(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

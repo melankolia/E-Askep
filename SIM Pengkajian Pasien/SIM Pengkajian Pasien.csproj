@@ -244,5 +244,11 @@
   <ItemGroup>
     <None Include="Resources\hiclipart.com-id_bzfqn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-clipart-1421908.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.2129570515172652822036.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
