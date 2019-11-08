@@ -136,14 +136,17 @@
   <data name="dna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="groups_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\groups_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unchecked_checkbox_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unchecked_checkbox_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0.2129570515172652822036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0.2129570515172652822036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maximize_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="-clipart-1421908" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-clipart-1421908.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circled_chevron_down_filled_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circled_chevron_down_filled_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circled_chevron_down_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled_chevron_down_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +154,8 @@
   <data name="close_window_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_window_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5dbe5e1bf1bd2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5dbe5e1bf1bd2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="circled_chevron_down_filled_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\circled_chevron_down_filled_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="-clipart-1421908" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-clipart-1421908.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="xbox_x_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xbox_x_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,14 +190,14 @@
   <data name="organ_transplantation_200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\organ_transplantation_200px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maximize_window_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximize_window_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="medical-kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medical-kit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_window_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_window_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5dbe5e1bf1bd2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5dbe5e1bf1bd2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nurse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nurse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,16 +217,19 @@
   <data name="cancel_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unchecked_checkbox_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unchecked_checkbox_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="horizontal_line_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horizontal_line_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="groups_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\groups_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hospital" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hospital.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="horizontal_line_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\horizontal_line_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximize_window_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize_window_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0.2129570515172652822036" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0.2129570515172652822036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blood Drop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blood Drop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
