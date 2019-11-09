@@ -163,8 +163,11 @@
   <data name="-clipart-1421908" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\-clipart-1421908.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xbox_x_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xbox_x_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lungs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lungs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="report" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,14 +223,23 @@
   <data name="boy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mental_health_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mental_health_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flex_biceps_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flex_biceps_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="psychology" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\psychology.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="body-chest-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\body-chest-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xbox_x_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xbox_x_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circled_chevron_up_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled_chevron_up_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,16 +256,22 @@
   <data name="hospital" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hospital.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="circled_chevron_down_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled_chevron_down_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medical nurse_3848714" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medical nurse_3848714.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="electrocardiogram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electrocardiogram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="maximize_window_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize_window_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

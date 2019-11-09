@@ -283,6 +283,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap electrocardiogram {
+            get {
+                object obj = ResourceManager.GetObject("electrocardiogram", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emergency_kit {
             get {
                 object obj = ResourceManager.GetObject("emergency-kit", resourceCulture);
@@ -343,6 +353,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heart__1_ {
+            get {
+                object obj = ResourceManager.GetObject("heart (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hiclipart_com_id_bzfqn {
             get {
                 object obj = ResourceManager.GetObject("hiclipart.com-id_bzfqn", resourceCulture);
@@ -386,6 +406,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap icon_ear_4 {
             get {
                 object obj = ResourceManager.GetObject("icon-ear-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lungs {
+            get {
+                object obj = ResourceManager.GetObject("lungs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +503,39 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap psychology {
+            get {
+                object obj = ResourceManager.GetObject("psychology", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap report {
             get {
                 object obj = ResourceManager.GetObject("report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sick {
+            get {
+                object obj = ResourceManager.GetObject("sick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sick1 {
+            get {
+                object obj = ResourceManager.GetObject("sick1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

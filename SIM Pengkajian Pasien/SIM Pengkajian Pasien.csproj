@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -320,6 +320,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lungs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrocardiogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sick1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

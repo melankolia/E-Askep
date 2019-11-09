@@ -48,27 +48,30 @@ namespace SIM_Pengkajian_Pasien
         {
             bunifuPages1.PageIndex = 0;
         }
-
+ 
         private void BunifuFlatButton2_Click(object sender, EventArgs e)
         {
             bunifuPages1.PageIndex = 1;
         }
-
-        private void BunifuFlatButton3_Click(object sender, EventArgs e)
+        private void B_Fisik2_Click(object sender, EventArgs e)
         {
             bunifuPages1.PageIndex = 2;
         }
-
-        private void BunifuFlatButton4_Click(object sender, EventArgs e)
+        private void B_Sosial_Click(object sender, EventArgs e)
         {
             bunifuPages1.PageIndex = 3;
         }
 
-        private void BunifuFlatButton5_Click(object sender, EventArgs e)
+        private void B_Psikologis_Click(object sender, EventArgs e)
         {
             bunifuPages1.PageIndex = 4;
         }
 
+        private void B_Diagnosis_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.PageIndex = 5;
+        }
+   
 
         private void B_Maximize_Click(object sender, EventArgs e)
         {
@@ -357,15 +360,16 @@ namespace SIM_Pengkajian_Pasien
             }
         }
 
-        private void BunifuSeparator2_Load(object sender, EventArgs e)
-        {
 
-        }
 
-        private void Panel14_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
+
+
+
+
+
+
+
 
 
 
