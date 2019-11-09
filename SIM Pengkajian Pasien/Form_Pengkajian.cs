@@ -84,10 +84,7 @@ namespace SIM_Pengkajian_Pasien
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            //L_PPSLevel.Text = "Timer is ticking";
-            //TB_PPSLevel.Text = "90";
-            //CB_PPSLevel.SelectedIndex = 1;
-            //TB_PPSLevel.Text = "Start";
+
             if (CB_Ambulasi.SelectedIndex == 0 && CB_StatusFungsional.SelectedIndex == 0 && CB_KemampauanMerawatDiri.SelectedIndex == 0 && CB_Intake.SelectedIndex == 0 && CB_TingkatKesadaran.SelectedIndex == 0)
             {
                 TB_PPSLevel.Text = "100";
@@ -359,6 +356,12 @@ namespace SIM_Pengkajian_Pasien
                     break;
             }
         }
+
+
+
+
+
+
 
 
 

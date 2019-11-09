@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Pengkajian));
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
@@ -107,6 +106,7 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties74 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties75 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties76 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.B_Diagnosis = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -120,7 +120,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.B_Minimize = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.B_Maximize = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -202,75 +207,81 @@
             this.TB_DPJP = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.L_IdentitasPasien = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.L_Kepala = new System.Windows.Forms.Label();
-            this.CB_LamaMerasaNyeri = new Bunifu.Framework.UI.BunifuDropdown();
-            this.L_LamaMerasaNyeri = new System.Windows.Forms.Label();
-            this.L_LokasiNyeri = new System.Windows.Forms.Label();
-            this.TB_LokasiNyeri = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.L_Durasi = new System.Windows.Forms.Label();
-            this.TB_DurasiNyeri = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.TB_InterpretasiSkalaNyeri = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.L_Frekuensi = new System.Windows.Forms.Label();
-            this.TB_FrekuensiNyeri = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.L_Skala = new System.Windows.Forms.Label();
-            this.L_Nyeri = new System.Windows.Forms.Label();
-            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.label32 = new System.Windows.Forms.Label();
-            this.TB_InterpretasiSuhu = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.TB_Suhu = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.L_Suhu = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.TB_InterpretasiFrekuensiPernapasan = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.TB_FrekuensiPernapasan = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.L_FrekuensiPernapasan = new System.Windows.Forms.Label();
-            this.CB_NadiTerabaKuat = new Bunifu.UI.WinForms.BunifuCheckBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.CB_NadiTerabaLemah = new Bunifu.UI.WinForms.BunifuCheckBox();
-            this.TB_Nadi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.TB_MAP = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.TB_Diastole = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.L_TekananDarah = new System.Windows.Forms.Label();
-            this.TB_Sistol = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.L_MAP = new System.Windows.Forms.Label();
-            this.TB_InterpretasiNadi = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.L_PengkajianTandaVital = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.B_Minimize = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.B_Maximize = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.CB_LamaMerasaNyeri = new Bunifu.Framework.UI.BunifuDropdown();
+            this.L_LamaMerasaNyeri = new System.Windows.Forms.Label();
+            this.TB_LokasiNyeri = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.L_LokasiNyeri = new System.Windows.Forms.Label();
+            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.TB_DurasiNyeri = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.L_Durasi = new System.Windows.Forms.Label();
+            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.TB_FrekuensiNyeri = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.L_Frekuensi = new System.Windows.Forms.Label();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.TB_InterpretasiSkalaNyeri = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.CB_SkalaNyeri = new Bunifu.Framework.UI.BunifuDropdown();
+            this.L_Skala = new System.Windows.Forms.Label();
+            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.L_Nyeri = new System.Windows.Forms.Label();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.TB_InterpretasiSuhu = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.TB_Suhu = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.L_Suhu = new System.Windows.Forms.Label();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.TB_InterpretasiFrekuensiPernapasan = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.TB_FrekuensiPernapasan = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.L_FrekuensiPernapasan = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.CB_NadiTerabaKuat = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.CB_NadiTerabaLemah = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.TB_InterpretasiNadi = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.TB_Nadi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.L_MAP = new System.Windows.Forms.Label();
+            this.TB_MAP = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.L_TekananDarah = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.TB_Diastole = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.TB_Sistol = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.bunifuPages1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -284,10 +295,24 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.TLP_IdentitasPasien.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel15.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
+            this.tableLayoutPanel17.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.bunifuPages1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -637,48 +662,118 @@
             this.bunifuToolTip1.SetToolTipIcon(this.panel4, null);
             this.bunifuToolTip1.SetToolTipTitle(this.panel4, "");
             // 
-            // bunifuPages1
+            // panel3
             // 
-            this.bunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.bunifuPages1.AllowTransitions = false;
-            this.bunifuPages1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuPages1.Controls.Add(this.tabPage1);
-            this.bunifuPages1.Controls.Add(this.tabPage2);
-            this.bunifuPages1.Controls.Add(this.tabPage3);
-            this.bunifuPages1.Controls.Add(this.tabPage4);
-            this.bunifuPages1.Controls.Add(this.tabPage5);
-            this.bunifuPages1.Location = new System.Drawing.Point(158, 25);
-            this.bunifuPages1.Multiline = true;
-            this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabPage2;
-            this.bunifuPages1.PageIndex = 1;
-            this.bunifuPages1.PageName = "tabPage2";
-            this.bunifuPages1.PageTitle = "tabPage2";
-            this.bunifuPages1.SelectedIndex = 0;
-            this.bunifuPages1.Size = new System.Drawing.Size(704, 532);
-            this.bunifuPages1.TabIndex = 1;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPages1, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPages1, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPages1, "");
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.bunifuPages1.Transition = animation1;
-            this.bunifuPages1.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.panel3.Controls.Add(this.B_Minimize);
+            this.panel3.Controls.Add(this.B_Maximize);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(158, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(707, 25);
+            this.panel3.TabIndex = 2;
+            this.bunifuToolTip1.SetToolTip(this.panel3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel3, "");
+            // 
+            // B_Minimize
+            // 
+            this.B_Minimize.Active = false;
+            this.B_Minimize.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
+            this.B_Minimize.BackColor = System.Drawing.Color.Transparent;
+            this.B_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B_Minimize.BorderRadius = 0;
+            this.B_Minimize.ButtonText = "";
+            this.B_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_Minimize.DisabledColor = System.Drawing.Color.Gray;
+            this.B_Minimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.B_Minimize.Iconcolor = System.Drawing.Color.Transparent;
+            this.B_Minimize.Iconimage = global::SIM_Pengkajian_Pasien.Properties.Resources.horizontal_line_filled_50px;
+            this.B_Minimize.Iconimage_right = null;
+            this.B_Minimize.Iconimage_right_Selected = null;
+            this.B_Minimize.Iconimage_Selected = null;
+            this.B_Minimize.IconMarginLeft = 0;
+            this.B_Minimize.IconMarginRight = 0;
+            this.B_Minimize.IconRightVisible = true;
+            this.B_Minimize.IconRightZoom = 0D;
+            this.B_Minimize.IconVisible = true;
+            this.B_Minimize.IconZoom = 40D;
+            this.B_Minimize.IsTab = false;
+            this.B_Minimize.Location = new System.Drawing.Point(651, 0);
+            this.B_Minimize.Name = "B_Minimize";
+            this.B_Minimize.Normalcolor = System.Drawing.Color.Transparent;
+            this.B_Minimize.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
+            this.B_Minimize.OnHoverTextColor = System.Drawing.Color.White;
+            this.B_Minimize.selected = false;
+            this.B_Minimize.Size = new System.Drawing.Size(28, 25);
+            this.B_Minimize.TabIndex = 14;
+            this.B_Minimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.B_Minimize.Textcolor = System.Drawing.Color.White;
+            this.B_Minimize.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuToolTip1.SetToolTip(this.B_Minimize, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.B_Minimize, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.B_Minimize, "");
+            this.B_Minimize.Click += new System.EventHandler(this.B_Minimize_Click_1);
+            // 
+            // B_Maximize
+            // 
+            this.B_Maximize.Active = false;
+            this.B_Maximize.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
+            this.B_Maximize.BackColor = System.Drawing.Color.Transparent;
+            this.B_Maximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B_Maximize.BorderRadius = 0;
+            this.B_Maximize.ButtonText = "";
+            this.B_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_Maximize.DisabledColor = System.Drawing.Color.Gray;
+            this.B_Maximize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.B_Maximize.Iconcolor = System.Drawing.Color.Transparent;
+            this.B_Maximize.Iconimage = global::SIM_Pengkajian_Pasien.Properties.Resources.up_squared_50px;
+            this.B_Maximize.Iconimage_right = null;
+            this.B_Maximize.Iconimage_right_Selected = null;
+            this.B_Maximize.Iconimage_Selected = null;
+            this.B_Maximize.IconMarginLeft = 0;
+            this.B_Maximize.IconMarginRight = 0;
+            this.B_Maximize.IconRightVisible = true;
+            this.B_Maximize.IconRightZoom = 0D;
+            this.B_Maximize.IconVisible = true;
+            this.B_Maximize.IconZoom = 40D;
+            this.B_Maximize.IsTab = false;
+            this.B_Maximize.Location = new System.Drawing.Point(679, 0);
+            this.B_Maximize.Name = "B_Maximize";
+            this.B_Maximize.Normalcolor = System.Drawing.Color.Transparent;
+            this.B_Maximize.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
+            this.B_Maximize.OnHoverTextColor = System.Drawing.Color.White;
+            this.B_Maximize.selected = false;
+            this.B_Maximize.Size = new System.Drawing.Size(28, 25);
+            this.B_Maximize.TabIndex = 13;
+            this.B_Maximize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.B_Maximize.Textcolor = System.Drawing.Color.White;
+            this.B_Maximize.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuToolTip1.SetToolTip(this.B_Maximize, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.B_Maximize, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.B_Maximize, "");
+            this.B_Maximize.Click += new System.EventHandler(this.B_Maximize_Click);
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.pictureBox1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuDragControl2
+            // 
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.panel3;
+            this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.tabPage1;
+            this.bunifuDragControl3.Vertical = true;
             // 
             // tabPage1
             // 
@@ -748,7 +843,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(613, 84);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(600, 84);
             this.tableLayoutPanel5.TabIndex = 25;
             this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel5, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel5, null);
@@ -788,7 +883,7 @@
             "-"});
             this.CB_KemampauanMerawatDiri.Location = new System.Drawing.Point(3, 24);
             this.CB_KemampauanMerawatDiri.Name = "CB_KemampauanMerawatDiri";
-            this.CB_KemampauanMerawatDiri.Size = new System.Drawing.Size(198, 32);
+            this.CB_KemampauanMerawatDiri.Size = new System.Drawing.Size(194, 32);
             this.CB_KemampauanMerawatDiri.TabIndex = 53;
             this.CB_KemampauanMerawatDiri.Text = null;
             this.bunifuToolTip1.SetToolTip(this.CB_KemampauanMerawatDiri, "");
@@ -828,9 +923,9 @@
             "Minimal",
             "Sangat Minimal",
             "-"});
-            this.CB_Intake.Location = new System.Drawing.Point(207, 24);
+            this.CB_Intake.Location = new System.Drawing.Point(203, 24);
             this.CB_Intake.Name = "CB_Intake";
-            this.CB_Intake.Size = new System.Drawing.Size(198, 32);
+            this.CB_Intake.Size = new System.Drawing.Size(194, 32);
             this.CB_Intake.TabIndex = 52;
             this.CB_Intake.Text = null;
             this.bunifuToolTip1.SetToolTip(this.CB_Intake, "");
@@ -874,9 +969,9 @@
             "Apatis, Letargi, Koma",
             "Letargi, Koma",
             "-"});
-            this.CB_TingkatKesadaran.Location = new System.Drawing.Point(411, 24);
+            this.CB_TingkatKesadaran.Location = new System.Drawing.Point(403, 24);
             this.CB_TingkatKesadaran.Name = "CB_TingkatKesadaran";
-            this.CB_TingkatKesadaran.Size = new System.Drawing.Size(199, 32);
+            this.CB_TingkatKesadaran.Size = new System.Drawing.Size(194, 32);
             this.CB_TingkatKesadaran.TabIndex = 51;
             this.CB_TingkatKesadaran.Text = null;
             this.bunifuToolTip1.SetToolTip(this.CB_TingkatKesadaran, "");
@@ -890,9 +985,9 @@
             this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(411, 0);
+            this.label9.Location = new System.Drawing.Point(403, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(199, 21);
+            this.label9.Size = new System.Drawing.Size(194, 21);
             this.label9.TabIndex = 49;
             this.label9.Text = "Tingkat Kesadaran";
             this.bunifuToolTip1.SetToolTip(this.label9, "");
@@ -905,9 +1000,9 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(207, 0);
+            this.label10.Location = new System.Drawing.Point(203, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(198, 21);
+            this.label10.Size = new System.Drawing.Size(194, 21);
             this.label10.TabIndex = 48;
             this.label10.Text = "Intake";
             this.bunifuToolTip1.SetToolTip(this.label10, "");
@@ -922,7 +1017,7 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(3, 1);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(198, 20);
+            this.label13.Size = new System.Drawing.Size(194, 20);
             this.label13.TabIndex = 47;
             this.label13.Text = "Kemampuan Merawat Diri";
             this.bunifuToolTip1.SetToolTip(this.label13, "");
@@ -937,7 +1032,7 @@
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Location = new System.Drawing.Point(-1, 2595);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(692, 54);
+            this.panel12.Size = new System.Drawing.Size(694, 54);
             this.panel12.TabIndex = 23;
             this.bunifuToolTip1.SetToolTip(this.panel12, "");
             this.bunifuToolTip1.SetToolTipIcon(this.panel12, null);
@@ -974,7 +1069,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(613, 64);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(600, 64);
             this.tableLayoutPanel4.TabIndex = 24;
             this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel4, "");
             this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel4, null);
@@ -1021,9 +1116,9 @@
             "Sangat sakit, perlu dirawat di RS untuk pengobatan suportif",
             "Sekarat",
             "Meninggal"});
-            this.CB_StatusFungsional.Location = new System.Drawing.Point(411, 24);
+            this.CB_StatusFungsional.Location = new System.Drawing.Point(402, 24);
             this.CB_StatusFungsional.Name = "CB_StatusFungsional";
-            this.CB_StatusFungsional.Size = new System.Drawing.Size(199, 32);
+            this.CB_StatusFungsional.Size = new System.Drawing.Size(195, 32);
             this.CB_StatusFungsional.TabIndex = 52;
             this.CB_StatusFungsional.Text = null;
             this.bunifuToolTip1.SetToolTip(this.CB_StatusFungsional, "");
@@ -1064,9 +1159,9 @@
             "Sering berbaring di tempat tidur",
             "Aktivitas total di atas tempat tidur",
             "Meninggal"});
-            this.CB_Ambulasi.Location = new System.Drawing.Point(207, 24);
+            this.CB_Ambulasi.Location = new System.Drawing.Point(203, 24);
             this.CB_Ambulasi.Name = "CB_Ambulasi";
-            this.CB_Ambulasi.Size = new System.Drawing.Size(198, 32);
+            this.CB_Ambulasi.Size = new System.Drawing.Size(193, 32);
             this.CB_Ambulasi.TabIndex = 51;
             this.CB_Ambulasi.Text = null;
             this.bunifuToolTip1.SetToolTip(this.CB_Ambulasi, "");
@@ -1080,9 +1175,9 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(411, 0);
+            this.label12.Location = new System.Drawing.Point(402, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(199, 21);
+            this.label12.Size = new System.Drawing.Size(195, 21);
             this.label12.TabIndex = 49;
             this.label12.Text = "Status Fungsional";
             this.bunifuToolTip1.SetToolTip(this.label12, "");
@@ -1095,9 +1190,9 @@
             this.L_Ambulasi.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.L_Ambulasi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.L_Ambulasi.ForeColor = System.Drawing.Color.White;
-            this.L_Ambulasi.Location = new System.Drawing.Point(207, 0);
+            this.L_Ambulasi.Location = new System.Drawing.Point(203, 0);
             this.L_Ambulasi.Name = "L_Ambulasi";
-            this.L_Ambulasi.Size = new System.Drawing.Size(198, 21);
+            this.L_Ambulasi.Size = new System.Drawing.Size(193, 21);
             this.L_Ambulasi.TabIndex = 48;
             this.L_Ambulasi.Text = "Ambulasi";
             this.bunifuToolTip1.SetToolTip(this.L_Ambulasi, "");
@@ -1112,7 +1207,7 @@
             this.L_PPSLevel.ForeColor = System.Drawing.Color.White;
             this.L_PPSLevel.Location = new System.Drawing.Point(3, 0);
             this.L_PPSLevel.Name = "L_PPSLevel";
-            this.L_PPSLevel.Size = new System.Drawing.Size(198, 21);
+            this.L_PPSLevel.Size = new System.Drawing.Size(194, 21);
             this.L_PPSLevel.TabIndex = 47;
             this.L_PPSLevel.Text = "PPS Level";
             this.bunifuToolTip1.SetToolTip(this.L_PPSLevel, "");
@@ -1184,7 +1279,7 @@
             this.TB_PPSLevel.SelectionLength = 0;
             this.TB_PPSLevel.SelectionStart = 0;
             this.TB_PPSLevel.ShortcutsEnabled = true;
-            this.TB_PPSLevel.Size = new System.Drawing.Size(198, 33);
+            this.TB_PPSLevel.Size = new System.Drawing.Size(194, 33);
             this.TB_PPSLevel.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TB_PPSLevel.TabIndex = 27;
             this.TB_PPSLevel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1220,7 +1315,7 @@
             this.panel10.Controls.Add(this.panel8);
             this.panel10.Location = new System.Drawing.Point(0, 2247);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(694, 76);
+            this.panel10.Size = new System.Drawing.Size(690, 76);
             this.panel10.TabIndex = 22;
             this.bunifuToolTip1.SetToolTip(this.panel10, "");
             this.bunifuToolTip1.SetToolTipIcon(this.panel10, null);
@@ -1244,7 +1339,7 @@
             this.pictureBox4.Image = global::SIM_Pengkajian_Pasien.Properties.Resources._0_2129570515172652822036;
             this.pictureBox4.Location = new System.Drawing.Point(488, 1934);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(167, 274);
+            this.pictureBox4.Size = new System.Drawing.Size(152, 274);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
@@ -1272,7 +1367,7 @@
             this.pictureBox3.Image = global::SIM_Pengkajian_Pasien.Properties.Resources._clipart_1421908;
             this.pictureBox3.Location = new System.Drawing.Point(431, 1202);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(218, 395);
+            this.pictureBox3.Size = new System.Drawing.Size(133, 395);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
@@ -1287,7 +1382,7 @@
             this.pictureBox2.Image = global::SIM_Pengkajian_Pasien.Properties.Resources.hiclipart_com_id_bzfqn;
             this.pictureBox2.Location = new System.Drawing.Point(395, 410);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(277, 340);
+            this.pictureBox2.Size = new System.Drawing.Size(192, 340);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -2783,7 +2878,7 @@
             this.TLP_IdentitasPasien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.41176F));
             this.TLP_IdentitasPasien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.58824F));
             this.TLP_IdentitasPasien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.41176F));
-            this.TLP_IdentitasPasien.Size = new System.Drawing.Size(537, 141);
+            this.TLP_IdentitasPasien.Size = new System.Drawing.Size(499, 141);
             this.TLP_IdentitasPasien.TabIndex = 6;
             this.bunifuToolTip1.SetToolTip(this.TLP_IdentitasPasien, "");
             this.bunifuToolTip1.SetToolTipIcon(this.TLP_IdentitasPasien, null);
@@ -2795,9 +2890,9 @@
             this.L_DPJP.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.L_DPJP.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.L_DPJP.ForeColor = System.Drawing.Color.White;
-            this.L_DPJP.Location = new System.Drawing.Point(271, 78);
+            this.L_DPJP.Location = new System.Drawing.Point(252, 78);
             this.L_DPJP.Name = "L_DPJP";
-            this.L_DPJP.Size = new System.Drawing.Size(263, 21);
+            this.L_DPJP.Size = new System.Drawing.Size(244, 21);
             this.L_DPJP.TabIndex = 25;
             this.L_DPJP.Text = "DPJP";
             this.bunifuToolTip1.SetToolTip(this.L_DPJP, "");
@@ -2832,7 +2927,7 @@
             this.TB_NoMEDREC.IconRight = null;
             this.TB_NoMEDREC.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TB_NoMEDREC.Lines = new string[0];
-            this.TB_NoMEDREC.Location = new System.Drawing.Point(271, 32);
+            this.TB_NoMEDREC.Location = new System.Drawing.Point(252, 32);
             this.TB_NoMEDREC.MaxLength = 32767;
             this.TB_NoMEDREC.MinimumSize = new System.Drawing.Size(1, 1);
             this.TB_NoMEDREC.Modified = false;
@@ -2887,9 +2982,9 @@
             this.L_MEDREC.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.L_MEDREC.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.L_MEDREC.ForeColor = System.Drawing.Color.White;
-            this.L_MEDREC.Location = new System.Drawing.Point(271, 8);
+            this.L_MEDREC.Location = new System.Drawing.Point(252, 8);
             this.L_MEDREC.Name = "L_MEDREC";
-            this.L_MEDREC.Size = new System.Drawing.Size(263, 21);
+            this.L_MEDREC.Size = new System.Drawing.Size(244, 21);
             this.L_MEDREC.TabIndex = 25;
             this.L_MEDREC.Text = "No MED REC";
             this.bunifuToolTip1.SetToolTip(this.L_MEDREC, "");
@@ -2981,7 +3076,7 @@
             this.L_JAM.ForeColor = System.Drawing.Color.White;
             this.L_JAM.Location = new System.Drawing.Point(3, 78);
             this.L_JAM.Name = "L_JAM";
-            this.L_JAM.Size = new System.Drawing.Size(262, 21);
+            this.L_JAM.Size = new System.Drawing.Size(243, 21);
             this.L_JAM.TabIndex = 25;
             this.L_JAM.Text = "Jam";
             this.bunifuToolTip1.SetToolTip(this.L_JAM, "");
@@ -2996,7 +3091,7 @@
             this.L_TglMasukRS.ForeColor = System.Drawing.Color.White;
             this.L_TglMasukRS.Location = new System.Drawing.Point(3, 8);
             this.L_TglMasukRS.Name = "L_TglMasukRS";
-            this.L_TglMasukRS.Size = new System.Drawing.Size(262, 21);
+            this.L_TglMasukRS.Size = new System.Drawing.Size(243, 21);
             this.L_TglMasukRS.TabIndex = 20;
             this.L_TglMasukRS.Text = "Tanggal Masuk RS";
             this.bunifuToolTip1.SetToolTip(this.L_TglMasukRS, "");
@@ -3013,7 +3108,7 @@
             this.Date_TglMasukRS.FormatCustom = null;
             this.Date_TglMasukRS.Location = new System.Drawing.Point(3, 32);
             this.Date_TglMasukRS.Name = "Date_TglMasukRS";
-            this.Date_TglMasukRS.Size = new System.Drawing.Size(224, 35);
+            this.Date_TglMasukRS.Size = new System.Drawing.Size(227, 35);
             this.Date_TglMasukRS.TabIndex = 21;
             this.bunifuToolTip1.SetToolTip(this.Date_TglMasukRS, "");
             this.bunifuToolTip1.SetToolTipIcon(this.Date_TglMasukRS, null);
@@ -3048,7 +3143,7 @@
             this.TB_DPJP.IconRight = null;
             this.TB_DPJP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TB_DPJP.Lines = new string[0];
-            this.TB_DPJP.Location = new System.Drawing.Point(271, 102);
+            this.TB_DPJP.Location = new System.Drawing.Point(252, 102);
             this.TB_DPJP.MaxLength = 32767;
             this.TB_DPJP.MinimumSize = new System.Drawing.Size(1, 1);
             this.TB_DPJP.Modified = false;
@@ -3124,1439 +3219,11 @@
             this.bunifuToolTip1.SetToolTipIcon(this.panel9, null);
             this.bunifuToolTip1.SetToolTipTitle(this.panel9, "");
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage2.Controls.Add(this.panel15);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(696, 506);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.bunifuToolTip1.SetToolTip(this.tabPage2, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.tabPage2, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.tabPage2, "");
-            // 
-            // panel15
-            // 
-            this.panel15.AutoScroll = true;
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.panel15.Controls.Add(this.CB_SkalaNyeri);
-            this.panel15.Controls.Add(this.bunifuSeparator1);
-            this.panel15.Controls.Add(this.L_Kepala);
-            this.panel15.Controls.Add(this.CB_LamaMerasaNyeri);
-            this.panel15.Controls.Add(this.L_LamaMerasaNyeri);
-            this.panel15.Controls.Add(this.L_LokasiNyeri);
-            this.panel15.Controls.Add(this.TB_LokasiNyeri);
-            this.panel15.Controls.Add(this.label52);
-            this.panel15.Controls.Add(this.L_Durasi);
-            this.panel15.Controls.Add(this.TB_DurasiNyeri);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.TB_InterpretasiSkalaNyeri);
-            this.panel15.Controls.Add(this.label27);
-            this.panel15.Controls.Add(this.label29);
-            this.panel15.Controls.Add(this.L_Frekuensi);
-            this.panel15.Controls.Add(this.TB_FrekuensiNyeri);
-            this.panel15.Controls.Add(this.L_Skala);
-            this.panel15.Controls.Add(this.L_Nyeri);
-            this.panel15.Controls.Add(this.bunifuSeparator2);
-            this.panel15.Controls.Add(this.label32);
-            this.panel15.Controls.Add(this.TB_InterpretasiSuhu);
-            this.panel15.Controls.Add(this.TB_Suhu);
-            this.panel15.Controls.Add(this.label33);
-            this.panel15.Controls.Add(this.L_Suhu);
-            this.panel15.Controls.Add(this.pictureBox5);
-            this.panel15.Controls.Add(this.label35);
-            this.panel15.Controls.Add(this.TB_InterpretasiFrekuensiPernapasan);
-            this.panel15.Controls.Add(this.TB_FrekuensiPernapasan);
-            this.panel15.Controls.Add(this.label36);
-            this.panel15.Controls.Add(this.label37);
-            this.panel15.Controls.Add(this.L_FrekuensiPernapasan);
-            this.panel15.Controls.Add(this.CB_NadiTerabaKuat);
-            this.panel15.Controls.Add(this.label39);
-            this.panel15.Controls.Add(this.label40);
-            this.panel15.Controls.Add(this.label41);
-            this.panel15.Controls.Add(this.CB_NadiTerabaLemah);
-            this.panel15.Controls.Add(this.TB_Nadi);
-            this.panel15.Controls.Add(this.label42);
-            this.panel15.Controls.Add(this.label43);
-            this.panel15.Controls.Add(this.label44);
-            this.panel15.Controls.Add(this.TB_MAP);
-            this.panel15.Controls.Add(this.label45);
-            this.panel15.Controls.Add(this.TB_Diastole);
-            this.panel15.Controls.Add(this.L_TekananDarah);
-            this.panel15.Controls.Add(this.TB_Sistol);
-            this.panel15.Controls.Add(this.label47);
-            this.panel15.Controls.Add(this.label48);
-            this.panel15.Controls.Add(this.L_MAP);
-            this.panel15.Controls.Add(this.TB_InterpretasiNadi);
-            this.panel15.Controls.Add(this.L_PengkajianTandaVital);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(3, 3);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(690, 500);
-            this.panel15.TabIndex = 77;
-            this.bunifuToolTip1.SetToolTip(this.panel15, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.panel15, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.panel15, "");
-            // 
-            // L_Kepala
-            // 
-            this.L_Kepala.AutoSize = true;
-            this.L_Kepala.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_Kepala.ForeColor = System.Drawing.Color.White;
-            this.L_Kepala.Location = new System.Drawing.Point(44, 899);
-            this.L_Kepala.Name = "L_Kepala";
-            this.L_Kepala.Size = new System.Drawing.Size(92, 32);
-            this.L_Kepala.TabIndex = 85;
-            this.L_Kepala.Text = "Kepala";
-            this.bunifuToolTip1.SetToolTip(this.L_Kepala, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_Kepala, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_Kepala, "");
-            // 
-            // CB_LamaMerasaNyeri
-            // 
-            this.CB_LamaMerasaNyeri.BackColor = System.Drawing.Color.Transparent;
-            this.CB_LamaMerasaNyeri.BorderRadius = 3;
-            this.CB_LamaMerasaNyeri.DisabledColor = System.Drawing.Color.Gray;
-            this.CB_LamaMerasaNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
-            this.CB_LamaMerasaNyeri.ForeColor = System.Drawing.Color.White;
-            this.CB_LamaMerasaNyeri.items = new string[] {
-        "Kurang Dari 3 Bulan",
-        "Lebih Dari 3 Bulan"};
-            this.CB_LamaMerasaNyeri.Location = new System.Drawing.Point(97, 717);
-            this.CB_LamaMerasaNyeri.Margin = new System.Windows.Forms.Padding(2);
-            this.CB_LamaMerasaNyeri.Name = "CB_LamaMerasaNyeri";
-            this.CB_LamaMerasaNyeri.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.CB_LamaMerasaNyeri.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.CB_LamaMerasaNyeri.selectedIndex = -1;
-            this.CB_LamaMerasaNyeri.Size = new System.Drawing.Size(236, 39);
-            this.CB_LamaMerasaNyeri.TabIndex = 84;
-            this.bunifuToolTip1.SetToolTip(this.CB_LamaMerasaNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.CB_LamaMerasaNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.CB_LamaMerasaNyeri, "");
-            // 
-            // L_LamaMerasaNyeri
-            // 
-            this.L_LamaMerasaNyeri.AutoSize = true;
-            this.L_LamaMerasaNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_LamaMerasaNyeri.ForeColor = System.Drawing.Color.White;
-            this.L_LamaMerasaNyeri.Location = new System.Drawing.Point(81, 687);
-            this.L_LamaMerasaNyeri.Name = "L_LamaMerasaNyeri";
-            this.L_LamaMerasaNyeri.Size = new System.Drawing.Size(140, 21);
-            this.L_LamaMerasaNyeri.TabIndex = 83;
-            this.L_LamaMerasaNyeri.Text = "Lama Merasa Nyeri";
-            this.bunifuToolTip1.SetToolTip(this.L_LamaMerasaNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_LamaMerasaNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_LamaMerasaNyeri, "");
-            // 
-            // L_LokasiNyeri
-            // 
-            this.L_LokasiNyeri.AutoSize = true;
-            this.L_LokasiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_LokasiNyeri.ForeColor = System.Drawing.Color.White;
-            this.L_LokasiNyeri.Location = new System.Drawing.Point(81, 635);
-            this.L_LokasiNyeri.Name = "L_LokasiNyeri";
-            this.L_LokasiNyeri.Size = new System.Drawing.Size(53, 21);
-            this.L_LokasiNyeri.TabIndex = 81;
-            this.L_LokasiNyeri.Text = "Lokasi";
-            this.bunifuToolTip1.SetToolTip(this.L_LokasiNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_LokasiNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_LokasiNyeri, "");
-            // 
-            // TB_LokasiNyeri
-            // 
-            this.TB_LokasiNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_LokasiNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_LokasiNyeri.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_LokasiNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_LokasiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_LokasiNyeri.ForeColor = System.Drawing.Color.White;
-            this.TB_LokasiNyeri.HintForeColor = System.Drawing.Color.White;
-            this.TB_LokasiNyeri.HintText = "";
-            this.TB_LokasiNyeri.isPassword = false;
-            this.TB_LokasiNyeri.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_LokasiNyeri.LineIdleColor = System.Drawing.Color.White;
-            this.TB_LokasiNyeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_LokasiNyeri.LineThickness = 1;
-            this.TB_LokasiNyeri.Location = new System.Drawing.Point(97, 656);
-            this.TB_LokasiNyeri.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_LokasiNyeri.MaxLength = 32767;
-            this.TB_LokasiNyeri.Name = "TB_LokasiNyeri";
-            this.TB_LokasiNyeri.Size = new System.Drawing.Size(236, 27);
-            this.TB_LokasiNyeri.TabIndex = 80;
-            this.TB_LokasiNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_LokasiNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_LokasiNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_LokasiNyeri, "");
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.White;
-            this.label52.Location = new System.Drawing.Point(161, 610);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(49, 21);
-            this.label52.TabIndex = 79;
-            this.label52.Text = "menit";
-            this.bunifuToolTip1.SetToolTip(this.label52, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label52, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label52, "");
-            // 
-            // L_Durasi
-            // 
-            this.L_Durasi.AutoSize = true;
-            this.L_Durasi.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_Durasi.ForeColor = System.Drawing.Color.White;
-            this.L_Durasi.Location = new System.Drawing.Point(81, 583);
-            this.L_Durasi.Name = "L_Durasi";
-            this.L_Durasi.Size = new System.Drawing.Size(54, 21);
-            this.L_Durasi.TabIndex = 77;
-            this.L_Durasi.Text = "Durasi";
-            this.bunifuToolTip1.SetToolTip(this.L_Durasi, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_Durasi, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_Durasi, "");
-            // 
-            // TB_DurasiNyeri
-            // 
-            this.TB_DurasiNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_DurasiNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_DurasiNyeri.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_DurasiNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_DurasiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_DurasiNyeri.ForeColor = System.Drawing.Color.White;
-            this.TB_DurasiNyeri.HintForeColor = System.Drawing.Color.White;
-            this.TB_DurasiNyeri.HintText = "";
-            this.TB_DurasiNyeri.isPassword = false;
-            this.TB_DurasiNyeri.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_DurasiNyeri.LineIdleColor = System.Drawing.Color.White;
-            this.TB_DurasiNyeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_DurasiNyeri.LineThickness = 1;
-            this.TB_DurasiNyeri.Location = new System.Drawing.Point(97, 604);
-            this.TB_DurasiNyeri.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_DurasiNyeri.MaxLength = 32767;
-            this.TB_DurasiNyeri.Name = "TB_DurasiNyeri";
-            this.TB_DurasiNyeri.Size = new System.Drawing.Size(57, 27);
-            this.TB_DurasiNyeri.TabIndex = 76;
-            this.TB_DurasiNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_DurasiNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_DurasiNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_DurasiNyeri, "");
-            // 
-            // label26
-            // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(314, 448);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(95, 21);
-            this.label26.TabIndex = 75;
-            this.label26.Text = "Interpretasi";
-            this.bunifuToolTip1.SetToolTip(this.label26, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label26, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label26, "");
-            // 
-            // TB_InterpretasiSkalaNyeri
-            // 
-            this.TB_InterpretasiSkalaNyeri.AcceptsReturn = false;
-            this.TB_InterpretasiSkalaNyeri.AcceptsTab = false;
-            this.TB_InterpretasiSkalaNyeri.AnimationSpeed = 200;
-            this.TB_InterpretasiSkalaNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_InterpretasiSkalaNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_InterpretasiSkalaNyeri.BackColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiSkalaNyeri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiSkalaNyeri.BackgroundImage")));
-            this.TB_InterpretasiSkalaNyeri.BorderColorActive = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSkalaNyeri.BorderColorDisabled = System.Drawing.Color.White;
-            this.TB_InterpretasiSkalaNyeri.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_InterpretasiSkalaNyeri.BorderColorIdle = System.Drawing.Color.White;
-            this.TB_InterpretasiSkalaNyeri.BorderRadius = 1;
-            this.TB_InterpretasiSkalaNyeri.BorderThickness = 1;
-            this.TB_InterpretasiSkalaNyeri.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_InterpretasiSkalaNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiSkalaNyeri.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_InterpretasiSkalaNyeri.DefaultText = "";
-            this.TB_InterpretasiSkalaNyeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.TB_InterpretasiSkalaNyeri.ForeColor = System.Drawing.Color.White;
-            this.TB_InterpretasiSkalaNyeri.HideSelection = true;
-            this.TB_InterpretasiSkalaNyeri.IconLeft = null;
-            this.TB_InterpretasiSkalaNyeri.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiSkalaNyeri.IconPadding = 10;
-            this.TB_InterpretasiSkalaNyeri.IconRight = null;
-            this.TB_InterpretasiSkalaNyeri.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiSkalaNyeri.Lines = new string[0];
-            this.TB_InterpretasiSkalaNyeri.Location = new System.Drawing.Point(334, 477);
-            this.TB_InterpretasiSkalaNyeri.MaxLength = 32767;
-            this.TB_InterpretasiSkalaNyeri.MinimumSize = new System.Drawing.Size(1, 1);
-            this.TB_InterpretasiSkalaNyeri.Modified = false;
-            this.TB_InterpretasiSkalaNyeri.Multiline = false;
-            this.TB_InterpretasiSkalaNyeri.Name = "TB_InterpretasiSkalaNyeri";
-            stateProperties57.BorderColor = System.Drawing.Color.Empty;
-            stateProperties57.FillColor = System.Drawing.Color.Empty;
-            stateProperties57.ForeColor = System.Drawing.Color.Empty;
-            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSkalaNyeri.OnActiveState = stateProperties57;
-            stateProperties58.BorderColor = System.Drawing.Color.White;
-            stateProperties58.FillColor = System.Drawing.Color.White;
-            stateProperties58.ForeColor = System.Drawing.Color.Empty;
-            stateProperties58.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TB_InterpretasiSkalaNyeri.OnDisabledState = stateProperties58;
-            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            stateProperties59.FillColor = System.Drawing.Color.Empty;
-            stateProperties59.ForeColor = System.Drawing.Color.Empty;
-            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSkalaNyeri.OnHoverState = stateProperties59;
-            stateProperties60.BorderColor = System.Drawing.Color.White;
-            stateProperties60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            stateProperties60.ForeColor = System.Drawing.Color.White;
-            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSkalaNyeri.OnIdleState = stateProperties60;
-            this.TB_InterpretasiSkalaNyeri.PasswordChar = '\0';
-            this.TB_InterpretasiSkalaNyeri.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiSkalaNyeri.PlaceholderText = "";
-            this.TB_InterpretasiSkalaNyeri.ReadOnly = true;
-            this.TB_InterpretasiSkalaNyeri.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TB_InterpretasiSkalaNyeri.SelectedText = "";
-            this.TB_InterpretasiSkalaNyeri.SelectionLength = 0;
-            this.TB_InterpretasiSkalaNyeri.SelectionStart = 0;
-            this.TB_InterpretasiSkalaNyeri.ShortcutsEnabled = true;
-            this.TB_InterpretasiSkalaNyeri.Size = new System.Drawing.Size(262, 33);
-            this.TB_InterpretasiSkalaNyeri.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TB_InterpretasiSkalaNyeri.TabIndex = 74;
-            this.TB_InterpretasiSkalaNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_InterpretasiSkalaNyeri.TextMarginBottom = 0;
-            this.TB_InterpretasiSkalaNyeri.TextMarginLeft = 5;
-            this.TB_InterpretasiSkalaNyeri.TextMarginTop = 0;
-            this.TB_InterpretasiSkalaNyeri.TextPlaceholder = "";
-            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiSkalaNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiSkalaNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiSkalaNyeri, "");
-            this.TB_InterpretasiSkalaNyeri.UseSystemPasswordChar = false;
-            this.TB_InterpretasiSkalaNyeri.WordWrap = true;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(179, 557);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(48, 21);
-            this.label27.TabIndex = 72;
-            this.label27.Text = "/ Hari";
-            this.bunifuToolTip1.SetToolTip(this.label27, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label27, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label27, "");
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(161, 557);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(17, 21);
-            this.label29.TabIndex = 71;
-            this.label29.Text = "x";
-            this.bunifuToolTip1.SetToolTip(this.label29, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label29, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label29, "");
-            // 
-            // L_Frekuensi
-            // 
-            this.L_Frekuensi.AutoSize = true;
-            this.L_Frekuensi.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_Frekuensi.ForeColor = System.Drawing.Color.White;
-            this.L_Frekuensi.Location = new System.Drawing.Point(81, 530);
-            this.L_Frekuensi.Name = "L_Frekuensi";
-            this.L_Frekuensi.Size = new System.Drawing.Size(76, 21);
-            this.L_Frekuensi.TabIndex = 70;
-            this.L_Frekuensi.Text = "Frekuensi";
-            this.bunifuToolTip1.SetToolTip(this.L_Frekuensi, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_Frekuensi, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_Frekuensi, "");
-            // 
-            // TB_FrekuensiNyeri
-            // 
-            this.TB_FrekuensiNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_FrekuensiNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_FrekuensiNyeri.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_FrekuensiNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_FrekuensiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_FrekuensiNyeri.ForeColor = System.Drawing.Color.White;
-            this.TB_FrekuensiNyeri.HintForeColor = System.Drawing.Color.White;
-            this.TB_FrekuensiNyeri.HintText = "";
-            this.TB_FrekuensiNyeri.isPassword = false;
-            this.TB_FrekuensiNyeri.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_FrekuensiNyeri.LineIdleColor = System.Drawing.Color.White;
-            this.TB_FrekuensiNyeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_FrekuensiNyeri.LineThickness = 1;
-            this.TB_FrekuensiNyeri.Location = new System.Drawing.Point(97, 551);
-            this.TB_FrekuensiNyeri.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_FrekuensiNyeri.MaxLength = 32767;
-            this.TB_FrekuensiNyeri.Name = "TB_FrekuensiNyeri";
-            this.TB_FrekuensiNyeri.Size = new System.Drawing.Size(57, 27);
-            this.TB_FrekuensiNyeri.TabIndex = 69;
-            this.TB_FrekuensiNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_FrekuensiNyeri, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_FrekuensiNyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_FrekuensiNyeri, "");
-            // 
-            // L_Skala
-            // 
-            this.L_Skala.AutoSize = true;
-            this.L_Skala.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_Skala.ForeColor = System.Drawing.Color.White;
-            this.L_Skala.Location = new System.Drawing.Point(81, 448);
-            this.L_Skala.Name = "L_Skala";
-            this.L_Skala.Size = new System.Drawing.Size(46, 21);
-            this.L_Skala.TabIndex = 68;
-            this.L_Skala.Text = "Skala";
-            this.bunifuToolTip1.SetToolTip(this.L_Skala, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_Skala, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_Skala, "");
-            // 
-            // L_Nyeri
-            // 
-            this.L_Nyeri.AutoSize = true;
-            this.L_Nyeri.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.L_Nyeri.ForeColor = System.Drawing.Color.White;
-            this.L_Nyeri.Location = new System.Drawing.Point(59, 416);
-            this.L_Nyeri.Name = "L_Nyeri";
-            this.L_Nyeri.Size = new System.Drawing.Size(59, 25);
-            this.L_Nyeri.TabIndex = 64;
-            this.L_Nyeri.Text = "Nyeri";
-            this.bunifuToolTip1.SetToolTip(this.L_Nyeri, "Menggunakan Titik ( . )\r\nJangan Menggunakan Koma ( , )\r\nContoh : 36.0\r\n          " +
-        "       36.5\r\n");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_Nyeri, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_Nyeri, "Cara penggunaan");
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator2.LineThickness = 100;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(-6, 1064);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(696, 52);
-            this.bunifuSeparator2.TabIndex = 63;
-            this.bunifuToolTip1.SetToolTip(this.bunifuSeparator2, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuSeparator2, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuSeparator2, "");
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(314, 350);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(95, 21);
-            this.label32.TabIndex = 62;
-            this.label32.Text = "Interpretasi";
-            this.bunifuToolTip1.SetToolTip(this.label32, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label32, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label32, "");
-            // 
-            // TB_InterpretasiSuhu
-            // 
-            this.TB_InterpretasiSuhu.AcceptsReturn = false;
-            this.TB_InterpretasiSuhu.AcceptsTab = false;
-            this.TB_InterpretasiSuhu.AnimationSpeed = 200;
-            this.TB_InterpretasiSuhu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_InterpretasiSuhu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_InterpretasiSuhu.BackColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiSuhu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiSuhu.BackgroundImage")));
-            this.TB_InterpretasiSuhu.BorderColorActive = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSuhu.BorderColorDisabled = System.Drawing.Color.White;
-            this.TB_InterpretasiSuhu.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_InterpretasiSuhu.BorderColorIdle = System.Drawing.Color.White;
-            this.TB_InterpretasiSuhu.BorderRadius = 1;
-            this.TB_InterpretasiSuhu.BorderThickness = 1;
-            this.TB_InterpretasiSuhu.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_InterpretasiSuhu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiSuhu.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_InterpretasiSuhu.DefaultText = "";
-            this.TB_InterpretasiSuhu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.TB_InterpretasiSuhu.ForeColor = System.Drawing.Color.White;
-            this.TB_InterpretasiSuhu.HideSelection = true;
-            this.TB_InterpretasiSuhu.IconLeft = null;
-            this.TB_InterpretasiSuhu.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiSuhu.IconPadding = 10;
-            this.TB_InterpretasiSuhu.IconRight = null;
-            this.TB_InterpretasiSuhu.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiSuhu.Lines = new string[0];
-            this.TB_InterpretasiSuhu.Location = new System.Drawing.Point(334, 374);
-            this.TB_InterpretasiSuhu.MaxLength = 32767;
-            this.TB_InterpretasiSuhu.MinimumSize = new System.Drawing.Size(1, 1);
-            this.TB_InterpretasiSuhu.Modified = false;
-            this.TB_InterpretasiSuhu.Multiline = false;
-            this.TB_InterpretasiSuhu.Name = "TB_InterpretasiSuhu";
-            stateProperties61.BorderColor = System.Drawing.Color.Empty;
-            stateProperties61.FillColor = System.Drawing.Color.Empty;
-            stateProperties61.ForeColor = System.Drawing.Color.Empty;
-            stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSuhu.OnActiveState = stateProperties61;
-            stateProperties62.BorderColor = System.Drawing.Color.White;
-            stateProperties62.FillColor = System.Drawing.Color.White;
-            stateProperties62.ForeColor = System.Drawing.Color.Empty;
-            stateProperties62.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TB_InterpretasiSuhu.OnDisabledState = stateProperties62;
-            stateProperties63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            stateProperties63.FillColor = System.Drawing.Color.Empty;
-            stateProperties63.ForeColor = System.Drawing.Color.Empty;
-            stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSuhu.OnHoverState = stateProperties63;
-            stateProperties64.BorderColor = System.Drawing.Color.White;
-            stateProperties64.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            stateProperties64.ForeColor = System.Drawing.Color.White;
-            stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiSuhu.OnIdleState = stateProperties64;
-            this.TB_InterpretasiSuhu.PasswordChar = '\0';
-            this.TB_InterpretasiSuhu.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiSuhu.PlaceholderText = "";
-            this.TB_InterpretasiSuhu.ReadOnly = true;
-            this.TB_InterpretasiSuhu.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TB_InterpretasiSuhu.SelectedText = "";
-            this.TB_InterpretasiSuhu.SelectionLength = 0;
-            this.TB_InterpretasiSuhu.SelectionStart = 0;
-            this.TB_InterpretasiSuhu.ShortcutsEnabled = true;
-            this.TB_InterpretasiSuhu.Size = new System.Drawing.Size(149, 33);
-            this.TB_InterpretasiSuhu.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TB_InterpretasiSuhu.TabIndex = 61;
-            this.TB_InterpretasiSuhu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_InterpretasiSuhu.TextMarginBottom = 0;
-            this.TB_InterpretasiSuhu.TextMarginLeft = 5;
-            this.TB_InterpretasiSuhu.TextMarginTop = 0;
-            this.TB_InterpretasiSuhu.TextPlaceholder = "";
-            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiSuhu, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiSuhu, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiSuhu, "");
-            this.TB_InterpretasiSuhu.UseSystemPasswordChar = false;
-            this.TB_InterpretasiSuhu.WordWrap = true;
-            // 
-            // TB_Suhu
-            // 
-            this.TB_Suhu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_Suhu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_Suhu.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_Suhu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_Suhu.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_Suhu.ForeColor = System.Drawing.Color.White;
-            this.TB_Suhu.HintForeColor = System.Drawing.Color.White;
-            this.TB_Suhu.HintText = "";
-            this.TB_Suhu.isPassword = false;
-            this.TB_Suhu.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Suhu.LineIdleColor = System.Drawing.Color.White;
-            this.TB_Suhu.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Suhu.LineThickness = 1;
-            this.TB_Suhu.Location = new System.Drawing.Point(84, 374);
-            this.TB_Suhu.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_Suhu.MaxLength = 32767;
-            this.TB_Suhu.Name = "TB_Suhu";
-            this.TB_Suhu.Size = new System.Drawing.Size(57, 27);
-            this.TB_Suhu.TabIndex = 60;
-            this.TB_Suhu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_Suhu, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_Suhu, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_Suhu, "");
-            this.TB_Suhu.OnValueChanged += new System.EventHandler(this.TB_Suhu_OnValueChanged);
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(138, 382);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(26, 21);
-            this.label33.TabIndex = 59;
-            this.label33.Text = "°C";
-            this.bunifuToolTip1.SetToolTip(this.label33, "Menggunakan Titik ( . )\r\nJangan Menggunakan Koma ( , )\r\nContoh : 36.0\r\n          " +
-        "       36.5");
-            this.bunifuToolTip1.SetToolTipIcon(this.label33, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label33, "Cara penggunaan");
-            // 
-            // L_Suhu
-            // 
-            this.L_Suhu.AutoSize = true;
-            this.L_Suhu.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.L_Suhu.ForeColor = System.Drawing.Color.White;
-            this.L_Suhu.Location = new System.Drawing.Point(59, 344);
-            this.L_Suhu.Name = "L_Suhu";
-            this.L_Suhu.Size = new System.Drawing.Size(55, 25);
-            this.L_Suhu.TabIndex = 58;
-            this.L_Suhu.Text = "Suhu";
-            this.bunifuToolTip1.SetToolTip(this.L_Suhu, "Menggunakan Titik ( . )\r\nJangan Menggunakan Koma ( , )\r\nContoh : 36.0\r\n          " +
-        "       36.5\r\n");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_Suhu, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_Suhu, "Cara penggunaan");
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Image = global::SIM_Pengkajian_Pasien.Properties.Resources.Blood_Drop;
-            this.pictureBox5.Location = new System.Drawing.Point(499, 83);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(171, 172);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 57;
-            this.pictureBox5.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.pictureBox5, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.pictureBox5, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.pictureBox5, "");
-            // 
-            // label35
-            // 
-            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(314, 282);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(95, 21);
-            this.label35.TabIndex = 55;
-            this.label35.Text = "Interpretasi";
-            this.bunifuToolTip1.SetToolTip(this.label35, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label35, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label35, "");
-            // 
-            // TB_InterpretasiFrekuensiPernapasan
-            // 
-            this.TB_InterpretasiFrekuensiPernapasan.AcceptsReturn = false;
-            this.TB_InterpretasiFrekuensiPernapasan.AcceptsTab = false;
-            this.TB_InterpretasiFrekuensiPernapasan.AnimationSpeed = 200;
-            this.TB_InterpretasiFrekuensiPernapasan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_InterpretasiFrekuensiPernapasan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_InterpretasiFrekuensiPernapasan.BackColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiFrekuensiPernapasan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiFrekuensiPernapasan.BackgroundImage")));
-            this.TB_InterpretasiFrekuensiPernapasan.BorderColorActive = System.Drawing.Color.Empty;
-            this.TB_InterpretasiFrekuensiPernapasan.BorderColorDisabled = System.Drawing.Color.White;
-            this.TB_InterpretasiFrekuensiPernapasan.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_InterpretasiFrekuensiPernapasan.BorderColorIdle = System.Drawing.Color.White;
-            this.TB_InterpretasiFrekuensiPernapasan.BorderRadius = 1;
-            this.TB_InterpretasiFrekuensiPernapasan.BorderThickness = 1;
-            this.TB_InterpretasiFrekuensiPernapasan.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_InterpretasiFrekuensiPernapasan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiFrekuensiPernapasan.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_InterpretasiFrekuensiPernapasan.DefaultText = "";
-            this.TB_InterpretasiFrekuensiPernapasan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.TB_InterpretasiFrekuensiPernapasan.ForeColor = System.Drawing.Color.White;
-            this.TB_InterpretasiFrekuensiPernapasan.HideSelection = true;
-            this.TB_InterpretasiFrekuensiPernapasan.IconLeft = null;
-            this.TB_InterpretasiFrekuensiPernapasan.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiFrekuensiPernapasan.IconPadding = 10;
-            this.TB_InterpretasiFrekuensiPernapasan.IconRight = null;
-            this.TB_InterpretasiFrekuensiPernapasan.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiFrekuensiPernapasan.Lines = new string[0];
-            this.TB_InterpretasiFrekuensiPernapasan.Location = new System.Drawing.Point(334, 306);
-            this.TB_InterpretasiFrekuensiPernapasan.MaxLength = 32767;
-            this.TB_InterpretasiFrekuensiPernapasan.MinimumSize = new System.Drawing.Size(1, 1);
-            this.TB_InterpretasiFrekuensiPernapasan.Modified = false;
-            this.TB_InterpretasiFrekuensiPernapasan.Multiline = false;
-            this.TB_InterpretasiFrekuensiPernapasan.Name = "TB_InterpretasiFrekuensiPernapasan";
-            stateProperties65.BorderColor = System.Drawing.Color.Empty;
-            stateProperties65.FillColor = System.Drawing.Color.Empty;
-            stateProperties65.ForeColor = System.Drawing.Color.Empty;
-            stateProperties65.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiFrekuensiPernapasan.OnActiveState = stateProperties65;
-            stateProperties66.BorderColor = System.Drawing.Color.White;
-            stateProperties66.FillColor = System.Drawing.Color.White;
-            stateProperties66.ForeColor = System.Drawing.Color.Empty;
-            stateProperties66.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TB_InterpretasiFrekuensiPernapasan.OnDisabledState = stateProperties66;
-            stateProperties67.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            stateProperties67.FillColor = System.Drawing.Color.Empty;
-            stateProperties67.ForeColor = System.Drawing.Color.Empty;
-            stateProperties67.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiFrekuensiPernapasan.OnHoverState = stateProperties67;
-            stateProperties68.BorderColor = System.Drawing.Color.White;
-            stateProperties68.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            stateProperties68.ForeColor = System.Drawing.Color.White;
-            stateProperties68.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiFrekuensiPernapasan.OnIdleState = stateProperties68;
-            this.TB_InterpretasiFrekuensiPernapasan.PasswordChar = '\0';
-            this.TB_InterpretasiFrekuensiPernapasan.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiFrekuensiPernapasan.PlaceholderText = "";
-            this.TB_InterpretasiFrekuensiPernapasan.ReadOnly = true;
-            this.TB_InterpretasiFrekuensiPernapasan.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TB_InterpretasiFrekuensiPernapasan.SelectedText = "";
-            this.TB_InterpretasiFrekuensiPernapasan.SelectionLength = 0;
-            this.TB_InterpretasiFrekuensiPernapasan.SelectionStart = 0;
-            this.TB_InterpretasiFrekuensiPernapasan.ShortcutsEnabled = true;
-            this.TB_InterpretasiFrekuensiPernapasan.Size = new System.Drawing.Size(149, 33);
-            this.TB_InterpretasiFrekuensiPernapasan.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TB_InterpretasiFrekuensiPernapasan.TabIndex = 54;
-            this.TB_InterpretasiFrekuensiPernapasan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_InterpretasiFrekuensiPernapasan.TextMarginBottom = 0;
-            this.TB_InterpretasiFrekuensiPernapasan.TextMarginLeft = 5;
-            this.TB_InterpretasiFrekuensiPernapasan.TextMarginTop = 0;
-            this.TB_InterpretasiFrekuensiPernapasan.TextPlaceholder = "";
-            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiFrekuensiPernapasan, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiFrekuensiPernapasan, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiFrekuensiPernapasan, "");
-            this.TB_InterpretasiFrekuensiPernapasan.UseSystemPasswordChar = false;
-            this.TB_InterpretasiFrekuensiPernapasan.WordWrap = true;
-            // 
-            // TB_FrekuensiPernapasan
-            // 
-            this.TB_FrekuensiPernapasan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_FrekuensiPernapasan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_FrekuensiPernapasan.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_FrekuensiPernapasan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_FrekuensiPernapasan.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_FrekuensiPernapasan.ForeColor = System.Drawing.Color.White;
-            this.TB_FrekuensiPernapasan.HintForeColor = System.Drawing.Color.White;
-            this.TB_FrekuensiPernapasan.HintText = "";
-            this.TB_FrekuensiPernapasan.isPassword = false;
-            this.TB_FrekuensiPernapasan.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_FrekuensiPernapasan.LineIdleColor = System.Drawing.Color.White;
-            this.TB_FrekuensiPernapasan.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_FrekuensiPernapasan.LineThickness = 1;
-            this.TB_FrekuensiPernapasan.Location = new System.Drawing.Point(84, 306);
-            this.TB_FrekuensiPernapasan.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_FrekuensiPernapasan.MaxLength = 32767;
-            this.TB_FrekuensiPernapasan.Name = "TB_FrekuensiPernapasan";
-            this.TB_FrekuensiPernapasan.Size = new System.Drawing.Size(57, 27);
-            this.TB_FrekuensiPernapasan.TabIndex = 53;
-            this.TB_FrekuensiPernapasan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_FrekuensiPernapasan, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_FrekuensiPernapasan, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_FrekuensiPernapasan, "");
-            this.TB_FrekuensiPernapasan.OnValueChanged += new System.EventHandler(this.TB_FrekuensiPernapasan_OnValueChanged);
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(166, 312);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(59, 21);
-            this.label36.TabIndex = 52;
-            this.label36.Text = "/ menit";
-            this.bunifuToolTip1.SetToolTip(this.label36, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label36, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label36, "");
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(148, 312);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(17, 21);
-            this.label37.TabIndex = 51;
-            this.label37.Text = "x";
-            this.bunifuToolTip1.SetToolTip(this.label37, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label37, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label37, "");
-            // 
-            // L_FrekuensiPernapasan
-            // 
-            this.L_FrekuensiPernapasan.AutoSize = true;
-            this.L_FrekuensiPernapasan.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.L_FrekuensiPernapasan.ForeColor = System.Drawing.Color.White;
-            this.L_FrekuensiPernapasan.Location = new System.Drawing.Point(59, 276);
-            this.L_FrekuensiPernapasan.Name = "L_FrekuensiPernapasan";
-            this.L_FrekuensiPernapasan.Size = new System.Drawing.Size(197, 25);
-            this.L_FrekuensiPernapasan.TabIndex = 50;
-            this.L_FrekuensiPernapasan.Text = "Frekuensi Pernapasan";
-            this.bunifuToolTip1.SetToolTip(this.L_FrekuensiPernapasan, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_FrekuensiPernapasan, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_FrekuensiPernapasan, "");
-            // 
-            // CB_NadiTerabaKuat
-            // 
-            this.CB_NadiTerabaKuat.AllowBindingControlAnimation = true;
-            this.CB_NadiTerabaKuat.AllowBindingControlColorChanges = false;
-            this.CB_NadiTerabaKuat.AllowBindingControlLocation = true;
-            this.CB_NadiTerabaKuat.AllowCheckBoxAnimation = false;
-            this.CB_NadiTerabaKuat.AllowCheckmarkAnimation = true;
-            this.CB_NadiTerabaKuat.AllowOnHoverStates = true;
-            this.CB_NadiTerabaKuat.AutoCheck = true;
-            this.CB_NadiTerabaKuat.BackColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaKuat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_NadiTerabaKuat.BackgroundImage")));
-            this.CB_NadiTerabaKuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CB_NadiTerabaKuat.BindingControl = null;
-            this.CB_NadiTerabaKuat.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.CB_NadiTerabaKuat.Checked = false;
-            this.CB_NadiTerabaKuat.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.CB_NadiTerabaKuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CB_NadiTerabaKuat.CustomCheckmarkImage = null;
-            this.CB_NadiTerabaKuat.Location = new System.Drawing.Point(200, 238);
-            this.CB_NadiTerabaKuat.MinimumSize = new System.Drawing.Size(17, 17);
-            this.CB_NadiTerabaKuat.Name = "CB_NadiTerabaKuat";
-            this.CB_NadiTerabaKuat.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.CB_NadiTerabaKuat.OnCheck.BorderRadius = 2;
-            this.CB_NadiTerabaKuat.OnCheck.BorderThickness = 2;
-            this.CB_NadiTerabaKuat.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.CB_NadiTerabaKuat.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.CB_NadiTerabaKuat.OnCheck.CheckmarkThickness = 2;
-            this.CB_NadiTerabaKuat.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.CB_NadiTerabaKuat.OnDisable.BorderRadius = 2;
-            this.CB_NadiTerabaKuat.OnDisable.BorderThickness = 2;
-            this.CB_NadiTerabaKuat.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaKuat.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.CB_NadiTerabaKuat.OnDisable.CheckmarkThickness = 2;
-            this.CB_NadiTerabaKuat.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CB_NadiTerabaKuat.OnHoverChecked.BorderRadius = 2;
-            this.CB_NadiTerabaKuat.OnHoverChecked.BorderThickness = 2;
-            this.CB_NadiTerabaKuat.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CB_NadiTerabaKuat.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.CB_NadiTerabaKuat.OnHoverChecked.CheckmarkThickness = 2;
-            this.CB_NadiTerabaKuat.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CB_NadiTerabaKuat.OnHoverUnchecked.BorderRadius = 2;
-            this.CB_NadiTerabaKuat.OnHoverUnchecked.BorderThickness = 1;
-            this.CB_NadiTerabaKuat.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaKuat.OnUncheck.BorderColor = System.Drawing.Color.White;
-            this.CB_NadiTerabaKuat.OnUncheck.BorderRadius = 2;
-            this.CB_NadiTerabaKuat.OnUncheck.BorderThickness = 1;
-            this.CB_NadiTerabaKuat.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaKuat.Size = new System.Drawing.Size(21, 21);
-            this.CB_NadiTerabaKuat.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.CB_NadiTerabaKuat.TabIndex = 49;
-            this.CB_NadiTerabaKuat.ThreeState = false;
-            this.bunifuToolTip1.SetToolTip(this.CB_NadiTerabaKuat, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.CB_NadiTerabaKuat, null);
-            this.CB_NadiTerabaKuat.ToolTipText = null;
-            this.bunifuToolTip1.SetToolTipTitle(this.CB_NadiTerabaKuat, "");
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(220, 241);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(39, 20);
-            this.label39.TabIndex = 48;
-            this.label39.Text = "Kuat";
-            this.bunifuToolTip1.SetToolTip(this.label39, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label39, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label39, "");
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(139, 241);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(53, 20);
-            this.label40.TabIndex = 46;
-            this.label40.Text = "Lemah";
-            this.bunifuToolTip1.SetToolTip(this.label40, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label40, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label40, "");
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(93, 212);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(91, 21);
-            this.label41.TabIndex = 45;
-            this.label41.Text = "Nadi Teraba";
-            this.bunifuToolTip1.SetToolTip(this.label41, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label41, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label41, "");
-            // 
-            // CB_NadiTerabaLemah
-            // 
-            this.CB_NadiTerabaLemah.AllowBindingControlAnimation = true;
-            this.CB_NadiTerabaLemah.AllowBindingControlColorChanges = false;
-            this.CB_NadiTerabaLemah.AllowBindingControlLocation = true;
-            this.CB_NadiTerabaLemah.AllowCheckBoxAnimation = false;
-            this.CB_NadiTerabaLemah.AllowCheckmarkAnimation = true;
-            this.CB_NadiTerabaLemah.AllowOnHoverStates = true;
-            this.CB_NadiTerabaLemah.AutoCheck = true;
-            this.CB_NadiTerabaLemah.BackColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaLemah.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_NadiTerabaLemah.BackgroundImage")));
-            this.CB_NadiTerabaLemah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CB_NadiTerabaLemah.BindingControl = null;
-            this.CB_NadiTerabaLemah.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.CB_NadiTerabaLemah.Checked = false;
-            this.CB_NadiTerabaLemah.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.CB_NadiTerabaLemah.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CB_NadiTerabaLemah.CustomCheckmarkImage = null;
-            this.CB_NadiTerabaLemah.Location = new System.Drawing.Point(118, 238);
-            this.CB_NadiTerabaLemah.MinimumSize = new System.Drawing.Size(17, 17);
-            this.CB_NadiTerabaLemah.Name = "CB_NadiTerabaLemah";
-            this.CB_NadiTerabaLemah.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.CB_NadiTerabaLemah.OnCheck.BorderRadius = 2;
-            this.CB_NadiTerabaLemah.OnCheck.BorderThickness = 2;
-            this.CB_NadiTerabaLemah.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.CB_NadiTerabaLemah.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.CB_NadiTerabaLemah.OnCheck.CheckmarkThickness = 2;
-            this.CB_NadiTerabaLemah.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.CB_NadiTerabaLemah.OnDisable.BorderRadius = 2;
-            this.CB_NadiTerabaLemah.OnDisable.BorderThickness = 2;
-            this.CB_NadiTerabaLemah.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaLemah.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.CB_NadiTerabaLemah.OnDisable.CheckmarkThickness = 2;
-            this.CB_NadiTerabaLemah.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CB_NadiTerabaLemah.OnHoverChecked.BorderRadius = 2;
-            this.CB_NadiTerabaLemah.OnHoverChecked.BorderThickness = 2;
-            this.CB_NadiTerabaLemah.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CB_NadiTerabaLemah.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.CB_NadiTerabaLemah.OnHoverChecked.CheckmarkThickness = 2;
-            this.CB_NadiTerabaLemah.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CB_NadiTerabaLemah.OnHoverUnchecked.BorderRadius = 2;
-            this.CB_NadiTerabaLemah.OnHoverUnchecked.BorderThickness = 1;
-            this.CB_NadiTerabaLemah.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaLemah.OnUncheck.BorderColor = System.Drawing.Color.White;
-            this.CB_NadiTerabaLemah.OnUncheck.BorderRadius = 2;
-            this.CB_NadiTerabaLemah.OnUncheck.BorderThickness = 1;
-            this.CB_NadiTerabaLemah.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.CB_NadiTerabaLemah.Size = new System.Drawing.Size(21, 21);
-            this.CB_NadiTerabaLemah.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.CB_NadiTerabaLemah.TabIndex = 44;
-            this.CB_NadiTerabaLemah.ThreeState = false;
-            this.bunifuToolTip1.SetToolTip(this.CB_NadiTerabaLemah, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.CB_NadiTerabaLemah, null);
-            this.CB_NadiTerabaLemah.ToolTipText = null;
-            this.bunifuToolTip1.SetToolTipTitle(this.CB_NadiTerabaLemah, "");
-            // 
-            // TB_Nadi
-            // 
-            this.TB_Nadi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_Nadi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_Nadi.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_Nadi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_Nadi.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_Nadi.ForeColor = System.Drawing.Color.White;
-            this.TB_Nadi.HintForeColor = System.Drawing.Color.White;
-            this.TB_Nadi.HintText = "";
-            this.TB_Nadi.isPassword = false;
-            this.TB_Nadi.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Nadi.LineIdleColor = System.Drawing.Color.White;
-            this.TB_Nadi.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Nadi.LineThickness = 1;
-            this.TB_Nadi.Location = new System.Drawing.Point(84, 175);
-            this.TB_Nadi.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_Nadi.MaxLength = 32767;
-            this.TB_Nadi.Name = "TB_Nadi";
-            this.TB_Nadi.Size = new System.Drawing.Size(57, 27);
-            this.TB_Nadi.TabIndex = 42;
-            this.TB_Nadi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_Nadi, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_Nadi, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_Nadi, "");
-            this.TB_Nadi.OnValueChanged += new System.EventHandler(this.TB_Nadi_OnValueChanged);
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.White;
-            this.label42.Location = new System.Drawing.Point(166, 181);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(59, 21);
-            this.label42.TabIndex = 41;
-            this.label42.Text = "/ menit";
-            this.bunifuToolTip1.SetToolTip(this.label42, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label42, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label42, "");
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.White;
-            this.label43.Location = new System.Drawing.Point(148, 181);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(17, 21);
-            this.label43.TabIndex = 40;
-            this.label43.Text = "x";
-            this.bunifuToolTip1.SetToolTip(this.label43, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label43, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label43, "");
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(59, 142);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(58, 25);
-            this.label44.TabIndex = 38;
-            this.label44.Text = "Nadi ";
-            this.bunifuToolTip1.SetToolTip(this.label44, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label44, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label44, "");
-            // 
-            // TB_MAP
-            // 
-            this.TB_MAP.AcceptsReturn = false;
-            this.TB_MAP.AcceptsTab = false;
-            this.TB_MAP.AnimationSpeed = 200;
-            this.TB_MAP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_MAP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_MAP.BackColor = System.Drawing.Color.Transparent;
-            this.TB_MAP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_MAP.BackgroundImage")));
-            this.TB_MAP.BorderColorActive = System.Drawing.Color.Empty;
-            this.TB_MAP.BorderColorDisabled = System.Drawing.Color.White;
-            this.TB_MAP.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_MAP.BorderColorIdle = System.Drawing.Color.White;
-            this.TB_MAP.BorderRadius = 1;
-            this.TB_MAP.BorderThickness = 1;
-            this.TB_MAP.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_MAP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_MAP.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_MAP.DefaultText = "";
-            this.TB_MAP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.TB_MAP.ForeColor = System.Drawing.Color.White;
-            this.TB_MAP.HideSelection = true;
-            this.TB_MAP.IconLeft = null;
-            this.TB_MAP.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_MAP.IconPadding = 10;
-            this.TB_MAP.IconRight = null;
-            this.TB_MAP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_MAP.Lines = new string[0];
-            this.TB_MAP.Location = new System.Drawing.Point(334, 95);
-            this.TB_MAP.MaxLength = 32767;
-            this.TB_MAP.MinimumSize = new System.Drawing.Size(1, 1);
-            this.TB_MAP.Modified = false;
-            this.TB_MAP.Multiline = false;
-            this.TB_MAP.Name = "TB_MAP";
-            stateProperties69.BorderColor = System.Drawing.Color.Empty;
-            stateProperties69.FillColor = System.Drawing.Color.Empty;
-            stateProperties69.ForeColor = System.Drawing.Color.Empty;
-            stateProperties69.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_MAP.OnActiveState = stateProperties69;
-            stateProperties70.BorderColor = System.Drawing.Color.White;
-            stateProperties70.FillColor = System.Drawing.Color.White;
-            stateProperties70.ForeColor = System.Drawing.Color.Empty;
-            stateProperties70.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TB_MAP.OnDisabledState = stateProperties70;
-            stateProperties71.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            stateProperties71.FillColor = System.Drawing.Color.Empty;
-            stateProperties71.ForeColor = System.Drawing.Color.Empty;
-            stateProperties71.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_MAP.OnHoverState = stateProperties71;
-            stateProperties72.BorderColor = System.Drawing.Color.White;
-            stateProperties72.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            stateProperties72.ForeColor = System.Drawing.Color.White;
-            stateProperties72.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_MAP.OnIdleState = stateProperties72;
-            this.TB_MAP.PasswordChar = '\0';
-            this.TB_MAP.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.TB_MAP.PlaceholderText = "";
-            this.TB_MAP.ReadOnly = true;
-            this.TB_MAP.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TB_MAP.SelectedText = "";
-            this.TB_MAP.SelectionLength = 0;
-            this.TB_MAP.SelectionStart = 0;
-            this.TB_MAP.ShortcutsEnabled = true;
-            this.TB_MAP.Size = new System.Drawing.Size(149, 33);
-            this.TB_MAP.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TB_MAP.TabIndex = 37;
-            this.TB_MAP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_MAP.TextMarginBottom = 0;
-            this.TB_MAP.TextMarginLeft = 5;
-            this.TB_MAP.TextMarginTop = 0;
-            this.TB_MAP.TextPlaceholder = "";
-            this.bunifuToolTip1.SetToolTip(this.TB_MAP, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_MAP, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_MAP, "");
-            this.TB_MAP.UseSystemPasswordChar = false;
-            this.TB_MAP.WordWrap = true;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(234, 107);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(56, 21);
-            this.label45.TabIndex = 36;
-            this.label45.Text = "mmHg";
-            this.bunifuToolTip1.SetToolTip(this.label45, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label45, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label45, "");
-            // 
-            // TB_Diastole
-            // 
-            this.TB_Diastole.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_Diastole.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_Diastole.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_Diastole.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_Diastole.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_Diastole.ForeColor = System.Drawing.Color.White;
-            this.TB_Diastole.HintForeColor = System.Drawing.Color.White;
-            this.TB_Diastole.HintText = "";
-            this.TB_Diastole.isPassword = false;
-            this.TB_Diastole.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Diastole.LineIdleColor = System.Drawing.Color.White;
-            this.TB_Diastole.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Diastole.LineThickness = 1;
-            this.TB_Diastole.Location = new System.Drawing.Point(168, 101);
-            this.TB_Diastole.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_Diastole.MaxLength = 32767;
-            this.TB_Diastole.Name = "TB_Diastole";
-            this.TB_Diastole.Size = new System.Drawing.Size(57, 27);
-            this.TB_Diastole.TabIndex = 35;
-            this.TB_Diastole.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_Diastole, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_Diastole, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_Diastole, "");
-            this.TB_Diastole.OnValueChanged += new System.EventHandler(this.TB_Diastole_OnValueChanged);
-            // 
-            // L_TekananDarah
-            // 
-            this.L_TekananDarah.AutoSize = true;
-            this.L_TekananDarah.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.L_TekananDarah.ForeColor = System.Drawing.Color.White;
-            this.L_TekananDarah.Location = new System.Drawing.Point(59, 65);
-            this.L_TekananDarah.Name = "L_TekananDarah";
-            this.L_TekananDarah.Size = new System.Drawing.Size(144, 25);
-            this.L_TekananDarah.TabIndex = 33;
-            this.L_TekananDarah.Text = "Tekanan Darah ";
-            this.bunifuToolTip1.SetToolTip(this.L_TekananDarah, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_TekananDarah, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_TekananDarah, "");
-            // 
-            // TB_Sistol
-            // 
-            this.TB_Sistol.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_Sistol.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_Sistol.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_Sistol.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_Sistol.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.TB_Sistol.ForeColor = System.Drawing.Color.White;
-            this.TB_Sistol.HintForeColor = System.Drawing.Color.White;
-            this.TB_Sistol.HintText = "";
-            this.TB_Sistol.isPassword = false;
-            this.TB_Sistol.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Sistol.LineIdleColor = System.Drawing.Color.White;
-            this.TB_Sistol.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_Sistol.LineThickness = 1;
-            this.TB_Sistol.Location = new System.Drawing.Point(85, 101);
-            this.TB_Sistol.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_Sistol.MaxLength = 32767;
-            this.TB_Sistol.Name = "TB_Sistol";
-            this.TB_Sistol.Size = new System.Drawing.Size(57, 27);
-            this.TB_Sistol.TabIndex = 32;
-            this.TB_Sistol.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuToolTip1.SetToolTip(this.TB_Sistol, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_Sistol, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_Sistol, "");
-            this.TB_Sistol.OnValueChanged += new System.EventHandler(this.TB_Sistol_OnValueChanged);
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(149, 107);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(16, 21);
-            this.label47.TabIndex = 34;
-            this.label47.Text = "/";
-            this.bunifuToolTip1.SetToolTip(this.label47, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label47, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label47, "");
-            // 
-            // label48
-            // 
-            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(314, 147);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(95, 21);
-            this.label48.TabIndex = 31;
-            this.label48.Text = "Interpretasi";
-            this.bunifuToolTip1.SetToolTip(this.label48, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.label48, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.label48, "");
-            // 
-            // L_MAP
-            // 
-            this.L_MAP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.L_MAP.AutoSize = true;
-            this.L_MAP.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_MAP.ForeColor = System.Drawing.Color.White;
-            this.L_MAP.Location = new System.Drawing.Point(314, 68);
-            this.L_MAP.Name = "L_MAP";
-            this.L_MAP.Size = new System.Drawing.Size(45, 21);
-            this.L_MAP.TabIndex = 29;
-            this.L_MAP.Text = "MAP";
-            this.bunifuToolTip1.SetToolTip(this.L_MAP, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_MAP, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_MAP, "");
-            // 
-            // TB_InterpretasiNadi
-            // 
-            this.TB_InterpretasiNadi.AcceptsReturn = false;
-            this.TB_InterpretasiNadi.AcceptsTab = false;
-            this.TB_InterpretasiNadi.AnimationSpeed = 200;
-            this.TB_InterpretasiNadi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TB_InterpretasiNadi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TB_InterpretasiNadi.BackColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiNadi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiNadi.BackgroundImage")));
-            this.TB_InterpretasiNadi.BorderColorActive = System.Drawing.Color.Empty;
-            this.TB_InterpretasiNadi.BorderColorDisabled = System.Drawing.Color.White;
-            this.TB_InterpretasiNadi.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.TB_InterpretasiNadi.BorderColorIdle = System.Drawing.Color.White;
-            this.TB_InterpretasiNadi.BorderRadius = 1;
-            this.TB_InterpretasiNadi.BorderThickness = 1;
-            this.TB_InterpretasiNadi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TB_InterpretasiNadi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiNadi.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_InterpretasiNadi.DefaultText = "";
-            this.TB_InterpretasiNadi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            this.TB_InterpretasiNadi.ForeColor = System.Drawing.Color.White;
-            this.TB_InterpretasiNadi.HideSelection = true;
-            this.TB_InterpretasiNadi.IconLeft = null;
-            this.TB_InterpretasiNadi.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiNadi.IconPadding = 10;
-            this.TB_InterpretasiNadi.IconRight = null;
-            this.TB_InterpretasiNadi.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_InterpretasiNadi.Lines = new string[0];
-            this.TB_InterpretasiNadi.Location = new System.Drawing.Point(334, 172);
-            this.TB_InterpretasiNadi.MaxLength = 32767;
-            this.TB_InterpretasiNadi.MinimumSize = new System.Drawing.Size(1, 1);
-            this.TB_InterpretasiNadi.Modified = false;
-            this.TB_InterpretasiNadi.Multiline = false;
-            this.TB_InterpretasiNadi.Name = "TB_InterpretasiNadi";
-            stateProperties73.BorderColor = System.Drawing.Color.Empty;
-            stateProperties73.FillColor = System.Drawing.Color.Empty;
-            stateProperties73.ForeColor = System.Drawing.Color.Empty;
-            stateProperties73.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiNadi.OnActiveState = stateProperties73;
-            stateProperties74.BorderColor = System.Drawing.Color.White;
-            stateProperties74.FillColor = System.Drawing.Color.White;
-            stateProperties74.ForeColor = System.Drawing.Color.Empty;
-            stateProperties74.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TB_InterpretasiNadi.OnDisabledState = stateProperties74;
-            stateProperties75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            stateProperties75.FillColor = System.Drawing.Color.Empty;
-            stateProperties75.ForeColor = System.Drawing.Color.Empty;
-            stateProperties75.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiNadi.OnHoverState = stateProperties75;
-            stateProperties76.BorderColor = System.Drawing.Color.White;
-            stateProperties76.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
-            stateProperties76.ForeColor = System.Drawing.Color.White;
-            stateProperties76.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TB_InterpretasiNadi.OnIdleState = stateProperties76;
-            this.TB_InterpretasiNadi.PasswordChar = '\0';
-            this.TB_InterpretasiNadi.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.TB_InterpretasiNadi.PlaceholderText = "";
-            this.TB_InterpretasiNadi.ReadOnly = true;
-            this.TB_InterpretasiNadi.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TB_InterpretasiNadi.SelectedText = "";
-            this.TB_InterpretasiNadi.SelectionLength = 0;
-            this.TB_InterpretasiNadi.SelectionStart = 0;
-            this.TB_InterpretasiNadi.ShortcutsEnabled = true;
-            this.TB_InterpretasiNadi.Size = new System.Drawing.Size(149, 33);
-            this.TB_InterpretasiNadi.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TB_InterpretasiNadi.TabIndex = 28;
-            this.TB_InterpretasiNadi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_InterpretasiNadi.TextMarginBottom = 0;
-            this.TB_InterpretasiNadi.TextMarginLeft = 5;
-            this.TB_InterpretasiNadi.TextMarginTop = 0;
-            this.TB_InterpretasiNadi.TextPlaceholder = "";
-            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiNadi, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiNadi, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiNadi, "Interpretasi");
-            this.TB_InterpretasiNadi.UseSystemPasswordChar = false;
-            this.TB_InterpretasiNadi.WordWrap = true;
-            // 
-            // L_PengkajianTandaVital
-            // 
-            this.L_PengkajianTandaVital.AutoSize = true;
-            this.L_PengkajianTandaVital.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_PengkajianTandaVital.ForeColor = System.Drawing.Color.White;
-            this.L_PengkajianTandaVital.Location = new System.Drawing.Point(47, 24);
-            this.L_PengkajianTandaVital.Name = "L_PengkajianTandaVital";
-            this.L_PengkajianTandaVital.Size = new System.Drawing.Size(274, 32);
-            this.L_PengkajianTandaVital.TabIndex = 6;
-            this.L_PengkajianTandaVital.Text = "Pengkajian Tanda Vital";
-            this.bunifuToolTip1.SetToolTip(this.L_PengkajianTandaVital, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.L_PengkajianTandaVital, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.L_PengkajianTandaVital, "");
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(696, 506);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.bunifuToolTip1.SetToolTip(this.tabPage3, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.tabPage3, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.tabPage3, "");
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(696, 506);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.bunifuToolTip1.SetToolTip(this.tabPage4, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.tabPage4, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.tabPage4, "");
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage5.Location = new System.Drawing.Point(4, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(696, 506);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            this.bunifuToolTip1.SetToolTip(this.tabPage5, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.tabPage5, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.tabPage5, "");
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
-            this.panel3.Controls.Add(this.B_Minimize);
-            this.panel3.Controls.Add(this.B_Maximize);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(158, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(707, 25);
-            this.panel3.TabIndex = 2;
-            this.bunifuToolTip1.SetToolTip(this.panel3, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.panel3, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.panel3, "");
-            // 
-            // B_Minimize
-            // 
-            this.B_Minimize.Active = false;
-            this.B_Minimize.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
-            this.B_Minimize.BackColor = System.Drawing.Color.Transparent;
-            this.B_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B_Minimize.BorderRadius = 0;
-            this.B_Minimize.ButtonText = "";
-            this.B_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B_Minimize.DisabledColor = System.Drawing.Color.Gray;
-            this.B_Minimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.B_Minimize.Iconcolor = System.Drawing.Color.Transparent;
-            this.B_Minimize.Iconimage = global::SIM_Pengkajian_Pasien.Properties.Resources.horizontal_line_filled_50px;
-            this.B_Minimize.Iconimage_right = null;
-            this.B_Minimize.Iconimage_right_Selected = null;
-            this.B_Minimize.Iconimage_Selected = null;
-            this.B_Minimize.IconMarginLeft = 0;
-            this.B_Minimize.IconMarginRight = 0;
-            this.B_Minimize.IconRightVisible = true;
-            this.B_Minimize.IconRightZoom = 0D;
-            this.B_Minimize.IconVisible = true;
-            this.B_Minimize.IconZoom = 40D;
-            this.B_Minimize.IsTab = false;
-            this.B_Minimize.Location = new System.Drawing.Point(651, 0);
-            this.B_Minimize.Name = "B_Minimize";
-            this.B_Minimize.Normalcolor = System.Drawing.Color.Transparent;
-            this.B_Minimize.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
-            this.B_Minimize.OnHoverTextColor = System.Drawing.Color.White;
-            this.B_Minimize.selected = false;
-            this.B_Minimize.Size = new System.Drawing.Size(28, 25);
-            this.B_Minimize.TabIndex = 14;
-            this.B_Minimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.B_Minimize.Textcolor = System.Drawing.Color.White;
-            this.B_Minimize.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuToolTip1.SetToolTip(this.B_Minimize, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.B_Minimize, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.B_Minimize, "");
-            this.B_Minimize.Click += new System.EventHandler(this.B_Minimize_Click_1);
-            // 
-            // B_Maximize
-            // 
-            this.B_Maximize.Active = false;
-            this.B_Maximize.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
-            this.B_Maximize.BackColor = System.Drawing.Color.Transparent;
-            this.B_Maximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B_Maximize.BorderRadius = 0;
-            this.B_Maximize.ButtonText = "";
-            this.B_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B_Maximize.DisabledColor = System.Drawing.Color.Gray;
-            this.B_Maximize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.B_Maximize.Iconcolor = System.Drawing.Color.Transparent;
-            this.B_Maximize.Iconimage = global::SIM_Pengkajian_Pasien.Properties.Resources.up_squared_50px;
-            this.B_Maximize.Iconimage_right = null;
-            this.B_Maximize.Iconimage_right_Selected = null;
-            this.B_Maximize.Iconimage_Selected = null;
-            this.B_Maximize.IconMarginLeft = 0;
-            this.B_Maximize.IconMarginRight = 0;
-            this.B_Maximize.IconRightVisible = true;
-            this.B_Maximize.IconRightZoom = 0D;
-            this.B_Maximize.IconVisible = true;
-            this.B_Maximize.IconZoom = 40D;
-            this.B_Maximize.IsTab = false;
-            this.B_Maximize.Location = new System.Drawing.Point(679, 0);
-            this.B_Maximize.Name = "B_Maximize";
-            this.B_Maximize.Normalcolor = System.Drawing.Color.Transparent;
-            this.B_Maximize.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(102)))), ((int)(((byte)(142)))));
-            this.B_Maximize.OnHoverTextColor = System.Drawing.Color.White;
-            this.B_Maximize.selected = false;
-            this.B_Maximize.Size = new System.Drawing.Size(28, 25);
-            this.B_Maximize.TabIndex = 13;
-            this.B_Maximize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.B_Maximize.Textcolor = System.Drawing.Color.White;
-            this.B_Maximize.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuToolTip1.SetToolTip(this.B_Maximize, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.B_Maximize, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.B_Maximize, "");
-            this.B_Maximize.Click += new System.EventHandler(this.B_Maximize_Click);
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.pictureBox1;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // bunifuDragControl2
-            // 
-            this.bunifuDragControl2.Fixed = true;
-            this.bunifuDragControl2.Horizontal = true;
-            this.bunifuDragControl2.TargetControl = this.panel3;
-            this.bunifuDragControl2.Vertical = true;
-            // 
-            // bunifuDragControl3
-            // 
-            this.bunifuDragControl3.Fixed = true;
-            this.bunifuDragControl3.Horizontal = true;
-            this.bunifuDragControl3.TargetControl = this.tabPage1;
-            this.bunifuDragControl3.Vertical = true;
-            // 
             // bunifuDragControl4
             // 
             this.bunifuDragControl4.Fixed = true;
             this.bunifuDragControl4.Horizontal = true;
-            this.bunifuDragControl4.TargetControl = this.tabPage2;
+            this.bunifuDragControl4.TargetControl = null;
             this.bunifuDragControl4.Vertical = true;
             // 
             // bunifuDragControl5
@@ -4605,28 +3272,476 @@
             this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
             this.bunifuToolTip1.ToolTipTitle = null;
             // 
-            // bunifuSeparator1
+            // tabPage5
             // 
-            this.bunifuSeparator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabPage5.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage5.Location = new System.Drawing.Point(4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(696, 506);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "tabPage5";
+            this.bunifuToolTip1.SetToolTip(this.tabPage5, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tabPage5, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tabPage5, "");
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(696, 506);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.bunifuToolTip1.SetToolTip(this.tabPage4, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tabPage4, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tabPage4, "");
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.AutoScroll = true;
+            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.Controls.Add(this.panel14);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(696, 506);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.bunifuToolTip1.SetToolTip(this.tabPage3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tabPage3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tabPage3, "");
+            // 
+            // panel14
+            // 
+            this.panel14.AutoScroll = true;
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.panel14.Controls.Add(this.tableLayoutPanel19);
+            this.panel14.Controls.Add(this.TB_LokasiNyeri);
+            this.panel14.Controls.Add(this.L_LokasiNyeri);
+            this.panel14.Controls.Add(this.tableLayoutPanel18);
+            this.panel14.Controls.Add(this.L_Durasi);
+            this.panel14.Controls.Add(this.tableLayoutPanel17);
+            this.panel14.Controls.Add(this.L_Frekuensi);
+            this.panel14.Controls.Add(this.tableLayoutPanel16);
+            this.panel14.Controls.Add(this.tableLayoutPanel15);
+            this.panel14.Controls.Add(this.bunifuSeparator4);
+            this.panel14.Controls.Add(this.L_Nyeri);
+            this.panel14.Controls.Add(this.tableLayoutPanel14);
+            this.panel14.Controls.Add(this.tableLayoutPanel13);
+            this.panel14.Controls.Add(this.L_Suhu);
+            this.panel14.Controls.Add(this.tableLayoutPanel12);
+            this.panel14.Controls.Add(this.tableLayoutPanel11);
+            this.panel14.Controls.Add(this.L_FrekuensiPernapasan);
+            this.panel14.Controls.Add(this.pictureBox5);
+            this.panel14.Controls.Add(this.tableLayoutPanel10);
+            this.panel14.Controls.Add(this.label41);
+            this.panel14.Controls.Add(this.tableLayoutPanel9);
+            this.panel14.Controls.Add(this.tableLayoutPanel8);
+            this.panel14.Controls.Add(this.label44);
+            this.panel14.Controls.Add(this.tableLayoutPanel7);
+            this.panel14.Controls.Add(this.L_TekananDarah);
+            this.panel14.Controls.Add(this.tableLayoutPanel6);
+            this.panel14.Controls.Add(this.label51);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(3, 3);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(690, 500);
+            this.panel14.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.panel14, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel14, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel14, "");
+            // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.ColumnCount = 1;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel19.Controls.Add(this.CB_LamaMerasaNyeri, 0, 1);
+            this.tableLayoutPanel19.Controls.Add(this.L_LamaMerasaNyeri, 0, 0);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(97, 735);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.RowCount = 2;
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(200, 64);
+            this.tableLayoutPanel19.TabIndex = 138;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel19, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel19, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel19, "");
+            // 
+            // CB_LamaMerasaNyeri
+            // 
+            this.CB_LamaMerasaNyeri.BackColor = System.Drawing.Color.Transparent;
+            this.CB_LamaMerasaNyeri.BorderRadius = 3;
+            this.CB_LamaMerasaNyeri.DisabledColor = System.Drawing.Color.Gray;
+            this.CB_LamaMerasaNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
+            this.CB_LamaMerasaNyeri.ForeColor = System.Drawing.Color.White;
+            this.CB_LamaMerasaNyeri.items = new string[] {
+        "Kurang Dari 3 Bulan",
+        "Lebih Dari 3 Bulan"};
+            this.CB_LamaMerasaNyeri.Location = new System.Drawing.Point(2, 23);
+            this.CB_LamaMerasaNyeri.Margin = new System.Windows.Forms.Padding(2);
+            this.CB_LamaMerasaNyeri.Name = "CB_LamaMerasaNyeri";
+            this.CB_LamaMerasaNyeri.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.CB_LamaMerasaNyeri.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.CB_LamaMerasaNyeri.selectedIndex = -1;
+            this.CB_LamaMerasaNyeri.Size = new System.Drawing.Size(196, 39);
+            this.CB_LamaMerasaNyeri.TabIndex = 137;
+            this.bunifuToolTip1.SetToolTip(this.CB_LamaMerasaNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.CB_LamaMerasaNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.CB_LamaMerasaNyeri, "");
+            // 
+            // L_LamaMerasaNyeri
+            // 
+            this.L_LamaMerasaNyeri.AutoSize = true;
+            this.L_LamaMerasaNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_LamaMerasaNyeri.ForeColor = System.Drawing.Color.White;
+            this.L_LamaMerasaNyeri.Location = new System.Drawing.Point(3, 0);
+            this.L_LamaMerasaNyeri.Name = "L_LamaMerasaNyeri";
+            this.L_LamaMerasaNyeri.Size = new System.Drawing.Size(140, 21);
+            this.L_LamaMerasaNyeri.TabIndex = 136;
+            this.L_LamaMerasaNyeri.Text = "Lama Merasa Nyeri";
+            this.bunifuToolTip1.SetToolTip(this.L_LamaMerasaNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_LamaMerasaNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_LamaMerasaNyeri, "");
+            // 
+            // TB_LokasiNyeri
+            // 
+            this.TB_LokasiNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_LokasiNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_LokasiNyeri.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_LokasiNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_LokasiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_LokasiNyeri.ForeColor = System.Drawing.Color.White;
+            this.TB_LokasiNyeri.HintForeColor = System.Drawing.Color.White;
+            this.TB_LokasiNyeri.HintText = "";
+            this.TB_LokasiNyeri.isPassword = false;
+            this.TB_LokasiNyeri.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_LokasiNyeri.LineIdleColor = System.Drawing.Color.White;
+            this.TB_LokasiNyeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_LokasiNyeri.LineThickness = 1;
+            this.TB_LokasiNyeri.Location = new System.Drawing.Point(97, 701);
+            this.TB_LokasiNyeri.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_LokasiNyeri.MaxLength = 32767;
+            this.TB_LokasiNyeri.Name = "TB_LokasiNyeri";
+            this.TB_LokasiNyeri.Size = new System.Drawing.Size(236, 27);
+            this.TB_LokasiNyeri.TabIndex = 135;
+            this.TB_LokasiNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_LokasiNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_LokasiNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_LokasiNyeri, "");
+            // 
+            // L_LokasiNyeri
+            // 
+            this.L_LokasiNyeri.AutoSize = true;
+            this.L_LokasiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_LokasiNyeri.ForeColor = System.Drawing.Color.White;
+            this.L_LokasiNyeri.Location = new System.Drawing.Point(93, 676);
+            this.L_LokasiNyeri.Name = "L_LokasiNyeri";
+            this.L_LokasiNyeri.Size = new System.Drawing.Size(53, 21);
+            this.L_LokasiNyeri.TabIndex = 134;
+            this.L_LokasiNyeri.Text = "Lokasi";
+            this.bunifuToolTip1.SetToolTip(this.L_LokasiNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_LokasiNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_LokasiNyeri, "");
+            // 
+            // tableLayoutPanel18
+            // 
+            this.tableLayoutPanel18.ColumnCount = 2;
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel18.Controls.Add(this.label52, 0, 0);
+            this.tableLayoutPanel18.Controls.Add(this.TB_DurasiNyeri, 0, 0);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(95, 631);
+            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
+            this.tableLayoutPanel18.RowCount = 1;
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(144, 42);
+            this.tableLayoutPanel18.TabIndex = 133;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel18, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel18, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel18, "");
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label52.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.White;
+            this.label52.Location = new System.Drawing.Point(68, 21);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(73, 21);
+            this.label52.TabIndex = 134;
+            this.label52.Text = "menit";
+            this.bunifuToolTip1.SetToolTip(this.label52, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label52, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label52, "");
+            // 
+            // TB_DurasiNyeri
+            // 
+            this.TB_DurasiNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_DurasiNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_DurasiNyeri.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_DurasiNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_DurasiNyeri.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_DurasiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_DurasiNyeri.ForeColor = System.Drawing.Color.White;
+            this.TB_DurasiNyeri.HintForeColor = System.Drawing.Color.White;
+            this.TB_DurasiNyeri.HintText = "";
+            this.TB_DurasiNyeri.isPassword = false;
+            this.TB_DurasiNyeri.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_DurasiNyeri.LineIdleColor = System.Drawing.Color.White;
+            this.TB_DurasiNyeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_DurasiNyeri.LineThickness = 1;
+            this.TB_DurasiNyeri.Location = new System.Drawing.Point(4, 11);
+            this.TB_DurasiNyeri.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_DurasiNyeri.MaxLength = 32767;
+            this.TB_DurasiNyeri.Name = "TB_DurasiNyeri";
+            this.TB_DurasiNyeri.Size = new System.Drawing.Size(57, 27);
+            this.TB_DurasiNyeri.TabIndex = 133;
+            this.TB_DurasiNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_DurasiNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_DurasiNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_DurasiNyeri, "");
+            // 
+            // L_Durasi
+            // 
+            this.L_Durasi.AutoSize = true;
+            this.L_Durasi.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_Durasi.ForeColor = System.Drawing.Color.White;
+            this.L_Durasi.Location = new System.Drawing.Point(91, 607);
+            this.L_Durasi.Name = "L_Durasi";
+            this.L_Durasi.Size = new System.Drawing.Size(54, 21);
+            this.L_Durasi.TabIndex = 132;
+            this.L_Durasi.Text = "Durasi";
+            this.bunifuToolTip1.SetToolTip(this.L_Durasi, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_Durasi, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_Durasi, "");
+            // 
+            // tableLayoutPanel17
+            // 
+            this.tableLayoutPanel17.ColumnCount = 3;
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel17.Controls.Add(this.label29, 1, 0);
+            this.tableLayoutPanel17.Controls.Add(this.TB_FrekuensiNyeri, 0, 0);
+            this.tableLayoutPanel17.Controls.Add(this.label27, 2, 0);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(95, 562);
+            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
+            this.tableLayoutPanel17.RowCount = 1;
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(146, 42);
+            this.tableLayoutPanel17.TabIndex = 94;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel17, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel17, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel17, "");
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(66, 21);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(17, 21);
+            this.label29.TabIndex = 96;
+            this.label29.Text = "x";
+            this.bunifuToolTip1.SetToolTip(this.label29, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label29, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label29, "");
+            // 
+            // TB_FrekuensiNyeri
+            // 
+            this.TB_FrekuensiNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_FrekuensiNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_FrekuensiNyeri.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_FrekuensiNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_FrekuensiNyeri.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_FrekuensiNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_FrekuensiNyeri.ForeColor = System.Drawing.Color.White;
+            this.TB_FrekuensiNyeri.HintForeColor = System.Drawing.Color.White;
+            this.TB_FrekuensiNyeri.HintText = "";
+            this.TB_FrekuensiNyeri.isPassword = false;
+            this.TB_FrekuensiNyeri.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_FrekuensiNyeri.LineIdleColor = System.Drawing.Color.White;
+            this.TB_FrekuensiNyeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_FrekuensiNyeri.LineThickness = 1;
+            this.TB_FrekuensiNyeri.Location = new System.Drawing.Point(4, 11);
+            this.TB_FrekuensiNyeri.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_FrekuensiNyeri.MaxLength = 32767;
+            this.TB_FrekuensiNyeri.Name = "TB_FrekuensiNyeri";
+            this.TB_FrekuensiNyeri.Size = new System.Drawing.Size(55, 27);
+            this.TB_FrekuensiNyeri.TabIndex = 95;
+            this.TB_FrekuensiNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_FrekuensiNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_FrekuensiNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_FrekuensiNyeri, "");
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(89, 21);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(54, 21);
+            this.label27.TabIndex = 98;
+            this.label27.Text = "/ Hari";
+            this.bunifuToolTip1.SetToolTip(this.label27, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label27, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label27, "");
+            // 
+            // L_Frekuensi
+            // 
+            this.L_Frekuensi.AutoSize = true;
+            this.L_Frekuensi.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_Frekuensi.ForeColor = System.Drawing.Color.White;
+            this.L_Frekuensi.Location = new System.Drawing.Point(91, 538);
+            this.L_Frekuensi.Name = "L_Frekuensi";
+            this.L_Frekuensi.Size = new System.Drawing.Size(76, 21);
+            this.L_Frekuensi.TabIndex = 93;
+            this.L_Frekuensi.Text = "Frekuensi";
+            this.bunifuToolTip1.SetToolTip(this.L_Frekuensi, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_Frekuensi, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_Frekuensi, "");
+            // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.ColumnCount = 1;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel16.Controls.Add(this.label32, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.TB_InterpretasiSkalaNyeri, 0, 1);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(390, 456);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 2;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(200, 73);
+            this.tableLayoutPanel16.TabIndex = 92;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel16, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel16, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel16, "");
+            // 
+            // label32
+            // 
+            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator1.LineThickness = 100;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(-6, 802);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(696, 68);
-            this.bunifuSeparator1.TabIndex = 86;
-            this.bunifuToolTip1.SetToolTip(this.bunifuSeparator1, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuSeparator1, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuSeparator1, "");
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(3, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(194, 21);
+            this.label32.TabIndex = 48;
+            this.label32.Text = "Interpretasi";
+            this.bunifuToolTip1.SetToolTip(this.label32, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label32, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label32, "");
+            // 
+            // TB_InterpretasiSkalaNyeri
+            // 
+            this.TB_InterpretasiSkalaNyeri.AcceptsReturn = false;
+            this.TB_InterpretasiSkalaNyeri.AcceptsTab = false;
+            this.TB_InterpretasiSkalaNyeri.AnimationSpeed = 200;
+            this.TB_InterpretasiSkalaNyeri.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_InterpretasiSkalaNyeri.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_InterpretasiSkalaNyeri.BackColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiSkalaNyeri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiSkalaNyeri.BackgroundImage")));
+            this.TB_InterpretasiSkalaNyeri.BorderColorActive = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSkalaNyeri.BorderColorDisabled = System.Drawing.Color.White;
+            this.TB_InterpretasiSkalaNyeri.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_InterpretasiSkalaNyeri.BorderColorIdle = System.Drawing.Color.White;
+            this.TB_InterpretasiSkalaNyeri.BorderRadius = 1;
+            this.TB_InterpretasiSkalaNyeri.BorderThickness = 1;
+            this.TB_InterpretasiSkalaNyeri.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_InterpretasiSkalaNyeri.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiSkalaNyeri.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_InterpretasiSkalaNyeri.DefaultText = "";
+            this.TB_InterpretasiSkalaNyeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.TB_InterpretasiSkalaNyeri.ForeColor = System.Drawing.Color.White;
+            this.TB_InterpretasiSkalaNyeri.HideSelection = true;
+            this.TB_InterpretasiSkalaNyeri.IconLeft = null;
+            this.TB_InterpretasiSkalaNyeri.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiSkalaNyeri.IconPadding = 10;
+            this.TB_InterpretasiSkalaNyeri.IconRight = null;
+            this.TB_InterpretasiSkalaNyeri.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiSkalaNyeri.Lines = new string[0];
+            this.TB_InterpretasiSkalaNyeri.Location = new System.Drawing.Point(3, 39);
+            this.TB_InterpretasiSkalaNyeri.MaxLength = 32767;
+            this.TB_InterpretasiSkalaNyeri.MinimumSize = new System.Drawing.Size(1, 1);
+            this.TB_InterpretasiSkalaNyeri.Modified = false;
+            this.TB_InterpretasiSkalaNyeri.Multiline = false;
+            this.TB_InterpretasiSkalaNyeri.Name = "TB_InterpretasiSkalaNyeri";
+            stateProperties57.BorderColor = System.Drawing.Color.Empty;
+            stateProperties57.FillColor = System.Drawing.Color.Empty;
+            stateProperties57.ForeColor = System.Drawing.Color.Empty;
+            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSkalaNyeri.OnActiveState = stateProperties57;
+            stateProperties58.BorderColor = System.Drawing.Color.White;
+            stateProperties58.FillColor = System.Drawing.Color.White;
+            stateProperties58.ForeColor = System.Drawing.Color.Empty;
+            stateProperties58.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TB_InterpretasiSkalaNyeri.OnDisabledState = stateProperties58;
+            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            stateProperties59.FillColor = System.Drawing.Color.Empty;
+            stateProperties59.ForeColor = System.Drawing.Color.Empty;
+            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSkalaNyeri.OnHoverState = stateProperties59;
+            stateProperties60.BorderColor = System.Drawing.Color.White;
+            stateProperties60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            stateProperties60.ForeColor = System.Drawing.Color.White;
+            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSkalaNyeri.OnIdleState = stateProperties60;
+            this.TB_InterpretasiSkalaNyeri.PasswordChar = '\0';
+            this.TB_InterpretasiSkalaNyeri.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiSkalaNyeri.PlaceholderText = "";
+            this.TB_InterpretasiSkalaNyeri.ReadOnly = true;
+            this.TB_InterpretasiSkalaNyeri.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TB_InterpretasiSkalaNyeri.SelectedText = "";
+            this.TB_InterpretasiSkalaNyeri.SelectionLength = 0;
+            this.TB_InterpretasiSkalaNyeri.SelectionStart = 0;
+            this.TB_InterpretasiSkalaNyeri.ShortcutsEnabled = true;
+            this.TB_InterpretasiSkalaNyeri.Size = new System.Drawing.Size(194, 31);
+            this.TB_InterpretasiSkalaNyeri.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TB_InterpretasiSkalaNyeri.TabIndex = 90;
+            this.TB_InterpretasiSkalaNyeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_InterpretasiSkalaNyeri.TextMarginBottom = 0;
+            this.TB_InterpretasiSkalaNyeri.TextMarginLeft = 5;
+            this.TB_InterpretasiSkalaNyeri.TextMarginTop = 0;
+            this.TB_InterpretasiSkalaNyeri.TextPlaceholder = "";
+            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiSkalaNyeri, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiSkalaNyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiSkalaNyeri, "");
+            this.TB_InterpretasiSkalaNyeri.UseSystemPasswordChar = false;
+            this.TB_InterpretasiSkalaNyeri.WordWrap = true;
+            // 
+            // tableLayoutPanel15
+            // 
+            this.tableLayoutPanel15.ColumnCount = 1;
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel15.Controls.Add(this.CB_SkalaNyeri, 0, 1);
+            this.tableLayoutPanel15.Controls.Add(this.L_Skala, 0, 0);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(93, 469);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.RowCount = 2;
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(146, 66);
+            this.tableLayoutPanel15.TabIndex = 89;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel15, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel15, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel15, "");
             // 
             // CB_SkalaNyeri
             // 
             this.CB_SkalaNyeri.BackColor = System.Drawing.Color.Transparent;
             this.CB_SkalaNyeri.BorderRadius = 3;
             this.CB_SkalaNyeri.DisabledColor = System.Drawing.Color.Gray;
+            this.CB_SkalaNyeri.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CB_SkalaNyeri.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
             this.CB_SkalaNyeri.ForeColor = System.Drawing.Color.White;
             this.CB_SkalaNyeri.items = new string[] {
@@ -4641,18 +3756,1134 @@
         "8",
         "9",
         "10"};
-            this.CB_SkalaNyeri.Location = new System.Drawing.Point(97, 477);
+            this.CB_SkalaNyeri.Location = new System.Drawing.Point(2, 25);
             this.CB_SkalaNyeri.Margin = new System.Windows.Forms.Padding(2);
             this.CB_SkalaNyeri.Name = "CB_SkalaNyeri";
             this.CB_SkalaNyeri.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
             this.CB_SkalaNyeri.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.CB_SkalaNyeri.selectedIndex = -1;
-            this.CB_SkalaNyeri.Size = new System.Drawing.Size(130, 39);
-            this.CB_SkalaNyeri.TabIndex = 87;
+            this.CB_SkalaNyeri.Size = new System.Drawing.Size(142, 39);
+            this.CB_SkalaNyeri.TabIndex = 88;
             this.bunifuToolTip1.SetToolTip(this.CB_SkalaNyeri, "");
             this.bunifuToolTip1.SetToolTipIcon(this.CB_SkalaNyeri, null);
             this.bunifuToolTip1.SetToolTipTitle(this.CB_SkalaNyeri, "");
-            this.CB_SkalaNyeri.onItemSelected += new System.EventHandler(this.CB_SkalaNyeri_onItemSelected);
+            // 
+            // L_Skala
+            // 
+            this.L_Skala.AutoSize = true;
+            this.L_Skala.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.L_Skala.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_Skala.ForeColor = System.Drawing.Color.White;
+            this.L_Skala.Location = new System.Drawing.Point(3, 0);
+            this.L_Skala.Name = "L_Skala";
+            this.L_Skala.Size = new System.Drawing.Size(140, 21);
+            this.L_Skala.TabIndex = 82;
+            this.L_Skala.Text = "Skala";
+            this.bunifuToolTip1.SetToolTip(this.L_Skala, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_Skala, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_Skala, "");
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator4.LineThickness = 50;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(0, 1122);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Size = new System.Drawing.Size(673, 45);
+            this.bunifuSeparator4.TabIndex = 1;
+            this.bunifuToolTip1.SetToolTip(this.bunifuSeparator4, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuSeparator4, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuSeparator4, "");
+            this.bunifuSeparator4.Transparency = 255;
+            this.bunifuSeparator4.Vertical = false;
+            // 
+            // L_Nyeri
+            // 
+            this.L_Nyeri.AutoSize = true;
+            this.L_Nyeri.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.L_Nyeri.ForeColor = System.Drawing.Color.White;
+            this.L_Nyeri.Location = new System.Drawing.Point(63, 441);
+            this.L_Nyeri.Name = "L_Nyeri";
+            this.L_Nyeri.Size = new System.Drawing.Size(59, 25);
+            this.L_Nyeri.TabIndex = 81;
+            this.L_Nyeri.Text = "Nyeri";
+            this.bunifuToolTip1.SetToolTip(this.L_Nyeri, "Menggunakan Titik ( . )\r\nJangan Menggunakan Koma ( , )\r\nContoh : 36.0\r\n          " +
+        "       36.5\r\n");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_Nyeri, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_Nyeri, "Cara penggunaan");
+            // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 1;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel14.Controls.Add(this.TB_InterpretasiSuhu, 0, 1);
+            this.tableLayoutPanel14.Controls.Add(this.label35, 0, 0);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(390, 371);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 2;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(200, 73);
+            this.tableLayoutPanel14.TabIndex = 80;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel14, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel14, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel14, "");
+            // 
+            // TB_InterpretasiSuhu
+            // 
+            this.TB_InterpretasiSuhu.AcceptsReturn = false;
+            this.TB_InterpretasiSuhu.AcceptsTab = false;
+            this.TB_InterpretasiSuhu.AnimationSpeed = 200;
+            this.TB_InterpretasiSuhu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_InterpretasiSuhu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_InterpretasiSuhu.BackColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiSuhu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiSuhu.BackgroundImage")));
+            this.TB_InterpretasiSuhu.BorderColorActive = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSuhu.BorderColorDisabled = System.Drawing.Color.White;
+            this.TB_InterpretasiSuhu.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_InterpretasiSuhu.BorderColorIdle = System.Drawing.Color.White;
+            this.TB_InterpretasiSuhu.BorderRadius = 1;
+            this.TB_InterpretasiSuhu.BorderThickness = 1;
+            this.TB_InterpretasiSuhu.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_InterpretasiSuhu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiSuhu.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_InterpretasiSuhu.DefaultText = "";
+            this.TB_InterpretasiSuhu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.TB_InterpretasiSuhu.ForeColor = System.Drawing.Color.White;
+            this.TB_InterpretasiSuhu.HideSelection = true;
+            this.TB_InterpretasiSuhu.IconLeft = null;
+            this.TB_InterpretasiSuhu.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiSuhu.IconPadding = 10;
+            this.TB_InterpretasiSuhu.IconRight = null;
+            this.TB_InterpretasiSuhu.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiSuhu.Lines = new string[0];
+            this.TB_InterpretasiSuhu.Location = new System.Drawing.Point(3, 39);
+            this.TB_InterpretasiSuhu.MaxLength = 32767;
+            this.TB_InterpretasiSuhu.MinimumSize = new System.Drawing.Size(1, 1);
+            this.TB_InterpretasiSuhu.Modified = false;
+            this.TB_InterpretasiSuhu.Multiline = false;
+            this.TB_InterpretasiSuhu.Name = "TB_InterpretasiSuhu";
+            stateProperties61.BorderColor = System.Drawing.Color.Empty;
+            stateProperties61.FillColor = System.Drawing.Color.Empty;
+            stateProperties61.ForeColor = System.Drawing.Color.Empty;
+            stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSuhu.OnActiveState = stateProperties61;
+            stateProperties62.BorderColor = System.Drawing.Color.White;
+            stateProperties62.FillColor = System.Drawing.Color.White;
+            stateProperties62.ForeColor = System.Drawing.Color.Empty;
+            stateProperties62.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TB_InterpretasiSuhu.OnDisabledState = stateProperties62;
+            stateProperties63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            stateProperties63.FillColor = System.Drawing.Color.Empty;
+            stateProperties63.ForeColor = System.Drawing.Color.Empty;
+            stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSuhu.OnHoverState = stateProperties63;
+            stateProperties64.BorderColor = System.Drawing.Color.White;
+            stateProperties64.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            stateProperties64.ForeColor = System.Drawing.Color.White;
+            stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiSuhu.OnIdleState = stateProperties64;
+            this.TB_InterpretasiSuhu.PasswordChar = '\0';
+            this.TB_InterpretasiSuhu.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiSuhu.PlaceholderText = "";
+            this.TB_InterpretasiSuhu.ReadOnly = true;
+            this.TB_InterpretasiSuhu.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TB_InterpretasiSuhu.SelectedText = "";
+            this.TB_InterpretasiSuhu.SelectionLength = 0;
+            this.TB_InterpretasiSuhu.SelectionStart = 0;
+            this.TB_InterpretasiSuhu.ShortcutsEnabled = true;
+            this.TB_InterpretasiSuhu.Size = new System.Drawing.Size(149, 31);
+            this.TB_InterpretasiSuhu.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TB_InterpretasiSuhu.TabIndex = 79;
+            this.TB_InterpretasiSuhu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_InterpretasiSuhu.TextMarginBottom = 0;
+            this.TB_InterpretasiSuhu.TextMarginLeft = 5;
+            this.TB_InterpretasiSuhu.TextMarginTop = 0;
+            this.TB_InterpretasiSuhu.TextPlaceholder = "";
+            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiSuhu, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiSuhu, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiSuhu, "");
+            this.TB_InterpretasiSuhu.UseSystemPasswordChar = false;
+            this.TB_InterpretasiSuhu.WordWrap = true;
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(3, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(194, 21);
+            this.label35.TabIndex = 48;
+            this.label35.Text = "Interpretasi";
+            this.bunifuToolTip1.SetToolTip(this.label35, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label35, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label35, "");
+            // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.ColumnCount = 2;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel13.Controls.Add(this.label33, 0, 0);
+            this.tableLayoutPanel13.Controls.Add(this.TB_Suhu, 0, 0);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(93, 396);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 1;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(99, 42);
+            this.tableLayoutPanel13.TabIndex = 77;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel13, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel13, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel13, "");
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(68, 21);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(28, 21);
+            this.label33.TabIndex = 62;
+            this.label33.Text = "°C";
+            this.bunifuToolTip1.SetToolTip(this.label33, "Menggunakan Titik ( . )\r\nJangan Menggunakan Koma ( , )\r\nContoh : 36.0\r\n          " +
+        "       36.5");
+            this.bunifuToolTip1.SetToolTipIcon(this.label33, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label33, "Cara penggunaan");
+            // 
+            // TB_Suhu
+            // 
+            this.TB_Suhu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_Suhu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_Suhu.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_Suhu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_Suhu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_Suhu.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_Suhu.ForeColor = System.Drawing.Color.White;
+            this.TB_Suhu.HintForeColor = System.Drawing.Color.White;
+            this.TB_Suhu.HintText = "";
+            this.TB_Suhu.isPassword = false;
+            this.TB_Suhu.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Suhu.LineIdleColor = System.Drawing.Color.White;
+            this.TB_Suhu.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Suhu.LineThickness = 1;
+            this.TB_Suhu.Location = new System.Drawing.Point(4, 11);
+            this.TB_Suhu.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_Suhu.MaxLength = 32767;
+            this.TB_Suhu.Name = "TB_Suhu";
+            this.TB_Suhu.Size = new System.Drawing.Size(57, 27);
+            this.TB_Suhu.TabIndex = 61;
+            this.TB_Suhu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_Suhu, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_Suhu, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_Suhu, "");
+            // 
+            // L_Suhu
+            // 
+            this.L_Suhu.AutoSize = true;
+            this.L_Suhu.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.L_Suhu.ForeColor = System.Drawing.Color.White;
+            this.L_Suhu.Location = new System.Drawing.Point(63, 371);
+            this.L_Suhu.Name = "L_Suhu";
+            this.L_Suhu.Size = new System.Drawing.Size(55, 25);
+            this.L_Suhu.TabIndex = 76;
+            this.L_Suhu.Text = "Suhu";
+            this.bunifuToolTip1.SetToolTip(this.L_Suhu, "Menggunakan Titik ( . )\r\nJangan Menggunakan Koma ( , )\r\nContoh : 36.0\r\n          " +
+        "       36.5\r\n");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_Suhu, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_Suhu, "Cara penggunaan");
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 1;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.Controls.Add(this.label53, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.TB_InterpretasiFrekuensiPernapasan, 0, 1);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(390, 290);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 2;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(200, 73);
+            this.tableLayoutPanel12.TabIndex = 75;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel12, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel12, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel12, "");
+            // 
+            // label53
+            // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.White;
+            this.label53.Location = new System.Drawing.Point(3, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(194, 21);
+            this.label53.TabIndex = 48;
+            this.label53.Text = "Interpretasi";
+            this.bunifuToolTip1.SetToolTip(this.label53, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label53, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label53, "");
+            // 
+            // TB_InterpretasiFrekuensiPernapasan
+            // 
+            this.TB_InterpretasiFrekuensiPernapasan.AcceptsReturn = false;
+            this.TB_InterpretasiFrekuensiPernapasan.AcceptsTab = false;
+            this.TB_InterpretasiFrekuensiPernapasan.AnimationSpeed = 200;
+            this.TB_InterpretasiFrekuensiPernapasan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_InterpretasiFrekuensiPernapasan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_InterpretasiFrekuensiPernapasan.BackColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiFrekuensiPernapasan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiFrekuensiPernapasan.BackgroundImage")));
+            this.TB_InterpretasiFrekuensiPernapasan.BorderColorActive = System.Drawing.Color.Empty;
+            this.TB_InterpretasiFrekuensiPernapasan.BorderColorDisabled = System.Drawing.Color.White;
+            this.TB_InterpretasiFrekuensiPernapasan.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_InterpretasiFrekuensiPernapasan.BorderColorIdle = System.Drawing.Color.White;
+            this.TB_InterpretasiFrekuensiPernapasan.BorderRadius = 1;
+            this.TB_InterpretasiFrekuensiPernapasan.BorderThickness = 1;
+            this.TB_InterpretasiFrekuensiPernapasan.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_InterpretasiFrekuensiPernapasan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiFrekuensiPernapasan.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_InterpretasiFrekuensiPernapasan.DefaultText = "";
+            this.TB_InterpretasiFrekuensiPernapasan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.TB_InterpretasiFrekuensiPernapasan.ForeColor = System.Drawing.Color.White;
+            this.TB_InterpretasiFrekuensiPernapasan.HideSelection = true;
+            this.TB_InterpretasiFrekuensiPernapasan.IconLeft = null;
+            this.TB_InterpretasiFrekuensiPernapasan.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiFrekuensiPernapasan.IconPadding = 10;
+            this.TB_InterpretasiFrekuensiPernapasan.IconRight = null;
+            this.TB_InterpretasiFrekuensiPernapasan.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiFrekuensiPernapasan.Lines = new string[0];
+            this.TB_InterpretasiFrekuensiPernapasan.Location = new System.Drawing.Point(3, 39);
+            this.TB_InterpretasiFrekuensiPernapasan.MaxLength = 32767;
+            this.TB_InterpretasiFrekuensiPernapasan.MinimumSize = new System.Drawing.Size(1, 1);
+            this.TB_InterpretasiFrekuensiPernapasan.Modified = false;
+            this.TB_InterpretasiFrekuensiPernapasan.Multiline = false;
+            this.TB_InterpretasiFrekuensiPernapasan.Name = "TB_InterpretasiFrekuensiPernapasan";
+            stateProperties65.BorderColor = System.Drawing.Color.Empty;
+            stateProperties65.FillColor = System.Drawing.Color.Empty;
+            stateProperties65.ForeColor = System.Drawing.Color.Empty;
+            stateProperties65.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiFrekuensiPernapasan.OnActiveState = stateProperties65;
+            stateProperties66.BorderColor = System.Drawing.Color.White;
+            stateProperties66.FillColor = System.Drawing.Color.White;
+            stateProperties66.ForeColor = System.Drawing.Color.Empty;
+            stateProperties66.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TB_InterpretasiFrekuensiPernapasan.OnDisabledState = stateProperties66;
+            stateProperties67.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            stateProperties67.FillColor = System.Drawing.Color.Empty;
+            stateProperties67.ForeColor = System.Drawing.Color.Empty;
+            stateProperties67.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiFrekuensiPernapasan.OnHoverState = stateProperties67;
+            stateProperties68.BorderColor = System.Drawing.Color.White;
+            stateProperties68.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            stateProperties68.ForeColor = System.Drawing.Color.White;
+            stateProperties68.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiFrekuensiPernapasan.OnIdleState = stateProperties68;
+            this.TB_InterpretasiFrekuensiPernapasan.PasswordChar = '\0';
+            this.TB_InterpretasiFrekuensiPernapasan.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiFrekuensiPernapasan.PlaceholderText = "";
+            this.TB_InterpretasiFrekuensiPernapasan.ReadOnly = true;
+            this.TB_InterpretasiFrekuensiPernapasan.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TB_InterpretasiFrekuensiPernapasan.SelectedText = "";
+            this.TB_InterpretasiFrekuensiPernapasan.SelectionLength = 0;
+            this.TB_InterpretasiFrekuensiPernapasan.SelectionStart = 0;
+            this.TB_InterpretasiFrekuensiPernapasan.ShortcutsEnabled = true;
+            this.TB_InterpretasiFrekuensiPernapasan.Size = new System.Drawing.Size(149, 31);
+            this.TB_InterpretasiFrekuensiPernapasan.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TB_InterpretasiFrekuensiPernapasan.TabIndex = 73;
+            this.TB_InterpretasiFrekuensiPernapasan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_InterpretasiFrekuensiPernapasan.TextMarginBottom = 0;
+            this.TB_InterpretasiFrekuensiPernapasan.TextMarginLeft = 5;
+            this.TB_InterpretasiFrekuensiPernapasan.TextMarginTop = 0;
+            this.TB_InterpretasiFrekuensiPernapasan.TextPlaceholder = "";
+            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiFrekuensiPernapasan, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiFrekuensiPernapasan, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiFrekuensiPernapasan, "");
+            this.TB_InterpretasiFrekuensiPernapasan.UseSystemPasswordChar = false;
+            this.TB_InterpretasiFrekuensiPernapasan.WordWrap = true;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 3;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel11.Controls.Add(this.label36, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label37, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.TB_FrekuensiPernapasan, 0, 0);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(91, 318);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 1;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(148, 42);
+            this.tableLayoutPanel11.TabIndex = 72;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel11, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel11, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel11, "");
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label36.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(91, 21);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(59, 21);
+            this.label36.TabIndex = 56;
+            this.label36.Text = "/ menit";
+            this.bunifuToolTip1.SetToolTip(this.label36, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label36, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label36, "");
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label37.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(68, 21);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(17, 21);
+            this.label37.TabIndex = 55;
+            this.label37.Text = "x";
+            this.bunifuToolTip1.SetToolTip(this.label37, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label37, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label37, "");
+            // 
+            // TB_FrekuensiPernapasan
+            // 
+            this.TB_FrekuensiPernapasan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_FrekuensiPernapasan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_FrekuensiPernapasan.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_FrekuensiPernapasan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_FrekuensiPernapasan.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_FrekuensiPernapasan.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_FrekuensiPernapasan.ForeColor = System.Drawing.Color.White;
+            this.TB_FrekuensiPernapasan.HintForeColor = System.Drawing.Color.White;
+            this.TB_FrekuensiPernapasan.HintText = "";
+            this.TB_FrekuensiPernapasan.isPassword = false;
+            this.TB_FrekuensiPernapasan.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_FrekuensiPernapasan.LineIdleColor = System.Drawing.Color.White;
+            this.TB_FrekuensiPernapasan.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_FrekuensiPernapasan.LineThickness = 1;
+            this.TB_FrekuensiPernapasan.Location = new System.Drawing.Point(4, 11);
+            this.TB_FrekuensiPernapasan.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_FrekuensiPernapasan.MaxLength = 32767;
+            this.TB_FrekuensiPernapasan.Name = "TB_FrekuensiPernapasan";
+            this.TB_FrekuensiPernapasan.Size = new System.Drawing.Size(57, 27);
+            this.TB_FrekuensiPernapasan.TabIndex = 54;
+            this.TB_FrekuensiPernapasan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_FrekuensiPernapasan, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_FrekuensiPernapasan, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_FrekuensiPernapasan, "");
+            // 
+            // L_FrekuensiPernapasan
+            // 
+            this.L_FrekuensiPernapasan.AutoSize = true;
+            this.L_FrekuensiPernapasan.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.L_FrekuensiPernapasan.ForeColor = System.Drawing.Color.White;
+            this.L_FrekuensiPernapasan.Location = new System.Drawing.Point(63, 290);
+            this.L_FrekuensiPernapasan.Name = "L_FrekuensiPernapasan";
+            this.L_FrekuensiPernapasan.Size = new System.Drawing.Size(197, 25);
+            this.L_FrekuensiPernapasan.TabIndex = 71;
+            this.L_FrekuensiPernapasan.Text = "Frekuensi Pernapasan";
+            this.bunifuToolTip1.SetToolTip(this.L_FrekuensiPernapasan, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_FrekuensiPernapasan, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_FrekuensiPernapasan, "");
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.Image = global::SIM_Pengkajian_Pasien.Properties.Resources.Blood_Drop;
+            this.pictureBox5.Location = new System.Drawing.Point(545, 68);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(125, 201);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 70;
+            this.pictureBox5.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.pictureBox5, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.pictureBox5, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.pictureBox5, "");
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 4;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel10.Controls.Add(this.label40, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.CB_NadiTerabaKuat, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.CB_NadiTerabaLemah, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label39, 3, 0);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(99, 242);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 1;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(200, 30);
+            this.tableLayoutPanel10.TabIndex = 69;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel10, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel10, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel10, "");
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label40.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(30, 10);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(53, 20);
+            this.label40.TabIndex = 52;
+            this.label40.Text = "Lemah";
+            this.bunifuToolTip1.SetToolTip(this.label40, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label40, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label40, "");
+            // 
+            // CB_NadiTerabaKuat
+            // 
+            this.CB_NadiTerabaKuat.AllowBindingControlAnimation = true;
+            this.CB_NadiTerabaKuat.AllowBindingControlColorChanges = false;
+            this.CB_NadiTerabaKuat.AllowBindingControlLocation = true;
+            this.CB_NadiTerabaKuat.AllowCheckBoxAnimation = false;
+            this.CB_NadiTerabaKuat.AllowCheckmarkAnimation = true;
+            this.CB_NadiTerabaKuat.AllowOnHoverStates = true;
+            this.CB_NadiTerabaKuat.AutoCheck = true;
+            this.CB_NadiTerabaKuat.BackColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaKuat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_NadiTerabaKuat.BackgroundImage")));
+            this.CB_NadiTerabaKuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CB_NadiTerabaKuat.BindingControl = null;
+            this.CB_NadiTerabaKuat.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.CB_NadiTerabaKuat.Checked = false;
+            this.CB_NadiTerabaKuat.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.CB_NadiTerabaKuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_NadiTerabaKuat.CustomCheckmarkImage = null;
+            this.CB_NadiTerabaKuat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CB_NadiTerabaKuat.Location = new System.Drawing.Point(89, 6);
+            this.CB_NadiTerabaKuat.MinimumSize = new System.Drawing.Size(17, 17);
+            this.CB_NadiTerabaKuat.Name = "CB_NadiTerabaKuat";
+            this.CB_NadiTerabaKuat.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.CB_NadiTerabaKuat.OnCheck.BorderRadius = 2;
+            this.CB_NadiTerabaKuat.OnCheck.BorderThickness = 2;
+            this.CB_NadiTerabaKuat.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.CB_NadiTerabaKuat.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.CB_NadiTerabaKuat.OnCheck.CheckmarkThickness = 2;
+            this.CB_NadiTerabaKuat.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.CB_NadiTerabaKuat.OnDisable.BorderRadius = 2;
+            this.CB_NadiTerabaKuat.OnDisable.BorderThickness = 2;
+            this.CB_NadiTerabaKuat.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaKuat.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.CB_NadiTerabaKuat.OnDisable.CheckmarkThickness = 2;
+            this.CB_NadiTerabaKuat.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.CB_NadiTerabaKuat.OnHoverChecked.BorderRadius = 2;
+            this.CB_NadiTerabaKuat.OnHoverChecked.BorderThickness = 2;
+            this.CB_NadiTerabaKuat.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.CB_NadiTerabaKuat.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.CB_NadiTerabaKuat.OnHoverChecked.CheckmarkThickness = 2;
+            this.CB_NadiTerabaKuat.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.CB_NadiTerabaKuat.OnHoverUnchecked.BorderRadius = 2;
+            this.CB_NadiTerabaKuat.OnHoverUnchecked.BorderThickness = 1;
+            this.CB_NadiTerabaKuat.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaKuat.OnUncheck.BorderColor = System.Drawing.Color.White;
+            this.CB_NadiTerabaKuat.OnUncheck.BorderRadius = 2;
+            this.CB_NadiTerabaKuat.OnUncheck.BorderThickness = 1;
+            this.CB_NadiTerabaKuat.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaKuat.Size = new System.Drawing.Size(21, 21);
+            this.CB_NadiTerabaKuat.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.CB_NadiTerabaKuat.TabIndex = 54;
+            this.CB_NadiTerabaKuat.ThreeState = false;
+            this.bunifuToolTip1.SetToolTip(this.CB_NadiTerabaKuat, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.CB_NadiTerabaKuat, null);
+            this.CB_NadiTerabaKuat.ToolTipText = null;
+            this.bunifuToolTip1.SetToolTipTitle(this.CB_NadiTerabaKuat, "");
+            // 
+            // CB_NadiTerabaLemah
+            // 
+            this.CB_NadiTerabaLemah.AllowBindingControlAnimation = true;
+            this.CB_NadiTerabaLemah.AllowBindingControlColorChanges = false;
+            this.CB_NadiTerabaLemah.AllowBindingControlLocation = true;
+            this.CB_NadiTerabaLemah.AllowCheckBoxAnimation = false;
+            this.CB_NadiTerabaLemah.AllowCheckmarkAnimation = true;
+            this.CB_NadiTerabaLemah.AllowOnHoverStates = true;
+            this.CB_NadiTerabaLemah.AutoCheck = true;
+            this.CB_NadiTerabaLemah.BackColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaLemah.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_NadiTerabaLemah.BackgroundImage")));
+            this.CB_NadiTerabaLemah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CB_NadiTerabaLemah.BindingControl = null;
+            this.CB_NadiTerabaLemah.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.CB_NadiTerabaLemah.Checked = false;
+            this.CB_NadiTerabaLemah.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.CB_NadiTerabaLemah.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_NadiTerabaLemah.CustomCheckmarkImage = null;
+            this.CB_NadiTerabaLemah.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CB_NadiTerabaLemah.Location = new System.Drawing.Point(3, 6);
+            this.CB_NadiTerabaLemah.MinimumSize = new System.Drawing.Size(17, 17);
+            this.CB_NadiTerabaLemah.Name = "CB_NadiTerabaLemah";
+            this.CB_NadiTerabaLemah.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.CB_NadiTerabaLemah.OnCheck.BorderRadius = 2;
+            this.CB_NadiTerabaLemah.OnCheck.BorderThickness = 2;
+            this.CB_NadiTerabaLemah.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.CB_NadiTerabaLemah.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.CB_NadiTerabaLemah.OnCheck.CheckmarkThickness = 2;
+            this.CB_NadiTerabaLemah.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.CB_NadiTerabaLemah.OnDisable.BorderRadius = 2;
+            this.CB_NadiTerabaLemah.OnDisable.BorderThickness = 2;
+            this.CB_NadiTerabaLemah.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaLemah.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.CB_NadiTerabaLemah.OnDisable.CheckmarkThickness = 2;
+            this.CB_NadiTerabaLemah.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.CB_NadiTerabaLemah.OnHoverChecked.BorderRadius = 2;
+            this.CB_NadiTerabaLemah.OnHoverChecked.BorderThickness = 2;
+            this.CB_NadiTerabaLemah.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.CB_NadiTerabaLemah.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.CB_NadiTerabaLemah.OnHoverChecked.CheckmarkThickness = 2;
+            this.CB_NadiTerabaLemah.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.CB_NadiTerabaLemah.OnHoverUnchecked.BorderRadius = 2;
+            this.CB_NadiTerabaLemah.OnHoverUnchecked.BorderThickness = 1;
+            this.CB_NadiTerabaLemah.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaLemah.OnUncheck.BorderColor = System.Drawing.Color.White;
+            this.CB_NadiTerabaLemah.OnUncheck.BorderRadius = 2;
+            this.CB_NadiTerabaLemah.OnUncheck.BorderThickness = 1;
+            this.CB_NadiTerabaLemah.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.CB_NadiTerabaLemah.Size = new System.Drawing.Size(21, 21);
+            this.CB_NadiTerabaLemah.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.CB_NadiTerabaLemah.TabIndex = 50;
+            this.CB_NadiTerabaLemah.ThreeState = false;
+            this.bunifuToolTip1.SetToolTip(this.CB_NadiTerabaLemah, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.CB_NadiTerabaLemah, null);
+            this.CB_NadiTerabaLemah.ToolTipText = null;
+            this.bunifuToolTip1.SetToolTipTitle(this.CB_NadiTerabaLemah, "");
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label39.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(116, 10);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(81, 20);
+            this.label39.TabIndex = 53;
+            this.label39.Text = "Kuat";
+            this.bunifuToolTip1.SetToolTip(this.label39, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label39, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label39, "");
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(85, 219);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(91, 21);
+            this.label41.TabIndex = 68;
+            this.label41.Text = "Nadi Teraba";
+            this.bunifuToolTip1.SetToolTip(this.label41, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label41, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label41, "");
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.Controls.Add(this.label48, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.TB_InterpretasiNadi, 0, 1);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(387, 139);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(200, 73);
+            this.tableLayoutPanel9.TabIndex = 67;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel9, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel9, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel9, "");
+            // 
+            // label48
+            // 
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(3, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(194, 21);
+            this.label48.TabIndex = 48;
+            this.label48.Text = "Interpretasi";
+            this.bunifuToolTip1.SetToolTip(this.label48, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label48, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label48, "");
+            // 
+            // TB_InterpretasiNadi
+            // 
+            this.TB_InterpretasiNadi.AcceptsReturn = false;
+            this.TB_InterpretasiNadi.AcceptsTab = false;
+            this.TB_InterpretasiNadi.AnimationSpeed = 200;
+            this.TB_InterpretasiNadi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_InterpretasiNadi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_InterpretasiNadi.BackColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiNadi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_InterpretasiNadi.BackgroundImage")));
+            this.TB_InterpretasiNadi.BorderColorActive = System.Drawing.Color.Empty;
+            this.TB_InterpretasiNadi.BorderColorDisabled = System.Drawing.Color.White;
+            this.TB_InterpretasiNadi.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_InterpretasiNadi.BorderColorIdle = System.Drawing.Color.White;
+            this.TB_InterpretasiNadi.BorderRadius = 1;
+            this.TB_InterpretasiNadi.BorderThickness = 1;
+            this.TB_InterpretasiNadi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_InterpretasiNadi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiNadi.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_InterpretasiNadi.DefaultText = "";
+            this.TB_InterpretasiNadi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.TB_InterpretasiNadi.ForeColor = System.Drawing.Color.White;
+            this.TB_InterpretasiNadi.HideSelection = true;
+            this.TB_InterpretasiNadi.IconLeft = null;
+            this.TB_InterpretasiNadi.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiNadi.IconPadding = 10;
+            this.TB_InterpretasiNadi.IconRight = null;
+            this.TB_InterpretasiNadi.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_InterpretasiNadi.Lines = new string[0];
+            this.TB_InterpretasiNadi.Location = new System.Drawing.Point(3, 39);
+            this.TB_InterpretasiNadi.MaxLength = 32767;
+            this.TB_InterpretasiNadi.MinimumSize = new System.Drawing.Size(1, 1);
+            this.TB_InterpretasiNadi.Modified = false;
+            this.TB_InterpretasiNadi.Multiline = false;
+            this.TB_InterpretasiNadi.Name = "TB_InterpretasiNadi";
+            stateProperties69.BorderColor = System.Drawing.Color.Empty;
+            stateProperties69.FillColor = System.Drawing.Color.Empty;
+            stateProperties69.ForeColor = System.Drawing.Color.Empty;
+            stateProperties69.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiNadi.OnActiveState = stateProperties69;
+            stateProperties70.BorderColor = System.Drawing.Color.White;
+            stateProperties70.FillColor = System.Drawing.Color.White;
+            stateProperties70.ForeColor = System.Drawing.Color.Empty;
+            stateProperties70.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TB_InterpretasiNadi.OnDisabledState = stateProperties70;
+            stateProperties71.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            stateProperties71.FillColor = System.Drawing.Color.Empty;
+            stateProperties71.ForeColor = System.Drawing.Color.Empty;
+            stateProperties71.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiNadi.OnHoverState = stateProperties71;
+            stateProperties72.BorderColor = System.Drawing.Color.White;
+            stateProperties72.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            stateProperties72.ForeColor = System.Drawing.Color.White;
+            stateProperties72.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_InterpretasiNadi.OnIdleState = stateProperties72;
+            this.TB_InterpretasiNadi.PasswordChar = '\0';
+            this.TB_InterpretasiNadi.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.TB_InterpretasiNadi.PlaceholderText = "";
+            this.TB_InterpretasiNadi.ReadOnly = true;
+            this.TB_InterpretasiNadi.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TB_InterpretasiNadi.SelectedText = "";
+            this.TB_InterpretasiNadi.SelectionLength = 0;
+            this.TB_InterpretasiNadi.SelectionStart = 0;
+            this.TB_InterpretasiNadi.ShortcutsEnabled = true;
+            this.TB_InterpretasiNadi.Size = new System.Drawing.Size(149, 31);
+            this.TB_InterpretasiNadi.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TB_InterpretasiNadi.TabIndex = 47;
+            this.TB_InterpretasiNadi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_InterpretasiNadi.TextMarginBottom = 0;
+            this.TB_InterpretasiNadi.TextMarginLeft = 5;
+            this.TB_InterpretasiNadi.TextMarginTop = 0;
+            this.TB_InterpretasiNadi.TextPlaceholder = "";
+            this.bunifuToolTip1.SetToolTip(this.TB_InterpretasiNadi, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_InterpretasiNadi, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_InterpretasiNadi, "");
+            this.TB_InterpretasiNadi.UseSystemPasswordChar = false;
+            this.TB_InterpretasiNadi.WordWrap = true;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 3;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel8.Controls.Add(this.TB_Nadi, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label42, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label43, 1, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(89, 174);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(148, 42);
+            this.tableLayoutPanel8.TabIndex = 66;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel8, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel8, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel8, "");
+            // 
+            // TB_Nadi
+            // 
+            this.TB_Nadi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_Nadi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_Nadi.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_Nadi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_Nadi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_Nadi.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_Nadi.ForeColor = System.Drawing.Color.White;
+            this.TB_Nadi.HintForeColor = System.Drawing.Color.White;
+            this.TB_Nadi.HintText = "";
+            this.TB_Nadi.isPassword = false;
+            this.TB_Nadi.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Nadi.LineIdleColor = System.Drawing.Color.White;
+            this.TB_Nadi.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Nadi.LineThickness = 1;
+            this.TB_Nadi.Location = new System.Drawing.Point(4, 11);
+            this.TB_Nadi.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_Nadi.MaxLength = 32767;
+            this.TB_Nadi.Name = "TB_Nadi";
+            this.TB_Nadi.Size = new System.Drawing.Size(57, 27);
+            this.TB_Nadi.TabIndex = 45;
+            this.TB_Nadi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_Nadi, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_Nadi, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_Nadi, "");
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label42.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(91, 21);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(59, 21);
+            this.label42.TabIndex = 44;
+            this.label42.Text = "/ menit";
+            this.bunifuToolTip1.SetToolTip(this.label42, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label42, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label42, "");
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label43.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.Location = new System.Drawing.Point(68, 21);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(17, 21);
+            this.label43.TabIndex = 43;
+            this.label43.Text = "x";
+            this.bunifuToolTip1.SetToolTip(this.label43, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label43, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label43, "");
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(63, 146);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(58, 25);
+            this.label44.TabIndex = 65;
+            this.label44.Text = "Nadi ";
+            this.bunifuToolTip1.SetToolTip(this.label44, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label44, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label44, "");
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Controls.Add(this.L_MAP, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.TB_MAP, 0, 1);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(387, 56);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(200, 73);
+            this.tableLayoutPanel7.TabIndex = 64;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel7, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel7, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel7, "");
+            // 
+            // L_MAP
+            // 
+            this.L_MAP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.L_MAP.AutoSize = true;
+            this.L_MAP.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_MAP.ForeColor = System.Drawing.Color.White;
+            this.L_MAP.Location = new System.Drawing.Point(3, 0);
+            this.L_MAP.Name = "L_MAP";
+            this.L_MAP.Size = new System.Drawing.Size(194, 21);
+            this.L_MAP.TabIndex = 38;
+            this.L_MAP.Text = "MAP";
+            this.bunifuToolTip1.SetToolTip(this.L_MAP, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_MAP, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_MAP, "");
+            // 
+            // TB_MAP
+            // 
+            this.TB_MAP.AcceptsReturn = false;
+            this.TB_MAP.AcceptsTab = false;
+            this.TB_MAP.AnimationSpeed = 200;
+            this.TB_MAP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_MAP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_MAP.BackColor = System.Drawing.Color.Transparent;
+            this.TB_MAP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TB_MAP.BackgroundImage")));
+            this.TB_MAP.BorderColorActive = System.Drawing.Color.Empty;
+            this.TB_MAP.BorderColorDisabled = System.Drawing.Color.White;
+            this.TB_MAP.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_MAP.BorderColorIdle = System.Drawing.Color.White;
+            this.TB_MAP.BorderRadius = 1;
+            this.TB_MAP.BorderThickness = 1;
+            this.TB_MAP.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_MAP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_MAP.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_MAP.DefaultText = "";
+            this.TB_MAP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.TB_MAP.ForeColor = System.Drawing.Color.White;
+            this.TB_MAP.HideSelection = true;
+            this.TB_MAP.IconLeft = null;
+            this.TB_MAP.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_MAP.IconPadding = 10;
+            this.TB_MAP.IconRight = null;
+            this.TB_MAP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_MAP.Lines = new string[0];
+            this.TB_MAP.Location = new System.Drawing.Point(3, 39);
+            this.TB_MAP.MaxLength = 32767;
+            this.TB_MAP.MinimumSize = new System.Drawing.Size(1, 1);
+            this.TB_MAP.Modified = false;
+            this.TB_MAP.Multiline = false;
+            this.TB_MAP.Name = "TB_MAP";
+            stateProperties73.BorderColor = System.Drawing.Color.Empty;
+            stateProperties73.FillColor = System.Drawing.Color.Empty;
+            stateProperties73.ForeColor = System.Drawing.Color.Empty;
+            stateProperties73.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_MAP.OnActiveState = stateProperties73;
+            stateProperties74.BorderColor = System.Drawing.Color.White;
+            stateProperties74.FillColor = System.Drawing.Color.White;
+            stateProperties74.ForeColor = System.Drawing.Color.Empty;
+            stateProperties74.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TB_MAP.OnDisabledState = stateProperties74;
+            stateProperties75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            stateProperties75.FillColor = System.Drawing.Color.Empty;
+            stateProperties75.ForeColor = System.Drawing.Color.Empty;
+            stateProperties75.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_MAP.OnHoverState = stateProperties75;
+            stateProperties76.BorderColor = System.Drawing.Color.White;
+            stateProperties76.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            stateProperties76.ForeColor = System.Drawing.Color.White;
+            stateProperties76.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TB_MAP.OnIdleState = stateProperties76;
+            this.TB_MAP.PasswordChar = '\0';
+            this.TB_MAP.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.TB_MAP.PlaceholderText = "";
+            this.TB_MAP.ReadOnly = true;
+            this.TB_MAP.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TB_MAP.SelectedText = "";
+            this.TB_MAP.SelectionLength = 0;
+            this.TB_MAP.SelectionStart = 0;
+            this.TB_MAP.ShortcutsEnabled = true;
+            this.TB_MAP.Size = new System.Drawing.Size(149, 31);
+            this.TB_MAP.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TB_MAP.TabIndex = 39;
+            this.TB_MAP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_MAP.TextMarginBottom = 0;
+            this.TB_MAP.TextMarginLeft = 5;
+            this.TB_MAP.TextMarginTop = 0;
+            this.TB_MAP.TextPlaceholder = "";
+            this.bunifuToolTip1.SetToolTip(this.TB_MAP, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_MAP, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_MAP, "");
+            this.TB_MAP.UseSystemPasswordChar = false;
+            this.TB_MAP.WordWrap = true;
+            // 
+            // L_TekananDarah
+            // 
+            this.L_TekananDarah.AutoSize = true;
+            this.L_TekananDarah.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.L_TekananDarah.ForeColor = System.Drawing.Color.White;
+            this.L_TekananDarah.Location = new System.Drawing.Point(63, 56);
+            this.L_TekananDarah.Name = "L_TekananDarah";
+            this.L_TekananDarah.Size = new System.Drawing.Size(144, 25);
+            this.L_TekananDarah.TabIndex = 63;
+            this.L_TekananDarah.Text = "Tekanan Darah ";
+            this.bunifuToolTip1.SetToolTip(this.L_TekananDarah, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.L_TekananDarah, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.L_TekananDarah, "");
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 5;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.Controls.Add(this.TB_Diastole, 3, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label45, 4, 1);
+            this.tableLayoutPanel6.Controls.Add(this.TB_Sistol, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label47, 2, 1);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(89, 84);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(210, 42);
+            this.tableLayoutPanel6.TabIndex = 62;
+            this.bunifuToolTip1.SetToolTip(this.tableLayoutPanel6, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.tableLayoutPanel6, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.tableLayoutPanel6, "");
+            // 
+            // TB_Diastole
+            // 
+            this.TB_Diastole.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_Diastole.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_Diastole.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_Diastole.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_Diastole.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_Diastole.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_Diastole.ForeColor = System.Drawing.Color.White;
+            this.TB_Diastole.HintForeColor = System.Drawing.Color.White;
+            this.TB_Diastole.HintText = "";
+            this.TB_Diastole.isPassword = false;
+            this.TB_Diastole.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Diastole.LineIdleColor = System.Drawing.Color.White;
+            this.TB_Diastole.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Diastole.LineThickness = 1;
+            this.TB_Diastole.Location = new System.Drawing.Point(91, 11);
+            this.TB_Diastole.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_Diastole.MaxLength = 32767;
+            this.TB_Diastole.Name = "TB_Diastole";
+            this.TB_Diastole.Size = new System.Drawing.Size(57, 27);
+            this.TB_Diastole.TabIndex = 133;
+            this.TB_Diastole.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_Diastole, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_Diastole, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_Diastole, "");
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label45.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(155, 21);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(56, 21);
+            this.label45.TabIndex = 134;
+            this.label45.Text = "mmHg";
+            this.bunifuToolTip1.SetToolTip(this.label45, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label45, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label45, "");
+            // 
+            // TB_Sistol
+            // 
+            this.TB_Sistol.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TB_Sistol.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TB_Sistol.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TB_Sistol.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TB_Sistol.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TB_Sistol.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.TB_Sistol.ForeColor = System.Drawing.Color.White;
+            this.TB_Sistol.HintForeColor = System.Drawing.Color.White;
+            this.TB_Sistol.HintText = "";
+            this.TB_Sistol.isPassword = false;
+            this.TB_Sistol.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Sistol.LineIdleColor = System.Drawing.Color.White;
+            this.TB_Sistol.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
+            this.TB_Sistol.LineThickness = 1;
+            this.TB_Sistol.Location = new System.Drawing.Point(4, 11);
+            this.TB_Sistol.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_Sistol.MaxLength = 32767;
+            this.TB_Sistol.Name = "TB_Sistol";
+            this.TB_Sistol.Size = new System.Drawing.Size(57, 27);
+            this.TB_Sistol.TabIndex = 131;
+            this.TB_Sistol.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.TB_Sistol, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.TB_Sistol, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.TB_Sistol, "");
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label47.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.label47.ForeColor = System.Drawing.Color.White;
+            this.label47.Location = new System.Drawing.Point(68, 21);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(16, 21);
+            this.label47.TabIndex = 132;
+            this.label47.Text = "/";
+            this.bunifuToolTip1.SetToolTip(this.label47, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label47, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label47, "");
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.White;
+            this.label51.Location = new System.Drawing.Point(47, 24);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(274, 32);
+            this.label51.TabIndex = 61;
+            this.label51.Text = "Pengkajian Tanda Vital";
+            this.bunifuToolTip1.SetToolTip(this.label51, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label51, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label51, "");
+            // 
+            // bunifuPages1
+            // 
+            this.bunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.bunifuPages1.AllowTransitions = false;
+            this.bunifuPages1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuPages1.Controls.Add(this.tabPage1);
+            this.bunifuPages1.Controls.Add(this.tabPage3);
+            this.bunifuPages1.Controls.Add(this.tabPage4);
+            this.bunifuPages1.Controls.Add(this.tabPage5);
+            this.bunifuPages1.Location = new System.Drawing.Point(158, 25);
+            this.bunifuPages1.Multiline = true;
+            this.bunifuPages1.Name = "bunifuPages1";
+            this.bunifuPages1.Page = this.tabPage3;
+            this.bunifuPages1.PageIndex = 1;
+            this.bunifuPages1.PageName = "tabPage3";
+            this.bunifuPages1.PageTitle = "tabPage3";
+            this.bunifuPages1.SelectedIndex = 0;
+            this.bunifuPages1.Size = new System.Drawing.Size(704, 532);
+            this.bunifuPages1.TabIndex = 1;
+            this.bunifuToolTip1.SetToolTip(this.bunifuPages1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPages1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPages1, "");
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuPages1.Transition = animation1;
+            this.bunifuPages1.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
             // 
             // Form_Pengkajian
             // 
@@ -4671,7 +4902,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.bunifuPages1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -4692,11 +4923,39 @@
             this.tableLayoutPanel1.PerformLayout();
             this.TLP_IdentitasPasien.ResumeLayout(false);
             this.TLP_IdentitasPasien.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.tableLayoutPanel19.PerformLayout();
+            this.tableLayoutPanel18.ResumeLayout(false);
+            this.tableLayoutPanel18.PerformLayout();
+            this.tableLayoutPanel17.ResumeLayout(false);
+            this.tableLayoutPanel17.PerformLayout();
+            this.tableLayoutPanel16.ResumeLayout(false);
+            this.tableLayoutPanel16.PerformLayout();
+            this.tableLayoutPanel15.ResumeLayout(false);
+            this.tableLayoutPanel15.PerformLayout();
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel14.PerformLayout();
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.tableLayoutPanel13.PerformLayout();
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel12.PerformLayout();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.bunifuPages1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4709,8 +4968,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton B_Psikologis;
         private Bunifu.Framework.UI.BunifuFlatButton B_Fisik;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
-        private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
@@ -4723,38 +4980,43 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
+        private Bunifu.Framework.UI.BunifuFlatButton B_Maximize;
+        private Bunifu.Framework.UI.BunifuFlatButton B_Minimize;
+        private System.Windows.Forms.Timer timer1;
+        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TableLayoutPanel TLP_IdentitasPasien;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_DPJP;
-        private System.Windows.Forms.Label L_DPJP;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_NoMEDREC;
-        private System.Windows.Forms.Label L_MEDREC;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_Jam;
-        private System.Windows.Forms.Label L_JAM;
-        private System.Windows.Forms.Label L_TglMasukRS;
-        private Bunifu.Framework.UI.BunifuDatepicker Date_TglMasukRS;
-        private System.Windows.Forms.Label L_IdentitasPasien;
-        private System.Windows.Forms.Label L_Pasien;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Bunifu.Framework.UI.BunifuDatepicker Date_LahirPasien;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_NamaPasien;
-        private System.Windows.Forms.Label L_NamaPasien;
-        private System.Windows.Forms.Label L_AgamaPasien;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_UsiaPasien;
-        private System.Windows.Forms.Label L_UsiaPasien;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_AlamatPasien;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuDropdown CB_PekerjaanPasien;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuDropdown CB_PendidikanPasien;
-        private Bunifu.Framework.UI.BunifuDropdown CB_AgamaPasien;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private Bunifu.UI.WinForms.BunifuDropdown CB_KemampauanMerawatDiri;
+        private Bunifu.UI.WinForms.BunifuDropdown CB_Intake;
+        private Bunifu.UI.WinForms.BunifuDropdown CB_TingkatKesadaran;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private Bunifu.UI.WinForms.BunifuDropdown CB_StatusFungsional;
+        private Bunifu.UI.WinForms.BunifuDropdown CB_Ambulasi;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label L_Ambulasi;
+        private System.Windows.Forms.Label L_PPSLevel;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_PPSLevel;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox4;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox3;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox2;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox1;
+        private System.Windows.Forms.Label L_KeluhanUtama;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label L_Keluhan;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Bunifu.Framework.UI.BunifuDropdown CB_AgamaKeluarga;
@@ -4774,93 +5036,101 @@
         private Bunifu.Framework.UI.BunifuDatepicker DB_TglLahirKeluarga;
         private Bunifu.Framework.UI.BunifuDropdown CB_PendidikanKeluarga;
         private System.Windows.Forms.Label L_Keluarga;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Bunifu.Framework.UI.BunifuDropdown CB_StatusPerkawinanPasien;
-        private System.Windows.Forms.Label L_Keluhan;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox4;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox3;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox2;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox1;
-        private System.Windows.Forms.Label L_KeluhanUtama;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel8;
+        private Bunifu.Framework.UI.BunifuDropdown CB_AgamaPasien;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_AlamatPasien;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private Bunifu.Framework.UI.BunifuDropdown CB_PekerjaanPasien;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label L_AgamaPasien;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_UsiaPasien;
+        private System.Windows.Forms.Label L_UsiaPasien;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_NamaPasien;
+        private System.Windows.Forms.Label L_NamaPasien;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuDatepicker Date_LahirPasien;
+        private Bunifu.Framework.UI.BunifuDropdown CB_PendidikanPasien;
+        private System.Windows.Forms.Label L_Pasien;
+        private System.Windows.Forms.TableLayoutPanel TLP_IdentitasPasien;
+        private System.Windows.Forms.Label L_DPJP;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_NoMEDREC;
+        private System.Windows.Forms.Label L_MEDREC;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_Jam;
+        private System.Windows.Forms.Label L_JAM;
+        private System.Windows.Forms.Label L_TglMasukRS;
+        private Bunifu.Framework.UI.BunifuDatepicker Date_TglMasukRS;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_DPJP;
+        private System.Windows.Forms.Label L_IdentitasPasien;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label L_Ambulasi;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label L_PPSLevel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private Bunifu.Framework.UI.BunifuFlatButton B_Maximize;
-        private Bunifu.Framework.UI.BunifuFlatButton B_Minimize;
-        private System.Windows.Forms.Timer timer1;
-        private Bunifu.UI.WinForms.BunifuDropdown CB_KemampauanMerawatDiri;
-        private Bunifu.UI.WinForms.BunifuDropdown CB_Intake;
-        private Bunifu.UI.WinForms.BunifuDropdown CB_TingkatKesadaran;
-        private Bunifu.UI.WinForms.BunifuDropdown CB_StatusFungsional;
-        private Bunifu.UI.WinForms.BunifuDropdown CB_Ambulasi;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_PPSLevel;
-        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label L_Kepala;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private Bunifu.Framework.UI.BunifuDropdown CB_LamaMerasaNyeri;
         private System.Windows.Forms.Label L_LamaMerasaNyeri;
-        private System.Windows.Forms.Label L_LokasiNyeri;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TB_LokasiNyeri;
+        private System.Windows.Forms.Label L_LokasiNyeri;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label L_Durasi;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TB_DurasiNyeri;
-        private System.Windows.Forms.Label label26;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_InterpretasiSkalaNyeri;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label L_Durasi;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label L_Frekuensi;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TB_FrekuensiNyeri;
-        private System.Windows.Forms.Label L_Skala;
-        private System.Windows.Forms.Label L_Nyeri;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label L_Frekuensi;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.Label label32;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_InterpretasiSkalaNyeri;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private Bunifu.Framework.UI.BunifuDropdown CB_SkalaNyeri;
+        private System.Windows.Forms.Label L_Skala;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
+        private System.Windows.Forms.Label L_Nyeri;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_InterpretasiSuhu;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TB_Suhu;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label L_Suhu;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.Label label33;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TB_Suhu;
+        private System.Windows.Forms.Label L_Suhu;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.Label label53;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_InterpretasiFrekuensiPernapasan;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TB_FrekuensiPernapasan;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TB_FrekuensiPernapasan;
         private System.Windows.Forms.Label L_FrekuensiPernapasan;
-        private Bunifu.UI.WinForms.BunifuCheckBox CB_NadiTerabaKuat;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
+        private Bunifu.UI.WinForms.BunifuCheckBox CB_NadiTerabaKuat;
         private Bunifu.UI.WinForms.BunifuCheckBox CB_NadiTerabaLemah;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.Label label48;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_InterpretasiNadi;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TB_Nadi;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label L_MAP;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_MAP;
-        private System.Windows.Forms.Label label45;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TB_Diastole;
         private System.Windows.Forms.Label L_TekananDarah;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TB_Diastole;
+        private System.Windows.Forms.Label label45;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TB_Sistol;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label L_MAP;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TB_InterpretasiNadi;
-        private System.Windows.Forms.Label L_PengkajianTandaVital;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private Bunifu.Framework.UI.BunifuDropdown CB_SkalaNyeri;
+        private System.Windows.Forms.Label label51;
+        private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
     }
 }

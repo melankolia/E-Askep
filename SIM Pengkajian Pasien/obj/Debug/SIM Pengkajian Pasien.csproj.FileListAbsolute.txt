@@ -81,3 +81,9 @@ D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Buni
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe.manifest
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.application
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.manifest
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.application
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
