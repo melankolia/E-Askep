@@ -357,6 +357,25 @@ namespace SIM_Pengkajian_Pasien
             }
         }
 
+        private void BunifuSeparator2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 

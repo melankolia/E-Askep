@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -299,6 +299,27 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-ear-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-mouth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human+eye+search+view+icon-1320167913090948918_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body-chest-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -103,6 +103,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anatomy_body_chest_exercise_fitness_man_medical_muscle_body_chest_png_512_512 {
+            get {
+                object obj = ResourceManager.GetObject("anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arm_plaster {
             get {
                 object obj = ResourceManager.GetObject("arm-plaster", resourceCulture);
@@ -116,6 +126,46 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap Blood_Drop {
             get {
                 object obj = ResourceManager.GetObject("Blood Drop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap body_chest_clipart {
+            get {
+                object obj = ResourceManager.GetObject("body-chest-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boy {
+            get {
+                object obj = ResourceManager.GetObject("boy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boy1 {
+            get {
+                object obj = ResourceManager.GetObject("boy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boy2 {
+            get {
+                object obj = ResourceManager.GetObject("boy2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,6 +373,26 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap human_eye_search_view_icon_1320167913090948918_128 {
+            get {
+                object obj = ResourceManager.GetObject("human+eye+search+view+icon-1320167913090948918_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_ear_4 {
+            get {
+                object obj = ResourceManager.GetObject("icon-ear-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize_window_26px {
             get {
                 object obj = ResourceManager.GetObject("maximize_window_26px", resourceCulture);
@@ -376,6 +446,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap nurse {
             get {
                 object obj = ResourceManager.GetObject("nurse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_mouth {
+            get {
+                object obj = ResourceManager.GetObject("open-mouth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
