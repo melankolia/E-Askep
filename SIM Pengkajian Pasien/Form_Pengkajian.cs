@@ -360,6 +360,11 @@ namespace SIM_Pengkajian_Pasien
             }
         }
 
+        private void Panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
 
