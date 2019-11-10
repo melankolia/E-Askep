@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +48,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6A40806683689E7AC748260136644B26433C16BB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SIM Pengkajian Pasien_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.21, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
@@ -39,6 +67,15 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
       <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\Visual Studio 2019\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\Visual Studio 2019\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\Visual Studio 2019\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
@@ -60,6 +97,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\..\..\..\Visual Studio 2019\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
       <HintPath>C:\Users\erk\Downloads\Compressed\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
@@ -132,6 +172,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SIM Pengkajian Pasien_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -231,6 +272,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close_window_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical nurse_3848714.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiclipart.com-id_bzfqn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-clipart-1421908.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.2129570515172652822036.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood Drop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-ear-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-mouth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human+eye+search+view+icon-1320167913090948918_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body-chest-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anatomy-body-chest-exercise-fitness-man-medical-muscle-body-chest-png-512_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lungs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrocardiogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sick1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
