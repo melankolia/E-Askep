@@ -273,6 +273,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap colon {
+            get {
+                object obj = ResourceManager.GetObject("colon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dna {
             get {
                 object obj = ResourceManager.GetObject("dna", resourceCulture);
@@ -423,6 +433,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap man_sitting_on_the_toilet {
+            get {
+                object obj = ResourceManager.GetObject("man-sitting-on-the-toilet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize_window_26px {
             get {
                 object obj = ResourceManager.GetObject("maximize_window_26px", resourceCulture);
@@ -556,6 +576,26 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap up_squared_50px {
             get {
                 object obj = ResourceManager.GetObject("up_squared_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap urinary_tract {
+            get {
+                object obj = ResourceManager.GetObject("urinary-tract", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap urinary_tract1 {
+            get {
+                object obj = ResourceManager.GetObject("urinary-tract1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
