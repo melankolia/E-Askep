@@ -132,11 +132,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TB_PPSLevel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANMAAAAhCAYAAABDXZ7LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACeSURBVHhe7dOxDQIxAARBt0HtVIboAiLQI5CRE0L+N5yT
-        Jrl8h5mFuz2269vMdm32s1IaYx6n8wXYYW6lJCY4QkwQERNExAQRMUFETBARE0TEBBExQURMEBETRMQE
-        ETFBREwQERNExAQRMUFETBARE0TEBBExQURMEBETRMQEETFBREwQERNExASRn5ie2+v+fczs781+Vkpm
-        dnxjfAC7UCTCcSkiyAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAALcAAAAhCAYAAACbUTrBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACVSURBVHhe7dLBCQJBFETBn4axG5mYhZ5WVpSRuZjCoxrq
+        0uc3Zuk9jvP+MYts9bzTnlnH5XqDhLWdtrhpETdZ4iZL3GSJmyxxkyVussRNlrjJEjdZ4iZL3GSJmyxx
+        kyVussRNlrjJEjdZ4iZL3GSJmyxxkyVussRNlrjJEjdZ4iZL3GT9xf0638/fYxbY6nmnbVbczBfWcTEL
+        luwFSQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuTextBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -210,13 +210,13 @@
   </data>
   <data name="TB_AlamatPasien.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAqoAAAAoCAYAAAA2YtiQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEESURBVHhe7dYxDQMxAARB80dlyzACIwDysuQmCH6LGema
-        Q7ADAACy9t6fOefPzMzMzOztnTa9mTrGOQAAoOC06c1UoQoAQIdQBQAgSagCAJAkVAEASBKqAAAkCVUA
-        AJKEKgAASUIVAIAkoQoAQJJQBQAgSagCAJAkVAEASBKqAAAkCVUAAJKEKgAASUIVAIAkoQoAQJJQBQAg
-        SagCAJAkVAEASBKqAAAkCVUAAJKEKgAASUIVAIAkoQoAQJJQBQAgSagCAJAkVAEASBKqAAAkCVUAAJKE
-        KgAASUIVAIAkoQoAQJJQBQAgSagCAJD0F6prre85zMzMzMze3mnTm6kAAFAzxgNscSITqPjGfAAAAABJ
-        RU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAApwAAAAoCAYAAABTjyrvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVHhe7dYxDQMxAARB80fll2EERgDkZclNem83I11z
+        CHYAAEBurfWZc/7MzMzMzG5tN+bJzTH2AQAAN+3GPLkpOAEAuE9wAgCQEpwAAKQEJwAAKcEJAEBKcAIA
+        kBKcAACkBCcAACnBCQBASnACAJASnAAApAQnAAApwQkAQEpwAgCQEpwAAKQEJwAAKcEJAEBKcAIAkBKc
+        AACkBCcAACnBCQBASnACAJASnAAApAQnAAApwQkAQEpwAgCQEpwAAKQEJwAAKcEJAEBKcAIAkBKcAACk
+        BCcAACnBCQBASnACAJASnAAApP6C83me7z7MzMzMzG5tN+bJTQAAqIzxAg997oiIRkW8AAAAAElFTkSu
+        QmCC
 </value>
   </data>
   <data name="TB_UsiaPasien.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
