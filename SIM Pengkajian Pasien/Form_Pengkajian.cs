@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace SIM_Pengkajian_Pasien
 {
@@ -25,6 +26,9 @@ namespace SIM_Pengkajian_Pasien
         {
             InitializeComponent();
         }
+
+
+        
 
         private int convertToNumber(bool boolValue)
         {
@@ -116,7 +120,35 @@ namespace SIM_Pengkajian_Pasien
             bunifuMaterialTextbox35.Text = "Error";
             return hasil;
         }
+        
+        private int TotalInput()
+        {
+            
+            int hasil = 0;
+            if (regex.IsMatch(bunifuMaterialTextbox54.Text) && regex.IsMatch(bunifuMaterialTextbox56.Text) && regex.IsMatch(bunifuMaterialTextbox58.Text)
+               && regex.IsMatch(bunifuMaterialTextbox60.Text) && regex.IsMatch(bunifuMaterialTextbox62.Text))
+            {
+                hasil = Convert.ToInt32(bunifuMaterialTextbox54.Text) + Convert.ToInt32(bunifuMaterialTextbox56.Text) + Convert.ToInt32(bunifuMaterialTextbox58.Text)
+                      + Convert.ToInt32(bunifuMaterialTextbox60.Text) + Convert.ToInt32(bunifuMaterialTextbox62.Text);
+                return hasil;
+            }
+                hasil = -1;
+            bunifuMaterialTextbox52.Text = "Error";
+            return hasil;
+        }
+        private int TotalOutput()
+        {
 
+            int hasil = 0;
+            if (regex.IsMatch(bunifuMaterialTextbox44.Text) && regex.IsMatch(bunifuMaterialTextbox43.Text) && regex.IsMatch(bunifuMaterialTextbox42.Text))
+            {
+                hasil = Convert.ToInt32(bunifuMaterialTextbox44.Text) + Convert.ToInt32(bunifuMaterialTextbox43.Text) + Convert.ToInt32(bunifuMaterialTextbox42.Text);
+                return hasil;
+            }
+            hasil = -1;
+            bunifuMaterialTextbox38.Text = "Error";
+            return hasil;
+        }
         private void BunifuFlatButton6_Click(object sender, EventArgs e)
         {
             Form_Close FC = new Form_Close();
@@ -633,7 +665,559 @@ namespace SIM_Pengkajian_Pasien
         {
             bunifuMaterialTextbox10.Text = IMT().ToString();
             bunifuMaterialTextbox35.Text = BBIdeal().ToString();
+            if (label585.Text == "IWL Normal")
+            {
+                bunifuMaterialTextbox42.Text = (15 * (Convert.ToInt32(bunifuMaterialTextbox8.Text))).ToString();
+                label567.Text = "ml";
+            }
+            else if (label585.Text == "IWL dengan kenaikan suhu tubuh")
+            {
+                bunifuMaterialTextbox42.Text = ((240 * ((Convert.ToDouble(TB_Suhu.Text)) - 37.0)) + (15 * (Convert.ToInt32(bunifuMaterialTextbox8.Text)))).ToString();
+                label567.Text = "ml / 24 Jam";
+            }
         }
+
+        private void Label558_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label567_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuMaterialTextbox62_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox52.Text = TotalInput().ToString();
+        }
+
+        private void BunifuMaterialTextbox60_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox52.Text = TotalInput().ToString();
+        }
+
+        private void BunifuMaterialTextbox58_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox52.Text = TotalInput().ToString();
+        }
+
+        private void BunifuMaterialTextbox56_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox52.Text = TotalInput().ToString();
+        }
+
+        private void BunifuMaterialTextbox54_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox52.Text = TotalInput().ToString();
+        }
+
+        private void TB_InterpretasiSuhu_TextChange(object sender, EventArgs e)
+        {
+            if (TB_InterpretasiSuhu.Text == "Hipertermi")
+            {
+                label585.Text = "IWL dengan kenaikan suhu tubuh";
+            }
+            else
+            {
+                label585.Text = "IWL Normal";
+            }
+            
+        }
+
+        private void BunifuMaterialTextbox44_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox38.Text = TotalOutput().ToString();
+        }
+
+        private void BunifuMaterialTextbox43_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox38.Text = TotalOutput().ToString();
+        }
+
+        private void BunifuMaterialTextbox42_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox38.Text = TotalOutput().ToString();
+        }
+
+        private int totalBalanceCairan()
+        {
+            int hasil;
+            if (regex.IsMatch(bunifuMaterialTextbox52.Text) && regex.IsMatch(bunifuMaterialTextbox38.Text))
+            {
+                hasil = Convert.ToInt32(bunifuMaterialTextbox52.Text) - Convert.ToInt32(bunifuMaterialTextbox38.Text);
+                return hasil;
+            }
+            hasil = -1;
+            
+            return hasil;
+        }
+
+        private void BunifuMaterialTextbox52_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox40.Text = totalBalanceCairan().ToString();
+        }
+
+        private void BunifuMaterialTextbox38_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox40.Text = totalBalanceCairan().ToString();
+        }
+
+        private void Label616_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void Label634_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuSeparator47_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuCheckBox336_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox336.Checked == true)
+            {
+                bunifuMaterialTextbox47.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox47.Enabled = false;
+            }
+        }
+
+        private void BunifuCheckBox337_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox337.Checked == true)
+            {
+                bunifuMaterialTextbox48.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox48.Enabled = false;
+            }
+        }
+
+        private void BunifuCheckBox338_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox338.Checked == true)
+            {
+                bunifuMaterialTextbox49.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox49.Enabled = false;
+            }
+        }
+        private void BunifuCheckBox339_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox339.Checked == true)
+            {
+                bunifuMaterialTextbox50.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox50.Enabled = false;
+            }
+        }
+        private void BunifuCheckBox340_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox340.Checked == true)
+            {
+                bunifuMaterialTextbox51.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox51.Enabled = false;
+            }
+        }
+
+
+
+        private void BunifuCheckBox341_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox341.Checked == true)
+            {
+                bunifuMaterialTextbox53.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox53.Enabled = false;
+            }
+        }
+
+        private void BunifuCheckBox342_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox342.Checked == true)
+            {
+                bunifuMaterialTextbox41.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox41.Enabled = false;
+            }
+        }
+        private void BunifuCheckBox343_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox343.Checked == true)
+            {
+                bunifuMaterialTextbox45.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox45.Enabled = false;
+            }
+        }
+
+
+        private void BunifuCheckBox344_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox344.Checked == true)
+            {
+                bunifuMaterialTextbox46.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox46.Enabled = false;
+            }
+        }
+        private void BunifuCheckBox345_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox345.Checked == true)
+            {
+                bunifuMaterialTextbox55.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox55.Enabled = false;
+            }
+        }
+        private void BunifuCheckBox346_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (bunifuCheckBox346.Checked == true)
+            {
+                bunifuMaterialTextbox57.Enabled = true;
+            }
+            else
+            {
+                bunifuMaterialTextbox57.Enabled = false;
+            }
+        }
+
+
+        int animasi = 0;
+        int lox = 289;
+        int i = 10;
+        string penampungan = "";
+        string idNameCB = "";
+        /* private void buatLabelHeader(string Header)
+        {
+            Label lebelbaru = new Label();
+            lebelbaru.Name = Header;
+            lebelbaru.Text = Header;
+
+            lebelbaru.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            lebelbaru.ForeColor = Color.White;
+            lebelbaru.AutoSize = true;
+            lebelbaru.Size = new Size(98, 34);
+            lebelbaru.TextAlign = ContentAlignment.MiddleCenter;
+            tableLayoutPanel2.Controls.Add(lebelbaru);
+
+        }*/
+
+        private void buatLabelDinamis(string NamaPenyakit)
+        {
+            Label lebelbaru = new Label();
+            lox += 20;
+            lebelbaru.Name = "lebel" + i.ToString();
+            lebelbaru.Text = NamaPenyakit;
+
+            lebelbaru.Font = new Font("Segoe UI", 11);
+            lebelbaru.ForeColor = Color.White;
+            lebelbaru.AutoSize = true;
+            lebelbaru.Size = new Size(98, 34);
+            Diagnosa_TabelUtama.Controls.Add(lebelbaru);
+            lebelbaru.TextAlign = ContentAlignment.MiddleCenter;
+            i += 1;
+        }
+        private void buatLabelDinamis2(string NamaPenyakit)
+        {
+            Label lebelbaru = new Label();
+            lox += 20;
+            lebelbaru.Name = "lebel" + i.ToString();
+            lebelbaru.Text = NamaPenyakit;
+            lebelbaru.Font = new Font("Segoe UI=", 11);
+            lebelbaru.ForeColor = Color.White;
+            lebelbaru.AutoSize = true;
+            lebelbaru.Size = new Size(98, 34);
+            Diagnosa_TabelKedua.Controls.Add(lebelbaru);
+            lebelbaru.TextAlign = ContentAlignment.MiddleLeft;
+            i += 1;
+        }
+
+        private void buatDropdown(string[] Penyebab)
+        {
+            //var dropdown = new Bunifu.UI.WinForms.BunifuDropdown();
+            ComboBox dropdown = new ComboBox();
+            for (int i = 0; i < Penyebab.Length; i++)
+            {
+                dropdown.Items.Add(Penyebab[i]);
+            }
+            dropdown.Name = "dropdown" + i.ToString();
+            dropdown.Dock = DockStyle.Fill;
+            dropdown.AutoSize = true;
+            //dropdown.Size = new Size(452, 66);
+            Diagnosa_TabelUtama.Controls.Add(dropdown);
+            dropdown.SelectedIndexChanged += new System.EventHandler(dropdown_SelectedValueChanged);
+            dropdown.Location = new Point(3, lox);
+
+        }
+        private void dropdown_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+            ComboBox combo = (ComboBox)sender;
+
+            if (penampungan.Length > 0 && idNameCB == combo.Name)
+            {
+                penampungan += ", " + combo.Text.Trim();
+                combo.Items.Add(penampungan);
+                MessageBox.Show(penampungan);
+                penampungan = "";
+                combo.SelectedIndex = combo.Items.Count - 1;
+            }
+            else if (penampungan.Length > 0 && idNameCB != combo.Name)
+            {
+                penampungan = "";
+                penampungan += combo.Text.Trim();
+                idNameCB = combo.Name;
+            }
+
+
+            else
+            {
+                penampungan += combo.Text;
+                idNameCB = combo.Name;
+            }
+
+
+
+
+        }
+
+        private void buatButton(/*string NamaPenyakit)*/)
+        {
+            Button btn10 = new Button();
+            btn10.Text = "Open";
+            //btn10.Name = NamaPenyakit;
+            btn10.AutoSize = true;
+            btn10.Size = new Size(75, 23);
+            btn10.FlatStyle = FlatStyle.Flat;
+            btn10.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            btn10.Location = new Point(3, lox);
+            btn10.Click += new EventHandler(btn_Click);
+            Diagnosa_TabelUtama.Controls.Add(btn10);
+        }
+        private void buatButton2(string NamaPenyakit)
+        {
+            Button btn10 = new Button();
+            btn10.Text = "Open File";
+            btn10.ForeColor = Color.White;
+            btn10.Name = NamaPenyakit;
+            btn10.AutoSize = true;
+            btn10.Size = new Size(75, 23);
+            btn10.FlatStyle = FlatStyle.Flat;
+            btn10.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btn10.Location = new Point(3, lox);
+            btn10.Click += new EventHandler(btn_Click);
+            btn10.Dock = DockStyle.Fill;
+            Diagnosa_TabelKedua.Controls.Add(btn10);
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            string filename;
+            Button boton = (Button)sender;
+            MessageBox.Show(boton.Name.ToString());
+            switch (boton.Name)
+            {
+                case "Bersihan Jalan Napas Tidak Efektif":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\BersihanJalanNapasTidakEfektif.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Gangguan Penyapihan Ventilator":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanPenyapihanVentilator.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+
+            }
+            /* buatLabelHeader("Diagnosis Keperawatan");
+            buatLabelHeader("Kreteria Hasil");
+            buatLabelHeader("Intervensi");
+            */
+            
+        }
+
+        private void Diagnosa_ButtonMulai_Click(object sender, EventArgs e)
+        {
+            Diagnosis_Timer.Enabled = true;
+            Diagnosa_ButtonMulai.Enabled = false;
+            Diagnosa_TabelUtama.Visible = true;
+            Diagnosa_ButtonMulai.Visible = false;
+            Diagnosa_ButtonReset.Visible = true;
+
+            // Klasifikasi 
+            double BersihanJalanNapasTidakEfektif = Math.Round((convertToNumber(bunifuCheckBox82.Checked) + convertToNumber(bunifuCheckBox82.Checked)
+                                                      + convertToNumber(bunifuCheckBox72.Checked) + convertToNumber((bunifuCheckBox108.Checked == true || bunifuCheckBox103.Checked == true || bunifuCheckBox104.Checked == true))) / 4.0, 1);
+            double GangguanPenyapihanVentilator = Math.Round((convertToNumber((TB_InterpretasiFrekuensiPernapasan.Text == "Takipnea")) + convertToNumber(bunifuCheckBox114.Checked)
+                                                    + convertToNumber(bunifuCheckBox106.Checked) + convertToNumber(bunifuCheckBox117.Checked) + convertToNumber(bunifuCheckBox270.Checked)) / 5.0, 1);
+            // Codingan
+            MessageBox.Show(BersihanJalanNapasTidakEfektif.ToString());
+            MessageBox.Show(GangguanPenyapihanVentilator.ToString());
+            if (BersihanJalanNapasTidakEfektif >= 0.80)
+            {
+                string NamaPenyakit = "Bersihan Jalan Napas Tidak Efektif";
+                string[] Penyebab = {   "1)	Fisiologis",
+                                        "   Spasme jalan napas",
+                                        "   Hiperseksresi jalan napas",
+                                        "   Disfungsi neuromuskuler",
+                                        "   Benda asing dalam jalan napas",
+                                        "   Adanya jalan napas buatan",
+                                        "   Sekresi yang tertahan",
+                                        "   Hiperplasia dinding jalan napas",
+                                        "   Proses infeksi",
+                                        "   Respon alergi",
+                                        "   Efek agen farmakologis(mis.anastesi)",
+                                        "2)	Situasional",
+                                        "   Merokok aktif",
+                                        "   Merokok pasif",
+                                        "   Terpajan polutan"};
+                
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                //buatButton(NamaPenyakit);
+            }
+            if (GangguanPenyapihanVentilator >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Penyapihan Ventilator";
+                string[] Penyebab = {   "1)	Fisiologis",
+                                        "   Hipersekresi jalan napas",
+                                        "   Ketidakcukupan energi",
+                                        "   Hambatan upaya napas(mis.nyeri saat bernapas, kelemahan otot pernapasan, efek sedagi)",
+                                        "2)	Psikologis",
+                                        "   Kecemasan",
+                                        "   Perasaan tidak berdaya",
+                                        "   Kurang terpapar informasi tenlang proses penyapihan",
+                                        "   Penurunan motivasi",
+                                        "3)	Situasional",
+                                        "   Ketidakadekuatan dukungan sosial",
+                                        "   Ketidaktepatan kecepatan proses penyapihan",
+                                        "   Riwayat kegagalan berulang dalam upaya penyapihan",
+                                        "   Riwayat ketergantungan ventilator > 4 hari"};
+                
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                //buatButton(NamaPenyakit);
+            }
+            if (DiagnosaCheckbox1.Checked == true)
+            {
+                string NamaPenyakit = "Konstipasi";
+                string[] Penyebab = {   "1. Fisiologis",
+                                        "   Penurunan motilitas gastrointestinal",
+                                        "   Ketidakadekuatan pertumbuhan gigi",
+                                        "   Ketidakcukupan diet",
+                                        "   Ketidakcukupan asupan serat",
+                                        "   Ketidakcukupan asupan cairan",
+                                        "   Aganglionik (mis.penyakit Hircsprung)",
+                                        "   Kelemahan otot abdomen" };
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                //buatButton(NamaPenyakit);
+            }
+
+        }
+
+
+        private void Diagnosis_Timer_Tick(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+
+
+        private void Diagnosa_ButtonReset_Click(object sender, EventArgs e)
+        {
+            Diagnosa_TabelUtama.Controls.Clear();
+            Diagnosa_TabelUtama.RowCount = 0;
+            Diagnosa_TabelKedua.Controls.Clear();
+            Diagnosa_TabelKedua.RowCount = 0;
+            bunifuCircleProgressbar1.Value = 0;
+            animasi = 0;
+            Diagnosa_ButtonMulai.Enabled = true;
+            Diagnosa_ButtonMulai.Visible = true;
+            Diagnosa_ButtonReset.Visible = false;
+
+        }
+
+        private void TableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Diagnosa_ButtonDiagnosaKeperawatan_Click(object sender, EventArgs e)
+        {
+            int hitung = 0;
+            string DiagnosisPerawatan = "";
+            string NamaPenyakit = "";
+            Diagnosa_TabelKedua.Visible = true;
+            foreach (Control c in Diagnosa_TabelUtama.Controls)
+            {
+                if (c is Label)
+                {
+                    Label tb = c as Label;
+                    DiagnosisPerawatan += tb.Text;
+                    NamaPenyakit = tb.Text;
+                    hitung++;
+                }
+                if (c is ComboBox)
+                {
+                    ComboBox cb = c as ComboBox;
+                    DiagnosisPerawatan += " berhubungan dengan " + cb.Text.Trim();
+                    hitung++;
+                }
+                if (hitung == 2)
+                {
+                    MessageBox.Show(DiagnosisPerawatan);
+                    buatLabelDinamis2(DiagnosisPerawatan);
+                    buatButton2(NamaPenyakit);
+                    buatButton2(NamaPenyakit);
+                    DiagnosisPerawatan = "";
+                    hitung = 0;
+                }
+
+            }
+
+
+
+        }
+
+        private void Diagnosis_Timer_Tick_1(object sender, EventArgs e)
+        {
+            animasi += 1;
+            bunifuCircleProgressbar1.Value = animasi;
+            if (bunifuCircleProgressbar1.Value == 100)
+            {
+                Diagnosis_Timer.Enabled = false;
+            }
+        }
+
 
 
 

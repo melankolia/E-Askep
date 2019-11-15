@@ -93,6 +93,26 @@ namespace SIM_Pengkajian_Pasien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _783564 {
+            get {
+                object obj = ResourceManager.GetObject("783564", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7835641 {
+            get {
+                object obj = ResourceManager.GetObject("7835641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _clipart_1421908 {
             get {
                 object obj = ResourceManager.GetObject("-clipart-1421908", resourceCulture);
@@ -486,6 +506,16 @@ namespace SIM_Pengkajian_Pasien.Properties {
         internal static System.Drawing.Bitmap mental_health_64px {
             get {
                 object obj = ResourceManager.GetObject("mental_health_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap network {
+            get {
+                object obj = ResourceManager.GetObject("network", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

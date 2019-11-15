@@ -95,3 +95,7 @@ D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinFor
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.manifest
 D:\Projek\SIM Pengkajian Pasien\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.application
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
