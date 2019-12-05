@@ -258,24 +258,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIM Pengkajian Pasien.exe" size="30392288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIM Pengkajian Pasien.exe" size="30428640">
       <assemblyIdentity name="SIM Pengkajian Pasien" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oNECrAzmEN+Pf9cQh+3qGz7V23pihlzpzRA3tjTyTSc=</dsig:DigestValue>
+        <dsig:DigestValue>l2S22w/fgbjRX/LDrDs02JCuu3qEVEE+SJe3OW5DInQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="SIM Pengkajian Pasien.exe.config" size="530">
+  <file name="SIM Pengkajian Pasien.exe.config" size="517">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ujqHyYBFl2EBLH1/cgncOMidC6UaRezOgWRNnYxFJok=</dsig:DigestValue>
+      <dsig:DigestValue>uQ5C0T60F20EB48x95CN2/KxI2Ai2f5YiZf0NWQLYeg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

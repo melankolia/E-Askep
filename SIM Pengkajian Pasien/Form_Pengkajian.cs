@@ -20,7 +20,6 @@ namespace SIM_Pengkajian_Pasien
         Regex regex = new Regex(regexPattern);
         Regex newRegex = new Regex(regexPattern2);
         Regex regexComa = new Regex(regexPattern3);
-        int leftcontrol = 0;
 
         public Form_Pengkajian()
         {
@@ -113,7 +112,7 @@ namespace SIM_Pengkajian_Pasien
             double hasil = 0;
             if (regexComa.IsMatch(bunifuMaterialTextbox9.Text))
             {
-                hasil = Convert.ToDouble(bunifuMaterialTextbox9.Text) * 20;
+                hasil = ((Convert.ToDouble(bunifuMaterialTextbox9.Text) * 100) - 100) - (((Convert.ToDouble(bunifuMaterialTextbox9.Text) * 100) - 100) * 0.10);
                 return hasil;
             }
             hasil = -1;
@@ -351,7 +350,7 @@ namespace SIM_Pengkajian_Pasien
                 nadi = Convert.ToDouble(TB_Nadi.Text);
                 if (nadi <= 60)
                 {
-                    TB_InterpretasiNadi.Text = "Bradikardi";
+                    TB_InterpretasiNadi.Text = "Bradikardia";
                 }
                 else if (nadi > 60 && nadi <= 100)
                 {
@@ -359,7 +358,7 @@ namespace SIM_Pengkajian_Pasien
                 }
                 else if (nadi > 100)
                 {
-                    TB_InterpretasiNadi.Text = "Takikardi";
+                    TB_InterpretasiNadi.Text = "Takikardia";
                 }
             }
 
@@ -785,10 +784,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox336.Checked == true)
             {
                 bunifuMaterialTextbox47.Enabled = true;
+                bunifuMaterialTextbox47.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox47.Enabled = false;
+                bunifuMaterialTextbox47.Visible = false;
             }
         }
 
@@ -797,10 +798,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox337.Checked == true)
             {
                 bunifuMaterialTextbox48.Enabled = true;
+                bunifuMaterialTextbox48.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox48.Enabled = false;
+                bunifuMaterialTextbox48.Visible = false;
             }
         }
 
@@ -809,10 +812,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox338.Checked == true)
             {
                 bunifuMaterialTextbox49.Enabled = true;
+                bunifuMaterialTextbox49.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox49.Enabled = false;
+                bunifuMaterialTextbox49.Visible = false;
             }
         }
         private void BunifuCheckBox339_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
@@ -820,10 +825,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox339.Checked == true)
             {
                 bunifuMaterialTextbox50.Enabled = true;
+                bunifuMaterialTextbox50.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox50.Enabled = false;
+                bunifuMaterialTextbox50.Visible = false;
             }
         }
         private void BunifuCheckBox340_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
@@ -831,10 +838,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox340.Checked == true)
             {
                 bunifuMaterialTextbox51.Enabled = true;
+                bunifuMaterialTextbox51.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox51.Enabled = false;
+                bunifuMaterialTextbox51.Visible = false;
             }
         }
 
@@ -845,10 +854,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox341.Checked == true)
             {
                 bunifuMaterialTextbox53.Enabled = true;
+                bunifuMaterialTextbox53.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox53.Enabled = false;
+                bunifuMaterialTextbox53.Visible = false;
             }
         }
 
@@ -857,10 +868,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox342.Checked == true)
             {
                 bunifuMaterialTextbox41.Enabled = true;
+                bunifuMaterialTextbox41.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox41.Enabled = false;
+                bunifuMaterialTextbox41.Visible = false;
             }
         }
         private void BunifuCheckBox343_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
@@ -868,10 +881,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox343.Checked == true)
             {
                 bunifuMaterialTextbox45.Enabled = true;
+                bunifuMaterialTextbox45.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox45.Enabled = false;
+                bunifuMaterialTextbox45.Visible = false;
             }
         }
 
@@ -881,10 +896,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox344.Checked == true)
             {
                 bunifuMaterialTextbox46.Enabled = true;
+                bunifuMaterialTextbox46.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox46.Enabled = false;
+                bunifuMaterialTextbox46.Visible = false;
             }
         }
         private void BunifuCheckBox345_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
@@ -892,10 +909,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox345.Checked == true)
             {
                 bunifuMaterialTextbox55.Enabled = true;
+                bunifuMaterialTextbox55.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox55.Enabled = false;
+                bunifuMaterialTextbox55.Visible = false;
             }
         }
         private void BunifuCheckBox346_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
@@ -903,10 +922,12 @@ namespace SIM_Pengkajian_Pasien
             if (bunifuCheckBox346.Checked == true)
             {
                 bunifuMaterialTextbox57.Enabled = true;
+                bunifuMaterialTextbox57.Visible = true;
             }
             else
             {
                 bunifuMaterialTextbox57.Enabled = false;
+                bunifuMaterialTextbox57.Visible = false;
             }
         }
 
@@ -1053,14 +1074,55 @@ namespace SIM_Pengkajian_Pasien
                 case "Gangguan Penyapihan Ventilator":
                     filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanPenyapihanVentilator.pdf";
                     System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Pertukaran Gas":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanPertukaranGas.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Ventilasi Spontan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanVentilasiSpontan.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Sirkulasi Spontan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanSirkulasiSpontan.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Penurunan Curah Jantung":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\PenurunanCurahJantung.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Perfusi Perifer Tidak Efektif":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\PerfusiPeriferTidakEfektif.pdf";
+                    System.Diagnostics.Process.Start(filename);
                     break;
+                case "Defisit Nutrisi":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\DefisitNutrisi.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Diare":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Diare.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Hipervolemia":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Hipervolemia.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Hipovolemia":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Hipovolemia.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Inkontinensia Fekal":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\InkontinensiaFekal.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+
 
             }
             /* buatLabelHeader("Diagnosis Keperawatan");
             buatLabelHeader("Kreteria Hasil");
             buatLabelHeader("Intervensi");
             */
-            
+
         }
 
         private void Diagnosa_ButtonMulai_Click(object sender, EventArgs e)
@@ -1075,9 +1137,75 @@ namespace SIM_Pengkajian_Pasien
             double BersihanJalanNapasTidakEfektif = Math.Round((convertToNumber(bunifuCheckBox82.Checked) + convertToNumber(bunifuCheckBox82.Checked)
                                                       + convertToNumber(bunifuCheckBox72.Checked) + convertToNumber((bunifuCheckBox108.Checked == true || bunifuCheckBox103.Checked == true || bunifuCheckBox104.Checked == true))) / 4.0, 1);
             double GangguanPenyapihanVentilator = Math.Round((convertToNumber((TB_InterpretasiFrekuensiPernapasan.Text == "Takipnea")) + convertToNumber(bunifuCheckBox114.Checked)
-                                                    + convertToNumber(bunifuCheckBox106.Checked) + convertToNumber(bunifuCheckBox117.Checked) + convertToNumber(bunifuCheckBox270.Checked)) / 5.0, 1);
+                                                    + convertToNumber(bunifuCheckBox106.Checked) + convertToNumber(bunifuCheckBox117.Checked) + convertToNumber(bunifuCheckBox270.Checked)
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox41.Text) > 7.42 || Convert.ToDouble(bunifuMaterialTextbox41.Text) < 7.38))) / 6.0, 1);
+            double GangguanPertukaranGas = Math.Round((convertToNumber(bunifuCheckBox118.Checked)
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox55.Text)) < 38 || (Convert.ToDouble(bunifuMaterialTextbox55.Text) > 42))
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox46.Text) < 75))
+                                                    + convertToNumber(TB_InterpretasiNadi.Text == "Takikardia")
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox41.Text) > 7.42 || Convert.ToDouble(bunifuMaterialTextbox41.Text) < 7.38))
+                                                    + convertToNumber((bunifuCheckBox108.Checked == true || bunifuCheckBox103.Checked == true || bunifuCheckBox104.Checked == true))
+                                                    ) / 6.0, 1);
+            double GangguanVentilasiSpontan = Math.Round((convertToNumber(bunifuCheckBox118.Checked)
+                                                    + convertToNumber(bunifuCheckBox114.Checked)
+                                                    + convertToNumber(bunifuCheckBox440.Checked)
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox55.Text) > 42))
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox46.Text) < 75))
+                                                    + convertToNumber((Convert.ToDouble(bunifuMaterialTextbox57.Text) < 94))
+                                                    ) /6.0, 1);
+            double GangguanSirkulasiSpontan = Math.Round((convertToNumber(  (Convert.ToDouble(TB_Nadi.Text) < 50)  || Convert.ToDouble(TB_Nadi.Text) > 150 )
+                                                    + convertToNumber((Convert.ToDouble(TB_Sistol.Text) < 60) || Convert.ToDouble(TB_Sistol.Text) > 200)
+                                                    + convertToNumber((Convert.ToDouble(TB_FrekuensiPernapasan.Text) < 6) || Convert.ToDouble(TB_FrekuensiPernapasan.Text) > 30)
+                                                    + convertToNumber((bunifuCheckBox170.Checked == true || bunifuCheckBox173.Checked == true || bunifuCheckBox174.Checked == true))
+                                                    ) / 4.0, 1);
+            double PenurunanCurahJantung = Math.Round((convertToNumber(bunifuCheckBox126.Checked)
+                                                    + convertToNumber(bunifuCheckBox121.Checked)
+                                                    + convertToNumber(bunifuCheckBox118.Checked)
+                                                    + convertToNumber(bunifuCheckBox119.Checked)
+                                                    + convertToNumber(bunifuCheckBox122.Checked)
+                                                    + convertToNumber(bunifuCheckBox82.Checked)
+                                                    + convertToNumber((TB_InterpretasiNadi.Text == "Bradikardia" || TB_InterpretasiNadi.Text == "Takikardia"))
+                                                    + convertToNumber((bunifuCheckBox139.Checked == true || bunifuCheckBox142.Checked == true))
+                                                    + convertToNumber(bunifuCheckBox55.Checked)
+                                                    + convertToNumber((bunifuCheckBox168.Checked == true || bunifuCheckBox167.Checked == true))
+                                                    + convertToNumber(bunifuCheckBox217.Checked)
+                                                    + convertToNumber(CB_NadiTerabaLemah.Checked)
+                                                    + convertToNumber(bunifuCheckBox137.Checked)
+                                                    + convertToNumber(bunifuCheckBox294.Checked)
+                                                    + convertToNumber((bunifuCheckBox489.Checked == true || bunifuCheckBox471.Checked == true))
+                                                    + convertToNumber(bunifuCheckBox437.Checked)
+                                                    + convertToNumber(bunifuCheckBox136.Checked)
+                                                    ) / 17.0, 1);
+            double PerfusiPeriferTidakEfektif = Math.Round((convertToNumber(bunifuCheckBox137.Checked)
+                                                    + convertToNumber(CB_NadiTerabaLemah.Checked)
+                                                    + convertToNumber(bunifuCheckBox276.Checked)
+                                                    + convertToNumber(bunifuCheckBox269.Checked)
+                                                    + convertToNumber(bunifuCheckBox471.Checked)
+                                                    ) / 5.0, 1);
+            double DefisitNutrisi = convertToNumber((Convert.ToDouble(bunifuMaterialTextbox35.Text) - (Convert.ToDouble(bunifuMaterialTextbox35.Text) * 0.1)) > Convert.ToDouble(bunifuMaterialTextbox8.Text));
+            double Diare = Math.Round((convertToNumber(bunifuCheckBox312.Checked)
+                                      + convertToNumber(bunifuCheckBox308.Checked)
+                                      ) / 1.0, 1);
+            double Hipervolemia = Math.Round((convertToNumber(bunifuCheckBox122.Checked)
+                                       + convertToNumber(bunifuCheckBox118.Checked)
+                                       + convertToNumber(bunifuCheckBox119.Checked)
+                                       + convertToNumber((bunifuCheckBox245.Checked == true || bunifuCheckBox243.Checked == true))
+                                       + convertToNumber(bunifuCheckBox223.Checked)
+                                       + convertToNumber((bunifuCheckBox55.Checked == true || bunifuCheckBox168.Checked == true))
+                                      ) /6.0, 1);
+            double Hipovolemia = Math.Round((convertToNumber((Convert.ToDouble(TB_Nadi.Text) > 100))
+                                       + convertToNumber(CB_NadiTerabaLemah.Checked)
+                                       + convertToNumber(bunifuCheckBox473.Checked)
+                                       + convertToNumber(bunifuCheckBox269.Checked)
+                                       + convertToNumber(bunifuCheckBox275.Checked)
+                                       + convertToNumber(bunifuCheckBox302.Checked)
+                                      ) /6.0, 1);
+            double InkontinensiaFekal = Math.Round((convertToNumber(bunifuCheckBox332.Checked)
+                                       + convertToNumber(bunifuCheckBox330.Checked)
+                                       + convertToNumber(bunifuCheckBox311.Checked)
+                                        ) / 3.0, 1);
             // Codingan
-            MessageBox.Show(BersihanJalanNapasTidakEfektif.ToString());
+            //MessageBox.Show(BersihanJalanNapasTidakEfektif.ToString());
             MessageBox.Show(GangguanPenyapihanVentilator.ToString());
             if (BersihanJalanNapasTidakEfektif >= 0.80)
             {
@@ -1100,6 +1228,7 @@ namespace SIM_Pengkajian_Pasien
                 
                 buatLabelDinamis(NamaPenyakit);
                 buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " "+ BersihanJalanNapasTidakEfektif);
                 //buatButton(NamaPenyakit);
             }
             if (GangguanPenyapihanVentilator >= 0.80)
@@ -1122,24 +1251,150 @@ namespace SIM_Pengkajian_Pasien
                 
                 buatLabelDinamis(NamaPenyakit);
                 buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanPenyapihanVentilator);
                 //buatButton(NamaPenyakit);
             }
-            if (DiagnosaCheckbox1.Checked == true)
+            if (GangguanPertukaranGas >= 0.80)
             {
-                string NamaPenyakit = "Konstipasi";
-                string[] Penyebab = {   "1. Fisiologis",
-                                        "   Penurunan motilitas gastrointestinal",
-                                        "   Ketidakadekuatan pertumbuhan gigi",
-                                        "   Ketidakcukupan diet",
-                                        "   Ketidakcukupan asupan serat",
-                                        "   Ketidakcukupan asupan cairan",
-                                        "   Aganglionik (mis.penyakit Hircsprung)",
-                                        "   Kelemahan otot abdomen" };
+                string NamaPenyakit = "Gangguan Pertukaran Gas";
+                string[] Penyebab = {   "Ketidakseimbangan ventilasi-perfusi",
+                                        "Perubalian membran alveolus - kapiler"};
+
                 buatLabelDinamis(NamaPenyakit);
                 buatDropdown(Penyebab);
-                //buatButton(NamaPenyakit);
+                MessageBox.Show(NamaPenyakit + " " + GangguanPertukaranGas);
             }
+            if (GangguanVentilasiSpontan >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Ventilasi Spontan";
+                string[] Penyebab = {   "Gangguan metabolisme", 
+                                        "Kelelahan otot pernapasan"};
+              
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanVentilasiSpontan);
+            }
+            if (GangguanSirkulasiSpontan >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Sirkulasi Spontan";
+                string[] Penyebab = {   "Abnormalitas kelistrikan jantung", 
+                                        "Abnormatitas struktur jantung",
+                                        "Penurunan fungsi ventrikel"};
 
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanSirkulasiSpontan);
+            }
+            if (PenurunanCurahJantung >= 0.80)
+            {
+                string NamaPenyakit = "Penurunan Curah Jantung";
+                string[] Penyebab = {   "Perubahan irama jantung", 
+                                        "Perubahan frekuensi jantung",
+                                        "Perubahan kontraktilitas",
+                                        "Perubahan preload",
+                                        "Perubahan afterload"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + PenurunanCurahJantung);
+            }
+            if (PerfusiPeriferTidakEfektif >= 0.80)
+            {
+                string NamaPenyakit = "Perfusi Perifer Tidak Efektif";
+                string[] Penyebab = {   "Hiperglikernia", 
+                                        "Penurunan konsentrasi hemoglobin",
+                                        "Peningkatan tekanan darah",
+                                        "Kekurangan volume cairan",
+                                        "Penurunan aliran arteri daniatau vena",
+                                        "Kurang terpapar informasi tentang faktor pemberat",
+                                        "Kurang terpapar informasi tentang proses penyakit",
+                                        "Kurang aktivitas fisik"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + PerfusiPeriferTidakEfektif);
+            }
+            if (DefisitNutrisi >= 0.80)
+            {
+                string NamaPenyakit = "Defisit Nutrisi";
+                string[] Penyebab = {   "Ketidakmampuan menelan makanan",
+                                        "Ketidakmampuan mencerna makanan",
+                                        "Ketidakmampuan mengabsorbsi nutrien",
+                                        "Peningkatan kebutuhan metabolisme",
+                                        "Faktor ekonomi(mis, finansial tidak mencukupi)",
+                                        "Faktor psikologis(mis.stres, keengganan untuk makan)"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + DefisitNutrisi);
+            }
+            if (Diare >= 0.80)
+            {
+                string NamaPenyakit = "Diare";
+                string[] Penyebab = {   "1)	Fisiologis",
+                                            "   lnflamasi gastrointestinal",
+                                            "   Iritasi gastrointestinal",
+                                            "   Proses infeksi",
+                                            "   Malabsorpsi",
+                                            "2)	Psikologis",
+                                            "   Kecemasan",
+                                            "   Tingkat stres tinggi",
+                                            "3)	Situasional",
+                                            "   Terpapar kontaminan",
+                                            "   Terpapar toksin",
+                                            "   Penyalahgunaan laksatif",
+                                            "   Penyalahgunaan zat",
+                                            "   Program pengobatan",
+                                            "   Perubahan air dan makanan",
+                                            "   Bakteri pada air"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Diare);
+            }
+            if (Hipervolemia >= 0.80)
+            {
+                string NamaPenyakit = "Hipervolemia";
+                string[] Penyebab = {   "Gangguan mekanisme regulasi", 
+                                        "Kelebihan asupan cairan",
+                                        "Kelebihan asupan natrium",
+                                        "Gangguan aliran balik vena",
+                                        "Efek agen farmakologis"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Hipervolemia);
+            }
+            if (Hipovolemia >= 0.80)
+            {
+                string NamaPenyakit = "Hipovolemia";
+                string[] Penyebab = {   "Kehilangan cairan aktif",
+                                        "Kegagalan mekanisme regulasi",
+                                        "Peningkatan permeabilitas regulasi",
+                                        "Kekurangan intake cairan",
+                                        "Evaporasi"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Hipovolemia);
+            }
+            if (InkontinensiaFekal >= 0.80)
+            {
+                string NamaPenyakit = "Inkontinensia Fekal";
+                string[] Penyebab = {   "Kerusakan susunan saraf motorik bawah",
+                                            "Penururtan tonus otot",
+                                            "Gangguan kogntif",
+                                            "Penyalahgunaan laksatif",
+                                            "Kehilangan fungsi pengendalan sfingter rektum",
+                                            "Pascaoperasi pullthrough dan penutupan kolosomi",
+                                            "Ketidakmampuan mencapai kamar kecil",
+                                            "Diare kronis",
+                                            "Stres berlebihan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + InkontinensiaFekal);
+            }
         }
 
 

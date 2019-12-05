@@ -99,3 +99,44 @@ D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Buni
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
 D:\Visual Studio\Repos\SIM-PengkajianPasien\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csprojAssemblyReference.cache
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.config
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form1.resources
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form_Pengkajian.resources
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Form_Close.resources
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.Properties.Resources.resources
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.GenerateResource.cache
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.pdb
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe.config
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe.manifest
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.application
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.exe
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\SIM Pengkajian Pasien.pdb
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\bin\Debug\Bunifu_UI_v1.5.3.xml
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.manifest
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.application
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CopyComplete
