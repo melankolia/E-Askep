@@ -173,12 +173,12 @@ namespace SIM_Pengkajian_Pasien
         }
         private void B_Sosial_Click(object sender, EventArgs e)
         {
-            bunifuPages1.PageIndex = 4;
+            bunifuPages1.PageIndex = 5;
         }
 
         private void B_Psikologis_Click(object sender, EventArgs e)
         {
-            bunifuPages1.PageIndex = 5;
+            bunifuPages1.PageIndex = 4;
         }
 
         private void B_Diagnosis_Click(object sender, EventArgs e)
@@ -1110,11 +1110,64 @@ namespace SIM_Pengkajian_Pasien
                 case "Hipovolemia":
                     filename = Directory.GetCurrentDirectory() + @"\Resources\Hipovolemia.pdf";
                     System.Diagnostics.Process.Start(filename);
-                    break;
+                    break; 
                 case "Inkontinensia Fekal":
                     filename = Directory.GetCurrentDirectory() + @"\Resources\InkontinensiaFekal.pdf";
                     System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Konstipasi":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Konstipasi.pdf";
+                    System.Diagnostics.Process.Start(filename);
                     break;
+                case "Retensi Urine":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\RetensiUrine.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Intoleransi Aktivitas":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\IntoleransiAktivitas.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Menelan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanMenelan.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Disfungsi Seksual":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\DisfungsiSeksual.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Nyeri Akut":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\NyeriAkut.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Nyeri Kronis":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\NyeriKronis.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Citra Tubuh":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanCitraTubuh.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Identitas Diri":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanIdentitasDiri.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Persepsi Sensori":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanPersepsiSensori.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Keputusasaan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Keputusasaan.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Ketidakberdayaan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Ketidakberdayaan.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Koping Defensif":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\KopingDefensif.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+
 
 
             }
@@ -1204,6 +1257,75 @@ namespace SIM_Pengkajian_Pasien
                                        + convertToNumber(bunifuCheckBox330.Checked)
                                        + convertToNumber(bunifuCheckBox311.Checked)
                                         ) / 3.0, 1);
+            double Konstipasi = Math.Round((convertToNumber(bunifuCheckBox313.Checked)
+                                        + convertToNumber(bunifuCheckBox315.Checked)
+                                        + convertToNumber(bunifuCheckBox301.Checked)
+                                        + convertToNumber((bunifuTextBox7.Text == "Hipoaktif"))
+                                        ) / 4.0, 1);
+            double RetensiUrine = Math.Round((convertToNumber(bunifuCheckBox329.Checked)
+                                        + convertToNumber((bunifuCheckBox296.Checked == true || bunifuCheckBox307.Checked == true))
+                                        + convertToNumber(bunifuCheckBox305.Checked)
+                                        ) /2.0, 1);
+            double IntoleransiAktivitas = Math.Round((convertToNumber(bunifuCheckBox253.Checked)
+                                        + convertToNumber(bunifuCheckBox256.Checked)
+                                        ) /2.0, 1);
+            double GangguanMenelan = Math.Round((convertToNumber(bunifuCheckBox241.Checked)
+                                        + convertToNumber(bunifuCheckBox216.Checked)
+                                        + convertToNumber(bunifuCheckBox221.Checked)
+                                        + convertToNumber(bunifuCheckBox474.Checked)
+                                        + convertToNumber(bunifuCheckBox475.Checked)
+                                        ) /5.0, 1);
+            double DisfungsiSeksual = Math.Round((convertToNumber(bunifuCheckBox463.Checked)
+                                        + convertToNumber(bunifuCheckBox464.Checked)
+                                        + convertToNumber(bunifuCheckBox465.Checked)
+                                        + convertToNumber(bunifuCheckBox466.Checked)
+                                        + convertToNumber(bunifuCheckBox467.Checked)
+                                        + convertToNumber(bunifuCheckBox468.Checked)
+                                        + convertToNumber(bunifuCheckBox469.Checked)
+                                        ) /7.0,1);
+            double NyeriAkut = Math.Round((convertToNumber(bunifuCheckBox258.Checked)
+                                        + convertToNumber(bunifuCheckBox23.Checked)
+                                        + convertToNumber((bunifuCheckBox191.Checked == true || bunifuCheckBox179.Checked == true))
+                                        + convertToNumber(bunifuCheckBox203.Checked)
+                                        + convertToNumber((Convert.ToDouble(TB_Nadi.Text) > 100))
+                                        + convertToNumber(bunifuCheckBox201.Checked)
+                                        ) / 6.0, 1);
+            double NyeriKronis = Math.Round((convertToNumber(bunifuCheckBox258.Checked)
+                                        + convertToNumber(bunifuCheckBox264.Checked)
+                                        + convertToNumber(bunifuCheckBox23.Checked)
+                                        + convertToNumber(bunifuCheckBox203.Checked)
+                                        + convertToNumber(bunifuCheckBox190.Checked)
+                                        ) /5.0, 1);
+            double GangguanCitraTubuh = Math.Round((convertToNumber(bunifuCheckBox353.Checked)
+                                        + convertToNumber(bunifuCheckBox248.Checked)
+                                        + convertToNumber(bunifuCheckBox254.Checked)
+                                        ) / 2.0, 1);
+            double GangguanIdentitasDiri = Math.Round((convertToNumber(bunifuCheckBox348.Checked)
+                                        + convertToNumber(bunifuCheckBox347.Checked)
+                                        + convertToNumber(bunifuCheckBox354.Checked)
+                                        + convertToNumber(bunifuCheckBox409.Checked)
+                                        + convertToNumber(bunifuCheckBox408.Checked)
+                                        + convertToNumber(bunifuCheckBox407.Checked)
+                                        + convertToNumber(bunifuCheckBox406.Checked)
+                                        ) / 7.0, 1);
+            double GangguanPersepsiSensori = Math.Round((convertToNumber(bunifuCheckBox355.Checked)
+                                        + convertToNumber(bunifuCheckBox356.Checked)
+                                        + convertToNumber(bunifuCheckBox405.Checked)
+                                        + convertToNumber(bunifuCheckBox404.Checked)
+                                        + convertToNumber(bunifuCheckBox403.Checked)
+                                        ) / 5.0, 1);
+            double Keputusasaan = Math.Round((convertToNumber(bunifuCheckBox357.Checked)
+                                        + convertToNumber(bunifuCheckBox402.Checked)
+                                        ) / 1.0, 1);
+            double Ketidakberdayaan = Math.Round((convertToNumber(bunifuCheckBox358.Checked)
+                                        + convertToNumber(bunifuCheckBox396.Checked)
+                                        ) / 1.0, 1);
+            double KopingDefensif = Math.Round((convertToNumber(bunifuCheckBox364.Checked)
+                            + convertToNumber(bunifuCheckBox365.Checked)
+                            + convertToNumber(bunifuCheckBox366.Checked)
+                            + convertToNumber(bunifuCheckBox367.Checked)
+                            + convertToNumber(bunifuCheckBox393.Checked)
+                            ) / 5.0, 1);
             // Codingan
             //MessageBox.Show(BersihanJalanNapasTidakEfektif.ToString());
             MessageBox.Show(GangguanPenyapihanVentilator.ToString());
@@ -1395,6 +1517,218 @@ namespace SIM_Pengkajian_Pasien
                 buatDropdown(Penyebab);
                 MessageBox.Show(NamaPenyakit + " " + InkontinensiaFekal);
             }
+            if (Konstipasi >= 0.80)
+            {
+                string NamaPenyakit = "Konstipasi";
+                string[] Penyebab = {       "1)	Fisiologis",
+                                            "   Penurunan motilitas gastrointestinal",
+                                            "   Ketidakadekuatan pertumbuhan gigi",
+                                            "   Ketidakcukupan diet",
+                                            "   Ketidakcukupan asupan serat",
+                                            "   Ketidakcukupan asupan cairan",
+                                            "   Aglionik(mis.penyakit Hircsprung)",
+                                            "   Kelemahan otot abdomen",
+                                            "2)	Psikologis",
+                                            "   Konfusi",
+                                            "   Depresi",
+                                            "   Gangguan emosional",
+                                            "3)	Situasional",
+                                            "   Perubahan kebiasaan makan",
+                                            "   Ketidakadekuatan toileting",
+                                            "   Aktivitas fisik harian kurang dari yang dianjurkan",
+                                            "   Penyalahgunaan laksatif",
+                                            "   Efek agen farmakologis",
+                                            "   Ketidakteraturan kebiasaan defekasi",
+                                            "   Kebiasaan menahan dorongan defekasi",
+                                            "   Perubahan lingkungan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Konstipasi);
+            }
+            if (RetensiUrine >= 0.80)
+            {
+                string NamaPenyakit = "Retensi Urine";
+                string[] Penyebab = {       "Peningkatan tekanan uretra",
+                                                "Kerusakan arkus refleks",
+                                                "Blok spingter",
+                                                "Disfungsi neurologis(mis.trauma, penyakit saraf)",
+                                                "Efek agen farmakologis"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + RetensiUrine);
+            }
+            if (IntoleransiAktivitas >= 0.80)
+            {
+                string NamaPenyakit = "Intoleransi Aktivitas";
+                string[] Penyebab = {   "Ketidakseimbangan antara suplai dan kebutuhan oksigen",
+                                        "Tirah baring Kelemahan",
+                                        "Imobilitas",
+                                        "Gaya hidup monoton"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " +IntoleransiAktivitas);
+            }
+            if (GangguanMenelan >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Menelan";
+                string[] Penyebab = {   "Gangguan serebrovaskular",
+                                        "Gangguan saraf kranialis",
+                                        "Paralisis serebral",
+                                        "Akalasia",
+                                        "Abnormalitas laring",
+                                        "Abnormalitas orofaring",
+                                        "Anomali jalan napas atas",
+                                        "Defek anatomik kongenital",
+                                        "Defek laring",
+                                        "Defek nasal",
+                                        "Defek rongga nasofaring",
+                                        "Defek trakea",
+                                        "Refluk gastroesofagus",
+                                        "Obstruksi mekanis",
+                                        "Prematuritas"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanMenelan);
+            }
+            if (DisfungsiSeksual >= 0.80)
+            {
+                string NamaPenyakit = "Disfungsi Seksual";
+                string[] Penyebab = {   "Perubahan fungsi/struktur tubuh",
+                                        "Perubahan biopsikososial seksuatitas",
+                                        "Ketiadaan model peran",
+                                        "Model peran tidak dapat menpengaruhi",
+                                        "Kurang privasi",
+                                        "Ketiadaan pasangan",
+                                        "Kesalahan informasi",
+                                        "Kelainan seksual(mis, hubungan penuh kekerasan)",
+                                        "Konflik nilai",
+                                        "Penganiayaan fisik(mis kekerasan dalam rumah tangga)",
+                                        "Kurang terpapar informasi"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + DisfungsiSeksual);
+            }
+            if (NyeriAkut >= 0.80)
+            {
+                string NamaPenyakit = "Nyeri Akut";
+                string[] Penyebab = {   "Penyebab fisiologis (mis. inflamasi, iskemia, neoplasma)", 
+                                            "Agen pencedera kimiawi(mis.terbakar, bahan kimia iritan)",
+                                            "Agen pencedera fisik "};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + NyeriAkut);
+            }
+            if (NyeriKronis >= 0.80)
+            {
+                string NamaPenyakit = "Nyeri Kronis";
+                string[] Penyebab = {   "Kondisi muskuloskeletal kronis",
+                                            "Kerusakan sistem saraf",
+                                            "Penekanan saraf",
+                                            "infiltrasi tumor",
+                                            "Ketidakseimbangan neurotransmiter, neuromodulator, dan reseptor",
+                                            "Gangguan imunitas(mis.neuropati terkait HIV, virus varicella-zoster)",
+                                            "Gangguan fungsi metabolik",
+                                            "Riwayat posisi kerja statis",
+                                            "Peningkatan indeks massa tubuh",
+                                            "Kondisi pasca trauma",
+                                            "Tekanan emosional",
+                                            "Riwayat penganiayaan(mis.fisik, psikologis, seksual)",
+                                            "Riwayat penyalahgunaan obat / zat"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + NyeriKronis);
+            }
+            if (GangguanCitraTubuh >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Citra Tubuh";
+                string[] Penyebab = {   "Perubahan struktur/bentuk tubuh",
+                                        "Perubahan fungsi tubuh",
+                                        "Perubahan fungsi kognitif",
+                                        "Ketidaksesuaian budaya, keyakinan atau sistem nilai",
+                                        "Transisi perkembangan",
+                                        "Gangguan psikososial",
+                                        "Efek tindakan/ pengobatan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanCitraTubuh);
+            }
+            if (GangguanIdentitasDiri >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Identitas Diri";
+                string[] Penyebab = {   "Gangguan peran sosial",
+                                            "Tidak terpenuhinya tugas perkembangan",
+                                            "Gangguan neurologis",
+                                            "Ketidakadekuatan stimulasi sensori"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanIdentitasDiri);
+            }
+            if (GangguanPersepsiSensori >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Persepsi Sensori";
+                string[] Penyebab = {   "Gangguan penglihatan",
+                                        "Gangguan pendengaran",
+                                        "Gangguan penghiduan",
+                                        "Gangguan perabaan",
+                                        "Hipoksia serebral",
+                                        "Penyalahgunaan zat",
+                                        "Usia lanjut",
+                                        "Pemajanan toksin lingkungan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanPersepsiSensori);
+            }
+            if (Keputusasaan >= 0.80)
+            {
+                string NamaPenyakit = "Keputusasaan";
+                string[] Penyebab = {   "Stres jangka panjang",
+                                            "Penurunan kondisi fisiologis",
+                                            "Kehilangan kepercayaan pada kekuatan spiritual",
+                                            "Kehilangan kepercayaan pada nilai-nilai penting",
+                                            "Pembatasan aktivitas jangka panjang",
+                                            "Pengasingan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Keputusasaan);
+            }
+            if (Ketidakberdayaan >= 0.80)
+            {
+                string NamaPenyakit = "Ketidakberdayaan";
+                string[] Penyebab = {   "Program perawatan/perigobatan yang kompleks atau jangka panjang",
+                                        "Lingkungan tidak rnendukung perawatan/ pengobatan",
+                                        "interaksi interpersonal tidak memuaskan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Ketidakberdayaan);
+            }
+            if (KopingDefensif >= 0.80)
+            {
+                string NamaPenyakit = "Koping Defensif";
+                string[] Penyebab = {   "Konflik antara persepsi diri dan sistem nilai",
+                                        "Takut mengalami kegagalan",
+                                        "Takut mengalami penghinaan",
+                                        "Takut terhadap dampak situasi yang dihadapi",
+                                        "Kurangnya rasa percaya kepada orang lain",
+                                        "Kurangnya kepercayaan diri",
+                                        "Kurangnya dukungan sistem pendukung(support system)",
+                                        "Harapan yang tidak realistis"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + KopingDefensif);
+            }
         }
 
 
@@ -1471,6 +1805,30 @@ namespace SIM_Pengkajian_Pasien
             {
                 Diagnosis_Timer.Enabled = false;
             }
+        }
+
+        private void BunifuMaterialTextbox4_OnValueChanged(object sender, EventArgs e)
+        {
+            double peristaltik;
+            
+            if (regex.IsMatch(bunifuMaterialTextbox4.Text))
+            {
+                peristaltik = Convert.ToDouble(bunifuMaterialTextbox4.Text);
+                if (peristaltik < 5)
+                {
+                    bunifuTextBox7.Text = "Hipoaktif";
+                }
+                else if (peristaltik > 5 && peristaltik < 30)
+                {
+                    bunifuTextBox7.Text = "Normal";
+                }
+                else if (peristaltik >= 30)
+                {
+                    bunifuTextBox7.Text = "Hiperaktif";
+                }
+
+            }
+
         }
 
 

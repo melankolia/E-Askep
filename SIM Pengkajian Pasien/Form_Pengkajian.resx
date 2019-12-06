@@ -1113,6 +1113,15 @@
         JkPW7ccAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuTextBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJUAAAAhCAYAAADQ+eksAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACTSURBVHhe7dKxDQIxAARBt0HtVIboAiLQI5CRE2Iv2Zw0
+        ycU7zP6y2+O4vs02NztaSY0xj9P5AlvmVlKioiEqcqIiJypyoiInKnKiIicqcqIiJypyoiInKnKiIicq
+        cqIiJypyoiInKnKiIicqcqIiJypyoiInKnKiIicqcqIiJypyP1E9j9f9+5htbHa0kjIrN8YH9jlSPjYp
+        zVoAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="bunifuCheckBox242.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -1434,6 +1443,22 @@
 </value>
   </data>
   <data name="bunifuCheckBox228.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABaSURBVDhPY6AZ+P//v8O/f//uA2mKAMgMIPYAGwpkPAeK
+        aYA5FACgGQpAs77DOP/BDCoAuFmjho4aSh0wauioocgMKgDaGgoqWIFsDjCHQoBsaAGIQx3wvwEAN2E1
+        JkPW7ccAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuCheckBox475.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABaSURBVDhPY6AZ+P//v8O/f//uA2mKAMgMIPYAGwpkPAeK
+        aYA5FACgGQpAs77DOP/BDCoAuFmjho4aSh0wauioocgMKgDaGgoqWIFsDjCHQoBsaAGIQx3wvwEAN2E1
+        JkPW7ccAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuCheckBox474.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABaSURBVDhPY6AZ+P//v8O/f//uA2mKAMgMIPYAGwpkPAeK
