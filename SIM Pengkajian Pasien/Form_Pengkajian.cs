@@ -420,11 +420,11 @@ namespace SIM_Pengkajian_Pasien
                 Suhu = Convert.ToDouble(TB_Suhu.Text);
                 if (Suhu < 36)
                 {
-                    TB_InterpretasiSuhu.Text = "Hipotermi";
+                    TB_InterpretasiSuhu.Text = "Hipotermia";
                 }
                 else if (Suhu > 37.5)
                 {
-                    TB_InterpretasiSuhu.Text = "Hipertermi";
+                    TB_InterpretasiSuhu.Text = "Hipertermia";
                 }
                 else if (Suhu <= 37.5 && Suhu >= 36)
                 {
@@ -1163,11 +1163,58 @@ namespace SIM_Pengkajian_Pasien
                     filename = Directory.GetCurrentDirectory() + @"\Resources\Ketidakberdayaan.pdf";
                     System.Diagnostics.Process.Start(filename);
                     break;
-                case "Koping Defensif":
+                case "Koping Defensif": 
                     filename = Directory.GetCurrentDirectory() + @"\Resources\KopingDefensif.pdf";
                     System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Koping Komunitas Tidak Efektif":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\KopingKomunitasTidakEfektif.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Penurunan Koping Keluarga":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\PenurunanKopingKeluarga.pdf";
+                    System.Diagnostics.Process.Start(filename);
                     break;
-
+                case "Pemeliharaan Kesehatan Tidak Efektif":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\PemeliharaanKesehatanTidakEfektif.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Gangguan Interaksi Sosial":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanInteraksiSosial.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Komunikasi Verbal":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanKomunikasiVerbal.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Proses Keluarga":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanProsesKeluarga.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Isolasi Sosial":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\IsolasiSosial.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Ketegangan Peran Pemberi Asuhan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\KeteganganPeranPemberiAsuhan.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Penampilan Peran Tidak Efektif":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\PenampilanPeranTidakEfektif.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Gangguan Integritas Kulit atau Jaringan":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Gangguanintegritaskulit.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break; 
+                case "Hipertermia":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\Hipertemia.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                case "Gangguan Eliminasi Urin":
+                    filename = Directory.GetCurrentDirectory() + @"\Resources\GangguanEliminasiUrin.pdf";
+                    System.Diagnostics.Process.Start(filename);
+                    break;
 
 
             }
@@ -1321,11 +1368,66 @@ namespace SIM_Pengkajian_Pasien
                                         + convertToNumber(bunifuCheckBox396.Checked)
                                         ) / 1.0, 1);
             double KopingDefensif = Math.Round((convertToNumber(bunifuCheckBox364.Checked)
-                            + convertToNumber(bunifuCheckBox365.Checked)
-                            + convertToNumber(bunifuCheckBox366.Checked)
-                            + convertToNumber(bunifuCheckBox367.Checked)
-                            + convertToNumber(bunifuCheckBox393.Checked)
-                            ) / 5.0, 1);
+                                        + convertToNumber(bunifuCheckBox365.Checked)
+                                        + convertToNumber(bunifuCheckBox366.Checked)
+                                        + convertToNumber(bunifuCheckBox367.Checked)
+                                        + convertToNumber(bunifuCheckBox393.Checked)
+                                        ) / 5.0, 1);
+            double KopingKomunitasTidakEfektif = Math.Round((convertToNumber(bunifuCheckBox459.Checked)
+                                                + convertToNumber(bunifuCheckBox515.Checked)
+                                                + convertToNumber(bunifuCheckBox514.Checked)
+                                                + convertToNumber(bunifuCheckBox513.Checked)
+                                                ) / 4.0, 1);
+            double PenurunanKopingKeluarga = Math.Round((convertToNumber(bunifuCheckBox457.Checked)
+                                    + convertToNumber(bunifuCheckBox509.Checked)
+                                    + convertToNumber(bunifuCheckBox508.Checked)
+                                    ) / 2.0, 1);
+            double PemeliharaanKesehatanTidakEfektif = Math.Round((convertToNumber(bunifuCheckBox369.Checked)
+                                    + convertToNumber(bunifuCheckBox370.Checked)
+                                    + convertToNumber(bunifuCheckBox387.Checked)
+                                    + convertToNumber(bunifuCheckBox386.Checked)
+                                    ) / 4.0, 1);
+            double GangguanInteraksiSosial = Math.Round((convertToNumber(bunifuCheckBox456.Checked)
+                                    + convertToNumber(bunifuCheckBox455.Checked)
+                                    + convertToNumber(bunifuCheckBox507.Checked)
+                                    + convertToNumber(bunifuCheckBox506.Checked)
+                                    ) / 4.0, 1);
+            double GangguanKomunikasiVerbal = Math.Round((convertToNumber(bunifuCheckBox383.Checked)
+                                    + convertToNumber(bunifuCheckBox419.Checked)
+                                    ) / 2.0, 1);
+            double GangguanProsesKeluarga = Math.Round((convertToNumber(bunifuCheckBox498.Checked)
+                                    + convertToNumber(bunifuCheckBox497.Checked)
+                                    ) / 2.0, 1);
+            double IsolasiSosial = Math.Round((convertToNumber(bunifuCheckBox453.Checked)
+                                    + convertToNumber(bunifuCheckBox452.Checked)
+                                    + convertToNumber(bunifuCheckBox516.Checked)
+                                    + convertToNumber(bunifuCheckBox496.Checked)
+                                    ) /4.0, 1);
+            double KeteganganPeranPemberiAsuhan = Math.Round((convertToNumber(bunifuCheckBox448.Checked)
+                        + convertToNumber(bunifuCheckBox447.Checked)
+                        + convertToNumber(bunifuCheckBox446.Checked)
+                        + convertToNumber(bunifuCheckBox485.Checked)
+                        ) / 4.0, 1);
+            double PenampilanPeranTidakEfektif = Math.Round((convertToNumber(bunifuCheckBox445.Checked)
+                           + convertToNumber(bunifuCheckBox444.Checked)
+                           + convertToNumber(bunifuCheckBox443.Checked)
+                           + convertToNumber(bunifuCheckBox483.Checked)
+                           + convertToNumber(bunifuCheckBox482.Checked)
+                           + convertToNumber(bunifuCheckBox481.Checked)
+                          ) / 6.0, 1);
+            double GangguanIntegritasKulitatauJaringan = Math.Round((convertToNumber(bunifuCheckBox289.Checked)
+                                                    ) / 1.0, 1);
+            double Hipertermia = convertToNumber((Convert.ToDouble(TB_Suhu.Text) > 37.5));
+            double GangguanEliminasiUrin = Math.Round((convertToNumber(bunifuCheckBox331.Checked)
+                                               + convertToNumber(bunifuCheckBox328.Checked)
+                                               + convertToNumber(bunifuCheckBox326.Checked)
+                                               + convertToNumber(bunifuCheckBox325.Checked)
+                                               + convertToNumber(bunifuCheckBox317.Checked)
+                                               + convertToNumber(bunifuCheckBox316.Checked)
+                                               + convertToNumber(bunifuCheckBox305.Checked)
+                                               + convertToNumber(bunifuCheckBox327.Checked)
+                                               + convertToNumber(bunifuCheckBox304.Checked)
+                                              ) / 9.0, 1);
             // Codingan
             //MessageBox.Show(BersihanJalanNapasTidakEfektif.ToString());
             MessageBox.Show(GangguanPenyapihanVentilator.ToString());
@@ -1728,6 +1830,208 @@ namespace SIM_Pengkajian_Pasien
                 buatLabelDinamis(NamaPenyakit);
                 buatDropdown(Penyebab);
                 MessageBox.Show(NamaPenyakit + " " + KopingDefensif);
+            }
+            if (KopingKomunitasTidakEfektif >= 0.80)
+            {
+                string NamaPenyakit = "Koping Komunitas Tidak Efektif";
+                string[] Penyebab = {   "Paparan bencana (alam atau buatan manusia)",
+                                        "Riwayat bencana(alam atau buatan manusia)",
+                                        "Ketidakadekuatan sumber daya untuk pemecahan masalah",
+                                        "Ketidakcukupan sumber daya masyarakat(mis.istirahat, rekreasi, dukungan sosial)",
+                                        "Tidak adanya sistem masyarakat"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + KopingKomunitasTidakEfektif);
+            }
+            
+            if (PenurunanKopingKeluarga >= 0.80)
+            {
+                string NamaPenyakit = "Penurunan Koping Keluarga";
+                string[] Penyebab = {   "Situasi penyerta yang mempengaruhi orang terdekat",
+                                        "Krisis perkembangan yang dihadapi orang terdekat",
+                                        "Kelelahan orang terdekat dalam memberikan dukungan",
+                                        "Disorganisasi keluarga",
+                                        "Perubahan peran keluarga",
+                                        "Tidak tersedianya informasi bagi orang terdekat",
+                                        "Kurangnya saling mendukung",
+                                        "Tidak cukupnya dukungan yang diberikan klien pada orang terdekat",
+                                        "Orang terdekat kurang terpapar informasi Salahnya / tidak pahamnya informasi yang didapatkan orang terdekat",
+                                        "Orang terdekat terlalu fokus pada kondisi di luar keluarga",
+                                        "Penyakit kronis yang menghasilkan kemampuan dukungan orang terdekat",
+                                        "Krisis situasional yang dialami orang terdekat"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + PenurunanKopingKeluarga);
+            }
+            if (PemeliharaanKesehatanTidakEfektif >= 0.80)
+            {
+                string NamaPenyakit = "Pemeliharaan Kesehatan Tidak Efektif";
+                string[] Penyebab = {   "Disabilitas (mis. Penurunan daya ingat, defisit sensorik/motorik)",
+                                            "Efek samping program perawatan/ pengobatan",
+                                            "Beban pembiayaan program perawatan/ pengobatan",
+                                            "Lingkungan tidak teraupetik",
+                                            "Program terapi  kompleks dan/ atau lama",
+                                            "Hambatan mengakses pelayanan kesehatan(mis.Gangguan mobilisasi, masalah transportasi)",
+                                            "Program terapi tidak ditanggung asuransi",
+                                            "Ketidakadekuatann pemahaman"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + PemeliharaanKesehatanTidakEfektif);
+            }
+            if (GangguanInteraksiSosial >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Interaksi Sosial";
+                string[] Penyebab = {   "Defesiensi bicara",
+                                        "Hambatan perkembangan/ maturasi",
+                                        "Ketiadaan orang terdekat",
+                                        "Perubahan neurologis(mis.Kelahiran prematur)",
+                                        "Disfungsi sistem keluarga",
+                                        "Ketidakteraturan atau kekacauan lingkungan",
+                                        "Penganiayaan atau pengabaian anak",
+                                        "Hubungan orang tua - anak tidak memuaskan",
+                                        "Model peran negatif",
+                                        "Impulsif",
+                                        "Perilaku menentang",
+                                        "Perilaku agresif",
+                                        "Keenganan berpisah dengan orang terdekat"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanInteraksiSosial);
+            }
+            if (GangguanKomunikasiVerbal >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Interaksi Sosial";
+                string[] Penyebab = {   "Penurunan sirkulasi serebral",
+                                        "Gangguan neuromuskuler",
+                                        "Gangguan pendengaran",
+                                        "Gangguan musculoskeletal",
+                                        "Kelainan palatum",
+                                        "Hambatan fisik(mis.terpasang trakheostomi, intubasi, kritotiroidektomi)",
+                                        "Hambatan individu(mis.ketakutan, kecemasan)",
+                                        "Hambatan psikologis(mis.gangguan psikotik, gangguan konsep diri).",
+                                        "Hambatan lingkungan(mis.ketidakcukupan informasi)"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanKomunikasiVerbal);
+            }
+            if (GangguanProsesKeluarga >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Proses Keluarga";
+                string[] Penyebab = {   "Perubahan status kesehatan anggota keluarga",
+                                            "Perubahan finansial keluarga",
+                                            "Perubahan status sosial keluarga",
+                                            "Perubahan interaksi dengan masyarakat",
+                                            "Krisis perkembangan",
+                                            "Transisi perkembangan",
+                                            "Peralihan pengambilan keputusan dalam keluarga",
+                                            "Perubahan peran keluarga",
+                                            "Krisis situasional",
+                                            "Transisi situasional"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanProsesKeluarga);
+            }
+            if (IsolasiSosial >= 0.80)
+            {
+                string NamaPenyakit = "Isolasi Sosial";
+                string[] Penyebab = {   "Keterlambatan perkembangan",
+                                        "Ketidakmampuan menjalani hubungan yang memuasakan",
+                                        "Ketidaksesuaian minat dengan tahap perkembangan",
+                                        "Ketidaksesuaian nilai-nilai dengan norma",
+                                        "Ketidaksesuaian perilaku sosial dengan norma",
+                                        "Perubahan penampilan fisik",
+                                        "Perubahan status mental",
+                                        "Ketidakadekuatan sumber daya personal(mis.disfungsi berduka, pengendalian diri buruk)"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + IsolasiSosial);
+            }
+            if (KeteganganPeranPemberiAsuhan >= 0.80)
+            {
+                string NamaPenyakit = "Ketegangan Peran Pemberi Asuhan";
+                string[] Penyebab = {   "Beratnya penyakit penerima asuhan",
+                                            "Kronisnya penyakit penerima asuhan",
+                                            "Pemberi asuhan kurang mendapatkan waktu istirahat dan rekreasi",
+                                            "Persaingan komitmen peran pemberi asuhan",
+                                            "Ketidakadekuatan lingkungan fisik dalam pemberian asuhan",
+                                            "Keluarga atau pemberi asuhan jauh dari kerabat lain",
+                                            "Kompleksitas dan jumlah aktivitas pemberi asuhan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + KeteganganPeranPemberiAsuhan);
+            }
+            
+            if (PenampilanPeranTidakEfektif >= 0.80)
+            {
+                string NamaPenyakit = "Penampilan Peran Tidak Efektif";
+                string[] Penyebab = {   "Harapan peran tidak realistis",
+                                            "Hambatan fisik",
+                                            "Harga diri rendah",
+                                            "Perubahan citra tubuh",
+                                            "Ketidakadekuaan sistem pendukung(support system)",
+                                            "Stress",
+                                            "Perubahan peran",
+                                            "Faktor ekonomi"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + PenampilanPeranTidakEfektif);
+            }
+            if (GangguanIntegritasKulitatauJaringan >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Integritas Kulit atau Jaringan";
+                string[] Penyebab = {   "Perubahan sirkulasi",
+                                        "Perubahan status nutrisi(kelebihan atau kekurangan)",
+                                        "Kekurangan / kelebihan volume cairan",
+                                        "Penurunan mobilitas",
+                                        "Bahan kimia iritatif",
+                                        "Suhu lingkungan yang ekstrem",
+                                        "Faktor mekanis(mis.penekanan pada tonjolan tulang, gesekan)",
+                                        "Faktor elektris(elektrodiatermi, energi listrik bertegangan tinggi)",
+                                        "Efek samping terapi radiasi",
+                                        "Kelembaban",
+                                        "Proses penuaan",
+                                        "Neuropati perifer",
+                                        "Perubahan pigmentasi",
+                                        "Perubahan hormonal",
+                                        "Kurang terpapar informasi tentang upaya mempertahankan/ melindungi integritas jaringan"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanIntegritasKulitatauJaringan);
+            }
+            if (Hipertermia >= 0.80)
+            {
+                string NamaPenyakit = "Hipertermia";
+                string[] Penyebab = {   "Dehidrasi",
+                                            "Terpapar lingkungan panas",
+                                            "Proses penyakit(mis.infeksi, kanker)",
+                                            "Ketidaksesuaian pakaian dengan suhu lingkungan",
+                                            "Peningkatan laju metabolism",
+                                            "Respon trauma",
+                                            "Aktivitas berlebihan",
+                                            "Penggunaan inkubator"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + Hipertermia);
+            }
+            if (GangguanEliminasiUrin >= 0.80)
+            {
+                string NamaPenyakit = "Gangguan Eliminasi Urin";
+                string[] Penyebab = {   "Disfungsi eliminasi urin"};
+
+                buatLabelDinamis(NamaPenyakit);
+                buatDropdown(Penyebab);
+                MessageBox.Show(NamaPenyakit + " " + GangguanEliminasiUrin);
             }
         }
 

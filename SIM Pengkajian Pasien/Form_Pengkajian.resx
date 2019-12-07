@@ -132,11 +132,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TB_PPSLevel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANgAAAAhCAYAAAC7vWU8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dOxDQIxAARBt0HtVIboAqJHj0BGTsi92Zw0
-        yeU7zCze4zjvHzPbttnUymuMeVyuN2CTuZWXwGA3gUFIYBASGIQEBiGBQUhgEBIYhAQGIYFBSGAQEhiE
-        BAYhgUFIYBASGIQEBiGBQUhgEBIYhAQGIYFBSGAQEhiEBAYhgUFIYBASGIT+Anud7+fvMbMtm02tvMys
-        2RhflHq99YajDN4AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAOQAAAAhCAYAAADJcgeKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVHhe7dOxDQIxAARBt0HtVIboAqJHj0BGTqjAG8xJ
+        k1y+w8xiexzn/WNm2zYbXDmOMY/L9QZsMrdyFCTsJkgIESSECBJCBAkhgoQQQUKIICFEkBAiSAgRJIQI
+        EkIECSGChBBBQoggIUSQECJICBEkhAgSQgQJIYKEEEFCiCAhRJAQIkgIESSECBJC/oJ8ne/n7zGzLZsN
+        rhzNrLExvqYllCH7RVZ4AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuTextBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
