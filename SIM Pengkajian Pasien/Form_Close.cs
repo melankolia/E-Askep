@@ -27,5 +27,10 @@ namespace SIM_Pengkajian_Pasien
         {
             this.Close();
         }
+
+        private void Form_Close_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -140,3 +140,4 @@ D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturB
 D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.exe.manifest
 D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.application
 D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM Pengkajian Pasien.csproj.CopyComplete
+D:\Visual Studio 2019\SIM-PengkajianPasien-fiturBaru\SIM-PengkajianPasien-fiturBaru\SIM Pengkajian Pasien\obj\Debug\SIM_Pengkajian_Pasien.FormPasien.resources

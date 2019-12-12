@@ -34,11 +34,10 @@ namespace SIM_Pengkajian_Pasien
             {
                 bunifuProgressBar1.Value += 1;
             }
-            Form_Pengkajian FP = new Form_Pengkajian();
+            FormPasien FP = new FormPasien();
             this.Hide();
-            //BunifuTransition transition = new bunifu
-            //transition.ShowSync(bunifuCards1, false, BunifuAnimatorNS.Animation.HorizSlideAndRotate);
             FP.ShowDialog();
+            this.Close();
         }
 
   

@@ -20,15 +20,16 @@ namespace SIM_Pengkajian_Pasien
         Regex regex = new Regex(regexPattern);
         Regex newRegex = new Regex(regexPattern2);
         Regex regexComa = new Regex(regexPattern3);
+        string[] line;
+        string strfilename;
+        string stats;
 
-        public Form_Pengkajian()
+        public Form_Pengkajian(string STR_Value, string stat)
         {
             InitializeComponent();
+            strfilename = STR_Value;
+            stats = stat;
         }
-
-
-        
-
         private int convertToNumber(bool boolValue)
         {
             if (boolValue == true)
@@ -152,6 +153,7 @@ namespace SIM_Pengkajian_Pasien
         {
             Form_Close FC = new Form_Close();
             FC.ShowDialog();
+                        
         }
 
         private void BunifuFlatButton1_Click(object sender, EventArgs e)
@@ -2135,122 +2137,838 @@ namespace SIM_Pengkajian_Pasien
 
         }
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+   
+        }
+
+        private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void BunifuFlatButton2_Click_1(object sender, EventArgs e)
+        {
+            string tempatsave = "";
+            for (int i = 0; i < TB_NoMEDREC.Text.Length; i++)
+            {
+                if (TB_NoMEDREC.Text[i].ToString() == "\\" || TB_NoMEDREC.Text[i].ToString() == "/")
+                {
+                    tempatsave += "";
+                }
+                else
+                {
+                    tempatsave += TB_NoMEDREC.Text[i];
+                }
+
+            }
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Save\\" + tempatsave + "[" + TB_NamaPasien.Text + "]" + ".txt");
+            tempatsave = "";
+            //TABPAGE 1
+            sw.WriteLine(bunifuTextBox10.Text);
+            sw.WriteLine(TB_NoMEDREC.Text);
+            sw.WriteLine(TB_Jam.Text);
+            sw.WriteLine(TB_DPJP.Text);
+            sw.WriteLine(TB_NamaPasien.Text);
+            sw.WriteLine(bunifuTextBox9.Text);
+            sw.WriteLine(TB_UsiaPasien.Text);
+            sw.WriteLine(CB_AgamaPasien.selectedIndex.ToString());
+            sw.WriteLine(CB_PendidikanPasien.selectedIndex.ToString());
+            sw.WriteLine(CB_PekerjaanPasien.selectedIndex.ToString());
+            sw.WriteLine(CB_StatusPerkawinanPasien.selectedIndex.ToString());
+            sw.WriteLine(TB_AlamatPasien.Text);
+            sw.WriteLine(TB_NamaKeluarga.Text);
+            sw.WriteLine(bunifuTextBox8.Text);
+            sw.WriteLine(TB_UsiaKeluarga.Text);
+            sw.WriteLine(CB_AgamaKeluarga.selectedIndex.ToString());
+            sw.WriteLine(CB_PendidikanKeluarga.selectedIndex.ToString());
+            sw.WriteLine(CB_PekerjaanKeluarga.selectedIndex.ToString());
+            sw.WriteLine(CB_StatusPerkawinanKeluarga.selectedIndex.ToString());
+            sw.WriteLine(TB_AlamatKeluarga.Text);
+            sw.WriteLine(bunifuTextBox1.Text);
+            sw.WriteLine(bunifuTextBox2.Text);
+            sw.WriteLine(bunifuTextBox3.Text);
+            sw.WriteLine(bunifuTextBox4.Text);
+            sw.WriteLine(CB_Ambulasi.SelectedIndex.ToString());
+            sw.WriteLine(CB_StatusFungsional.SelectedIndex.ToString());
+            sw.WriteLine(CB_KemampauanMerawatDiri.SelectedIndex.ToString());
+            sw.WriteLine(CB_Intake.SelectedIndex.ToString());
+            sw.WriteLine(CB_TingkatKesadaran.SelectedIndex.ToString());
+
+            //TABPAGE 2
+            sw.WriteLine(TB_Sistol.Text);
+            sw.WriteLine(TB_Diastole.Text);
+            sw.WriteLine(TB_MAP.Text);
+            sw.WriteLine(TB_Nadi.Text);
+            sw.WriteLine(TB_InterpretasiNadi.Text);
+            sw.WriteLine(CB_NadiTerabaLemah.Checked);
+            sw.WriteLine(CB_NadiTerabaKuat.Checked);
+            sw.WriteLine(bunifuCheckBox473.Checked);
+            sw.WriteLine(bunifuCheckBox472.Checked);
+            sw.WriteLine(TB_FrekuensiPernapasan.Text);
+            sw.WriteLine(TB_InterpretasiFrekuensiPernapasan.Text);
+            sw.WriteLine(TB_Suhu.Text);
+            sw.WriteLine(TB_InterpretasiSuhu.Text);
+            sw.WriteLine(CB_SkalaNyeri.selectedIndex.ToString());
+            sw.WriteLine(TB_InterpretasiSkalaNyeri.Text);
+            sw.WriteLine(TB_FrekuensiNyeri.Text);
+            sw.WriteLine(TB_DurasiNyeri.Text);
+            sw.WriteLine(TB_InterpretasiSuhu.Text);
+            sw.WriteLine(TB_LokasiNyeri.Text);
+            sw.WriteLine(CB_LamaMerasaNyeri.selectedIndex.ToString());
+            sw.WriteLine(bunifuDropdown1.selectedIndex.ToString());
+            sw.WriteLine(bunifuCheckBox9.Checked);
+            sw.WriteLine(bunifuCheckBox6.Checked);
+            sw.WriteLine(bunifuCheckBox2.Checked);
+            sw.WriteLine(bunifuCheckBox1.Checked);
+            sw.WriteLine(bunifuCheckBox11.Checked);
+            sw.WriteLine(bunifuCheckBox10.Checked);
+            sw.WriteLine(bunifuCheckBox4.Checked);
+            sw.WriteLine(bunifuCheckBox3.Checked);
+            sw.WriteLine(bunifuCheckBox13.Checked);
+            sw.WriteLine(bunifuCheckBox12.Checked);
+            sw.WriteLine(bunifuCheckBox5.Checked);
+            sw.WriteLine(bunifuCheckBox7.Checked);
+            sw.WriteLine(bunifuCheckBox8.Checked);
+            sw.WriteLine(bunifuCheckBox14.Checked);
+            sw.WriteLine(bunifuCheckBox16.Checked);
+            sw.WriteLine(bunifuCheckBox17.Checked);
+            sw.WriteLine(bunifuCheckBox28.Checked);
+            sw.WriteLine(bunifuCheckBox29.Checked);
+            sw.WriteLine(bunifuCheckBox19.Checked);
+            sw.WriteLine(bunifuCheckBox20.Checked);
+            sw.WriteLine(bunifuCheckBox30.Checked);
+            sw.WriteLine(bunifuCheckBox18.Checked);
+            sw.WriteLine(bunifuCheckBox31.Checked);
+            sw.WriteLine(bunifuCheckBox22.Checked);
+            sw.WriteLine(bunifuCheckBox23.Checked);
+            sw.WriteLine(bunifuCheckBox32.Checked);
+            sw.WriteLine(bunifuCheckBox33.Checked);
+            sw.WriteLine(bunifuCheckBox21.Checked);
+            sw.WriteLine(bunifuCheckBox24.Checked);
+            sw.WriteLine(bunifuCheckBox25.Checked);
+            sw.WriteLine(bunifuCheckBox36.Checked);
+            sw.WriteLine(bunifuCheckBox37.Checked);
+            sw.WriteLine(bunifuCheckBox34.Checked);
+            sw.WriteLine(bunifuCheckBox38.Checked);
+            sw.WriteLine(bunifuCheckBox26.Checked);
+            sw.WriteLine(bunifuCheckBox27.Checked);
+            sw.WriteLine(bunifuCheckBox39.Checked);
+            sw.WriteLine(bunifuCheckBox40.Checked);
+            sw.WriteLine(bunifuCheckBox41.Checked);
+            sw.WriteLine(bunifuCheckBox42.Checked);
+            sw.WriteLine(bunifuCheckBox43.Checked);
+            sw.WriteLine(bunifuCheckBox44.Checked);
+            sw.WriteLine(bunifuCheckBox45.Checked);
+            sw.WriteLine(bunifuCheckBox46.Checked);
+            sw.WriteLine(bunifuCheckBox47.Checked);
+            sw.WriteLine(bunifuCheckBox48.Checked);
+            sw.WriteLine(bunifuCheckBox49.Checked);
+            sw.WriteLine(bunifuCheckBox50.Checked);
+            sw.WriteLine(bunifuCheckBox51.Checked);
+            sw.WriteLine(bunifuCheckBox52.Checked);
+            sw.WriteLine(bunifuCheckBox53.Checked);
+            sw.WriteLine(bunifuCheckBox54.Checked);
+            sw.WriteLine(bunifuCheckBox55.Checked);
+            sw.WriteLine(bunifuCheckBox56.Checked);
+            sw.WriteLine(bunifuCheckBox57.Checked);
+            sw.WriteLine(bunifuCheckBox58.Checked);
+            sw.WriteLine(bunifuMaterialTextbox1.Text);
+            sw.WriteLine(bunifuCheckBox59.Checked);
+            sw.WriteLine(bunifuCheckBox60.Checked);
+            sw.WriteLine(bunifuCheckBox61.Checked);
+            sw.WriteLine(bunifuCheckBox62.Checked);
+            sw.WriteLine(bunifuCheckBox63.Checked);
+            sw.WriteLine(bunifuCheckBox64.Checked);
+            sw.WriteLine(bunifuCheckBox65.Checked);
+            sw.WriteLine(bunifuCheckBox66.Checked);
+            sw.WriteLine(bunifuCheckBox67.Checked);
+            sw.WriteLine(bunifuCheckBox68.Checked);
+            sw.WriteLine(bunifuCheckBox69.Checked);
+            sw.WriteLine(bunifuCheckBox70.Checked);
+            sw.WriteLine(bunifuCheckBox71.Checked);
+            sw.WriteLine(bunifuCheckBox75.Checked);
+            sw.WriteLine(bunifuCheckBox74.Checked);
+            sw.WriteLine(bunifuCheckBox76.Checked);
+            sw.WriteLine(bunifuCheckBox78.Checked);
+            sw.WriteLine(bunifuCheckBox77.Checked);
+            sw.WriteLine(bunifuCheckBox73.Checked);
+            sw.WriteLine(bunifuCheckBox81.Checked);
+            sw.WriteLine(bunifuCheckBox82.Checked);
+            sw.WriteLine(bunifuCheckBox83.Checked);
+            sw.WriteLine(bunifuCheckBox72.Checked);
+            sw.WriteLine(bunifuMaterialTextbox2.Text);
+            sw.WriteLine(bunifuCheckBox79.Checked);
+            sw.WriteLine(bunifuCheckBox80.Checked);
+            sw.WriteLine(bunifuMaterialTextbox3.Text);
+            sw.WriteLine(bunifuTextBox5.Text);
+            sw.WriteLine(bunifuCheckBox87.Checked);
+            sw.WriteLine(bunifuCheckBox86.Checked);
+            sw.WriteLine(bunifuCheckBox88.Checked);
+            sw.WriteLine(bunifuCheckBox90.Checked);
+            sw.WriteLine(bunifuCheckBox89.Checked);
+            sw.WriteLine(bunifuCheckBox85.Checked);
+            sw.WriteLine(bunifuCheckBox84.Checked);
+            sw.WriteLine(bunifuCheckBox91.Checked);
+            sw.WriteLine(bunifuCheckBox93.Checked);
+            sw.WriteLine(bunifuCheckBox94.Checked);
+            sw.WriteLine(bunifuCheckBox92.Checked);
+            sw.WriteLine(bunifuCheckBox95.Checked);
+            sw.WriteLine(bunifuCheckBox97.Checked);
+            sw.WriteLine(bunifuCheckBox101.Checked);
+            sw.WriteLine(bunifuCheckBox100.Checked);
+            sw.WriteLine(bunifuCheckBox102.Checked);
+            sw.WriteLine(bunifuCheckBox104.Checked);
+            sw.WriteLine(bunifuCheckBox103.Checked);
+            sw.WriteLine(bunifuCheckBox99.Checked);
+            sw.WriteLine(bunifuCheckBox98.Checked);
+            sw.WriteLine(bunifuCheckBox105.Checked);
+            sw.WriteLine(bunifuCheckBox106.Checked);
+            sw.WriteLine(bunifuCheckBox107.Checked);
+            sw.WriteLine(bunifuCheckBox108.Checked);
+            sw.WriteLine(bunifuCheckBox109.Checked);
+            sw.WriteLine(bunifuCheckBox96.Checked);
+            sw.WriteLine(bunifuCheckBox110.Checked);
+            sw.WriteLine(bunifuCheckBox111.Checked);
+            sw.WriteLine(bunifuCheckBox112.Checked);
+            sw.WriteLine(bunifuCheckBox113.Checked);
+            sw.WriteLine(bunifuCheckBox114.Checked);
+            sw.WriteLine(bunifuCheckBox115.Checked);
+            sw.WriteLine(bunifuCheckBox116.Checked);
+            sw.WriteLine(bunifuCheckBox117.Checked);
+            sw.WriteLine(bunifuCheckBox439.Checked);
+            sw.WriteLine(bunifuCheckBox440.Checked);
+            sw.WriteLine(bunifuCheckBox118.Checked);
+            sw.WriteLine(bunifuCheckBox119.Checked);
+            sw.WriteLine(bunifuCheckBox120.Checked);
+            sw.WriteLine(bunifuCheckBox124.Checked);
+            sw.WriteLine(bunifuCheckBox122.Checked);
+            sw.WriteLine(bunifuCheckBox125.Checked);
+            sw.WriteLine(bunifuCheckBox121.Checked);
+            sw.WriteLine(bunifuCheckBox126.Checked);
+            sw.WriteLine(bunifuCheckBox127.Checked);
+            sw.WriteLine(bunifuCheckBox123.Checked);
+            sw.WriteLine(bunifuCheckBox128.Checked);
+            sw.WriteLine(bunifuCheckBox129.Checked);
+            sw.WriteLine(bunifuCheckBox130.Checked);
+            sw.WriteLine(bunifuCheckBox131.Checked);
+            sw.WriteLine(bunifuCheckBox132.Checked);
+            sw.WriteLine(bunifuCheckBox133.Checked);
+            sw.WriteLine(bunifuCheckBox134.Checked);
+            sw.WriteLine(bunifuCheckBox135.Checked);
+            sw.WriteLine(bunifuCheckBox136.Checked);
+            sw.WriteLine(bunifuCheckBox137.Checked);
+            sw.WriteLine(bunifuCheckBox138.Checked);
+            sw.WriteLine(bunifuCheckBox140.Checked);
+            sw.WriteLine(bunifuCheckBox141.Checked);
+            sw.WriteLine(bunifuCheckBox436.Checked);
+            sw.WriteLine(bunifuCheckBox433.Checked);
+            sw.WriteLine(bunifuCheckBox437.Checked);
+            sw.WriteLine(bunifuCheckBox438.Checked);
+            sw.WriteLine(bunifuMaterialTextbox5.Text);
+            sw.WriteLine(bunifuCheckBox139.Checked);
+            sw.WriteLine(bunifuCheckBox142.Checked);
+            sw.WriteLine(bunifuCheckBox143.Checked);
+            sw.WriteLine(bunifuCheckBox144.Checked);
+            sw.WriteLine(bunifuCheckBox167.Checked);
+            sw.WriteLine(bunifuCheckBox168.Checked);
+            sw.WriteLine(bunifuCheckBox165.Checked);
+            sw.WriteLine(bunifuCheckBox166.Checked);
+            sw.WriteLine(bunifuCheckBox163.Checked);
+            sw.WriteLine(bunifuCheckBox164.Checked);
+            sw.WriteLine(bunifuCheckBox157.Checked);
+            sw.WriteLine(bunifuCheckBox158.Checked);
+            sw.WriteLine(bunifuCheckBox161.Checked);
+            sw.WriteLine(bunifuCheckBox162.Checked);
+            sw.WriteLine(bunifuCheckBox159.Checked);
+            sw.WriteLine(bunifuCheckBox160.Checked);
+            sw.WriteLine(bunifuCheckBox155.Checked);
+            sw.WriteLine(bunifuCheckBox156.Checked);
+            sw.WriteLine(bunifuTextBox6.Text);
+            sw.WriteLine(bunifuCheckBox15.Checked);
+
+            //TABPAGE 3
+            sw.WriteLine(bunifuCheckBox145.Checked);
+            sw.WriteLine(bunifuCheckBox146.Checked);
+            sw.WriteLine(bunifuCheckBox147.Checked);
+            sw.WriteLine(bunifuCheckBox154.Checked);
+            sw.WriteLine(bunifuCheckBox169.Checked);
+            sw.WriteLine(bunifuCheckBox152.Checked);
+            sw.WriteLine(bunifuCheckBox153.Checked);
+            sw.WriteLine(bunifuCheckBox170.Checked);
+            sw.WriteLine(bunifuCheckBox171.Checked);
+            sw.WriteLine(bunifuCheckBox172.Checked);
+            sw.WriteLine(bunifuCheckBox173.Checked);
+            sw.WriteLine(bunifuCheckBox174.Checked);
+            sw.WriteLine(bunifuCheckBox175.Checked);
+            sw.WriteLine(bunifuCheckBox176.Checked);
+            sw.WriteLine(bunifuCheckBox177.Checked);
+            sw.WriteLine(bunifuCheckBox178.Checked);
+            sw.WriteLine(bunifuCheckBox179.Checked);
+            sw.WriteLine(bunifuCheckBox180.Checked);
+            sw.WriteLine(bunifuCheckBox181.Checked);
+            sw.WriteLine(bunifuCheckBox190.Checked);
+            sw.WriteLine(bunifuCheckBox191.Checked);
+            sw.WriteLine(bunifuCheckBox192.Checked);
+            sw.WriteLine(bunifuCheckBox207.Checked);
+            sw.WriteLine(bunifuCheckBox206.Checked);
+            sw.WriteLine(bunifuCheckBox205.Checked);
+            sw.WriteLine(bunifuCheckBox204.Checked);
+            sw.WriteLine(bunifuCheckBox203.Checked);
+            sw.WriteLine(bunifuCheckBox202.Checked);
+            sw.WriteLine(bunifuCheckBox201.Checked);
+            sw.WriteLine(bunifuCheckBox187.Checked);
+            sw.WriteLine(bunifuCheckBox188.Checked);
+            sw.WriteLine(bunifuCheckBox185.Checked);
+            sw.WriteLine(bunifuCheckBox189.Checked);
+            sw.WriteLine(bunifuCheckBox183.Checked);
+            sw.WriteLine(bunifuCheckBox184.Checked);
+            sw.WriteLine(bunifuCheckBox186.Checked);
+            sw.WriteLine(bunifuMaterialTextbox7.Text);
+            sw.WriteLine(bunifuMaterialTextbox4.Text);
+            sw.WriteLine(bunifuTextBox7.Text);
+            sw.WriteLine(bunifuMaterialTextbox8.Text);
+            sw.WriteLine(bunifuMaterialTextbox6.Text);
+            sw.WriteLine(bunifuMaterialTextbox9.Text);
+            sw.WriteLine(bunifuCheckBox194.Checked);
+            sw.WriteLine(bunifuCheckBox195.Checked);
+            sw.WriteLine(bunifuCheckBox193.Checked);
+            sw.WriteLine(bunifuMaterialTextbox10.Text);
+            sw.WriteLine(bunifuCheckBox197.Checked);
+            sw.WriteLine(bunifuCheckBox198.Checked);
+            sw.WriteLine(bunifuCheckBox196.Checked);
+            sw.WriteLine(bunifuMaterialTextbox35.Text);
+            sw.WriteLine(bunifuCheckBox218.Checked);
+            sw.WriteLine(bunifuCheckBox217.Checked);
+            sw.WriteLine(bunifuCheckBox216.Checked);
+            sw.WriteLine(bunifuCheckBox215.Checked);
+            sw.WriteLine(bunifuCheckBox214.Checked);
+            sw.WriteLine(bunifuCheckBox213.Checked);
+            sw.WriteLine(bunifuCheckBox212.Checked);
+            sw.WriteLine(bunifuCheckBox228.Checked);
+            sw.WriteLine(bunifuCheckBox227.Checked);
+            sw.WriteLine(bunifuCheckBox211.Checked);
+            sw.WriteLine(bunifuCheckBox210.Checked);
+            sw.WriteLine(bunifuCheckBox209.Checked);
+            sw.WriteLine(bunifuCheckBox208.Checked);
+            sw.WriteLine(bunifuCheckBox200.Checked);
+            sw.WriteLine(bunifuCheckBox199.Checked);
+            sw.WriteLine(bunifuCheckBox182.Checked);
+            sw.WriteLine(bunifuCheckBox235.Checked);
+            sw.WriteLine(bunifuCheckBox234.Checked);
+            sw.WriteLine(bunifuCheckBox229.Checked);
+            sw.WriteLine(bunifuCheckBox224.Checked);
+            sw.WriteLine(bunifuCheckBox223.Checked);
+            sw.WriteLine(bunifuCheckBox222.Checked);
+            sw.WriteLine(bunifuCheckBox221.Checked);
+            sw.WriteLine(bunifuCheckBox220.Checked);
+            sw.WriteLine(bunifuCheckBox219.Checked);
+            sw.WriteLine(bunifuCheckBox225.Checked);
+            sw.WriteLine(bunifuCheckBox474.Checked);
+            sw.WriteLine(bunifuCheckBox475.Checked);
+            sw.WriteLine(bunifuCheckBox233.Checked);
+            sw.WriteLine(bunifuCheckBox232.Checked);
+            sw.WriteLine(bunifuCheckBox236.Checked);
+            sw.WriteLine(bunifuCheckBox230.Checked);
+            sw.WriteLine(bunifuCheckBox231.Checked);
+            sw.WriteLine(bunifuCheckBox226.Checked);
+            sw.WriteLine(bunifuCheckBox237.Checked);
+            sw.WriteLine(bunifuCheckBox238.Checked);
+            sw.WriteLine(bunifuCheckBox239.Checked);
+            sw.WriteLine(bunifuCheckBox240.Checked);
+            sw.WriteLine(bunifuCheckBox241.Checked);
+            sw.WriteLine(bunifuCheckBox242.Checked);
+
+
+            //TABPAGE 4
+            sw.WriteLine(bunifuCheckBox249.Checked);
+            sw.WriteLine(bunifuCheckBox248.Checked);
+            sw.WriteLine(bunifuCheckBox247.Checked);
+            sw.WriteLine(bunifuCheckBox246.Checked);
+            sw.WriteLine(bunifuCheckBox250.Checked);
+            sw.WriteLine(bunifuCheckBox245.Checked);
+            sw.WriteLine(bunifuCheckBox244.Checked);
+            sw.WriteLine(bunifuCheckBox254.Checked);
+            sw.WriteLine(bunifuCheckBox253.Checked);
+            sw.WriteLine(bunifuCheckBox252.Checked);
+            sw.WriteLine(bunifuCheckBox251.Checked);
+            sw.WriteLine(bunifuCheckBox263.Checked);
+            sw.WriteLine(bunifuCheckBox264.Checked);
+            sw.WriteLine(bunifuCheckBox261.Checked);
+            sw.WriteLine(bunifuCheckBox265.Checked);
+            sw.WriteLine(bunifuCheckBox257.Checked);
+            sw.WriteLine(bunifuCheckBox256.Checked);
+            sw.WriteLine(bunifuCheckBox255.Checked);
+            sw.WriteLine(bunifuCheckBox258.Checked);
+            sw.WriteLine(bunifuCheckBox259.Checked);
+            sw.WriteLine(bunifuCheckBox260.Checked);
+            sw.WriteLine(bunifuCheckBox262.Checked);
+            sw.WriteLine(bunifuCheckBox266.Checked);
+            sw.WriteLine(bunifuCheckBox267.Checked);
+            sw.WriteLine(bunifuMaterialTextbox11.Text);
+            sw.WriteLine(bunifuMaterialTextbox12.Text);
+            sw.WriteLine(bunifuMaterialTextbox13.Text);
+            sw.WriteLine(bunifuMaterialTextbox14.Text);
+            sw.WriteLine(bunifuMaterialTextbox15.Text);
+            sw.WriteLine(bunifuMaterialTextbox16.Text);
+            sw.WriteLine(bunifuMaterialTextbox17.Text);
+            sw.WriteLine(bunifuMaterialTextbox18.Text);
+            sw.WriteLine(bunifuMaterialTextbox19.Text);
+            sw.WriteLine(bunifuMaterialTextbox20.Text);
+            sw.WriteLine(bunifuMaterialTextbox21.Text);
+            sw.WriteLine(bunifuMaterialTextbox22.Text);
+            sw.WriteLine(bunifuMaterialTextbox23.Text);
+            sw.WriteLine(bunifuMaterialTextbox24.Text);
+            sw.WriteLine(bunifuMaterialTextbox25.Text);
+            sw.WriteLine(bunifuMaterialTextbox26.Text);
+            sw.WriteLine(bunifuMaterialTextbox27.Text);
+            sw.WriteLine(bunifuMaterialTextbox28.Text);
+            sw.WriteLine(bunifuMaterialTextbox29.Text);
+            sw.WriteLine(bunifuMaterialTextbox30.Text);
+            sw.WriteLine(bunifuMaterialTextbox31.Text);
+            sw.WriteLine(bunifuMaterialTextbox32.Text);
+            sw.WriteLine(bunifuMaterialTextbox33.Text);
+            sw.WriteLine(bunifuMaterialTextbox34.Text);
+            sw.WriteLine(bunifuCheckBox268.Checked);
+            sw.WriteLine(bunifuCheckBox269.Checked);
+            sw.WriteLine(bunifuCheckBox274.Checked);
+            sw.WriteLine(bunifuCheckBox275.Checked);
+            sw.WriteLine(bunifuCheckBox270.Checked);
+            sw.WriteLine(bunifuCheckBox271.Checked);
+            sw.WriteLine(bunifuCheckBox276.Checked);
+            sw.WriteLine(bunifuCheckBox277.Checked);
+            sw.WriteLine(bunifuCheckBox278.Checked);
+            sw.WriteLine(bunifuCheckBox279.Checked);
+            sw.WriteLine(bunifuCheckBox280.Checked);
+            sw.WriteLine(bunifuCheckBox281.Checked);
+            sw.WriteLine(bunifuCheckBox282.Checked);
+            sw.WriteLine(bunifuCheckBox471.Checked);
+            sw.WriteLine(bunifuCheckBox272.Checked);
+            sw.WriteLine(bunifuCheckBox273.Checked);
+            sw.WriteLine(bunifuCheckBox286.Checked);
+            sw.WriteLine(bunifuCheckBox285.Checked);
+            sw.WriteLine(bunifuCheckBox284.Checked);
+            sw.WriteLine(bunifuCheckBox283.Checked);
+            sw.WriteLine(bunifuCheckBox290.Checked);
+            sw.WriteLine(bunifuCheckBox289.Checked);
+            sw.WriteLine(bunifuCheckBox288.Checked);
+            sw.WriteLine(bunifuCheckBox291.Checked);
+            sw.WriteLine(bunifuCheckBox287.Checked);
+            sw.WriteLine(bunifuMaterialTextbox36.Text);
+            sw.WriteLine(bunifuCheckBox293.Checked);
+            sw.WriteLine(bunifuCheckBox292.Checked);
+            sw.WriteLine(bunifuMaterialTextbox37.Text);
+            sw.WriteLine(bunifuCheckBox300.Checked);
+            sw.WriteLine(bunifuCheckBox299.Checked);
+            sw.WriteLine(bunifuCheckBox298.Checked);
+            sw.WriteLine(bunifuCheckBox297.Checked);
+            sw.WriteLine(bunifuCheckBox296.Checked);
+            sw.WriteLine(bunifuCheckBox295.Checked);
+            sw.WriteLine(bunifuCheckBox294.Checked);
+            sw.WriteLine(bunifuCheckBox307.Checked);
+            sw.WriteLine(bunifuCheckBox306.Checked);
+            sw.WriteLine(bunifuCheckBox305.Checked);
+            sw.WriteLine(bunifuCheckBox304.Checked);
+            sw.WriteLine(bunifuCheckBox303.Checked);
+            sw.WriteLine(bunifuCheckBox302.Checked);
+            sw.WriteLine(bunifuCheckBox323.Checked);
+            sw.WriteLine(bunifuCheckBox322.Checked);
+            sw.WriteLine(bunifuMaterialTextbox39.Text);
+            sw.WriteLine(bunifuCheckBox321.Checked);
+            sw.WriteLine(bunifuCheckBox320.Checked);
+            sw.WriteLine(bunifuCheckBox324.Checked);
+            sw.WriteLine(bunifuCheckBox313.Checked);
+            sw.WriteLine(bunifuCheckBox312.Checked);
+            sw.WriteLine(bunifuCheckBox311.Checked);
+            sw.WriteLine(bunifuCheckBox310.Checked);
+            sw.WriteLine(bunifuCheckBox309.Checked);
+            sw.WriteLine(bunifuCheckBox308.Checked);
+            sw.WriteLine(bunifuCheckBox301.Checked);
+            sw.WriteLine(bunifuCheckBox319.Checked);
+            sw.WriteLine(bunifuCheckBox318.Checked);
+            sw.WriteLine(bunifuMaterialTextbox62.Text);
+            sw.WriteLine(bunifuMaterialTextbox60.Text);
+            sw.WriteLine(bunifuMaterialTextbox58.Text);
+            sw.WriteLine(bunifuMaterialTextbox56.Text);
+            sw.WriteLine(bunifuMaterialTextbox54.Text);
+            sw.WriteLine(bunifuMaterialTextbox52.Text);
+            sw.WriteLine(bunifuMaterialTextbox44.Text);
+            sw.WriteLine(bunifuMaterialTextbox43.Text);
+            sw.WriteLine(bunifuMaterialTextbox42.Text);
+            sw.WriteLine(bunifuMaterialTextbox38.Text);
+            sw.WriteLine(bunifuMaterialTextbox40.Text);
+            sw.WriteLine(bunifuCheckBox331.Checked);
+            sw.WriteLine(bunifuCheckBox332.Checked);
+            sw.WriteLine(bunifuCheckBox330.Checked);
+            sw.WriteLine(bunifuCheckBox333.Checked);
+            sw.WriteLine(bunifuCheckBox329.Checked);
+            sw.WriteLine(bunifuCheckBox328.Checked);
+            sw.WriteLine(bunifuCheckBox327.Checked);
+            sw.WriteLine(bunifuCheckBox326.Checked);
+            sw.WriteLine(bunifuCheckBox325.Checked);
+            sw.WriteLine(bunifuCheckBox317.Checked);
+            sw.WriteLine(bunifuCheckBox316.Checked);
+            sw.WriteLine(bunifuCheckBox315.Checked);
+            sw.WriteLine(bunifuCheckBox334.Checked);
+            sw.WriteLine(bunifuCheckBox335.Checked);
+            sw.WriteLine(bunifuCheckBox314.Checked);
+            sw.WriteLine(bunifuCheckBox336.Checked);
+            sw.WriteLine(bunifuCheckBox337.Checked);
+            sw.WriteLine(bunifuCheckBox338.Checked);
+            sw.WriteLine(bunifuCheckBox339.Checked);
+            sw.WriteLine(bunifuCheckBox340.Checked);
+            sw.WriteLine(bunifuCheckBox341.Checked);
+            sw.WriteLine(bunifuCheckBox342.Checked);
+            sw.WriteLine(bunifuCheckBox343.Checked);
+            sw.WriteLine(bunifuCheckBox344.Checked);
+            sw.WriteLine(bunifuCheckBox345.Checked);
+            sw.WriteLine(bunifuCheckBox346.Checked);
+            sw.WriteLine(bunifuMaterialTextbox47.Text);
+            sw.WriteLine(bunifuMaterialTextbox48.Text);
+            sw.WriteLine(bunifuMaterialTextbox49.Text);
+            sw.WriteLine(bunifuMaterialTextbox50.Text);
+            sw.WriteLine(bunifuMaterialTextbox51.Text);
+            sw.WriteLine(bunifuMaterialTextbox53.Text);
+            sw.WriteLine(bunifuMaterialTextbox41.Text);
+            sw.WriteLine(bunifuMaterialTextbox45.Text);
+            sw.WriteLine(bunifuMaterialTextbox46.Text);
+            sw.WriteLine(bunifuMaterialTextbox55.Text);
+            sw.WriteLine(bunifuMaterialTextbox57.Text);
+
+
+
+
+
+            sw.Close();
+            MessageBox.Show("Successfully Saved");
+        }
+        private void Form_Pengkajian_Load(object sender, EventArgs e)
+        {
+            if (stats == "Load")
+            {
+                //TABPAGE 1
+                line = File.ReadAllLines(strfilename);
+                bunifuTextBox10.Text = line[0];
+                TB_NoMEDREC.Text = line[1];
+                TB_Jam.Text = line[2];
+                TB_DPJP.Text = line[3];
+                TB_NamaPasien.Text = line[4];
+                bunifuTextBox9.Text = line[5];
+                TB_UsiaPasien.Text = line[6];
+                CB_AgamaPasien.selectedIndex = Convert.ToInt32(line[7]);
+                CB_PendidikanPasien.selectedIndex = Convert.ToInt32(line[8]);
+                CB_PekerjaanPasien.selectedIndex = Convert.ToInt32(line[9]);
+                CB_StatusPerkawinanPasien.selectedIndex = Convert.ToInt32(line[10]);
+                TB_AlamatPasien.Text = line[11];
+                TB_NamaKeluarga.Text = line[12];
+                bunifuTextBox8.Text = line[13];
+                TB_UsiaKeluarga.Text = line[14];
+                CB_AgamaKeluarga.selectedIndex = Convert.ToInt32(line[15]);
+                CB_PendidikanKeluarga.selectedIndex = Convert.ToInt32(line[16]);
+                CB_PekerjaanKeluarga.selectedIndex = Convert.ToInt32(line[17]);
+                CB_StatusPerkawinanKeluarga.selectedIndex = Convert.ToInt32(line[18]);
+                TB_AlamatKeluarga.Text = line[19];
+                bunifuTextBox1.Text = line[20];
+                bunifuTextBox2.Text = line[21];
+                bunifuTextBox3.Text = line[22];
+                bunifuTextBox4.Text = line[23];
+                CB_Ambulasi.SelectedIndex = Convert.ToInt32(line[24]);
+                CB_StatusFungsional.SelectedIndex = Convert.ToInt32(line[25]);
+                CB_KemampauanMerawatDiri.SelectedIndex = Convert.ToInt32(line[26]);
+                CB_Intake.SelectedIndex = Convert.ToInt32(line[27]);
+                CB_TingkatKesadaran.SelectedIndex = Convert.ToInt32(line[28]);
+
+                //TABPAGE 2
+                TB_Sistol.Text = line[29];
+                TB_Diastole.Text = line[30];
+                TB_MAP.Text = line[31];
+                TB_Nadi.Text = line[32];
+                TB_InterpretasiNadi.Text = line[33];
+                CB_NadiTerabaLemah.Checked = bool.Parse(line[34]);
+                CB_NadiTerabaKuat.Checked = bool.Parse(line[35]);
+                bunifuCheckBox473.Checked = bool.Parse(line[36]);
+                bunifuCheckBox472.Checked = bool.Parse(line[37]);
+                TB_FrekuensiPernapasan.Text = line[38];
+                TB_InterpretasiFrekuensiPernapasan.Text = line[39];
+                TB_Suhu.Text = line[40];
+                TB_InterpretasiSuhu.Text = line[41];
+                CB_SkalaNyeri.selectedIndex = Convert.ToInt32(line[42]);
+                TB_InterpretasiSkalaNyeri.Text = line[43];
+                TB_FrekuensiNyeri.Text = line[44];
+                TB_DurasiNyeri.Text = line[45];
+                TB_InterpretasiSuhu.Text = line[46];
+                TB_LokasiNyeri.Text = line[47];
+                CB_LamaMerasaNyeri.selectedIndex = Convert.ToInt32(line[48]);
+                bunifuDropdown1.selectedIndex = Convert.ToInt32(line[49]);
+                bunifuCheckBox9.Checked = bool.Parse(line[50]);
+                bunifuCheckBox6.Checked = bool.Parse(line[51]);
+                bunifuCheckBox2.Checked = bool.Parse(line[52]);
+                bunifuCheckBox1.Checked = bool.Parse(line[53]);
+                bunifuCheckBox11.Checked = bool.Parse(line[54]);
+                bunifuCheckBox10.Checked = bool.Parse(line[55]);
+                bunifuCheckBox4.Checked = bool.Parse(line[56]);
+                bunifuCheckBox3.Checked = bool.Parse(line[57]);
+                bunifuCheckBox13.Checked = bool.Parse(line[58]);
+                bunifuCheckBox12.Checked = bool.Parse(line[59]);
+                bunifuCheckBox5.Checked = bool.Parse(line[60]);
+                bunifuCheckBox7.Checked = bool.Parse(line[61]);
+                bunifuCheckBox8.Checked = bool.Parse(line[62]);
+                bunifuCheckBox14.Checked = bool.Parse(line[63]);
+                bunifuCheckBox16.Checked = bool.Parse(line[64]);
+                bunifuCheckBox17.Checked = bool.Parse(line[65]);
+                bunifuCheckBox28.Checked = bool.Parse(line[66]);
+                bunifuCheckBox29.Checked = bool.Parse(line[67]);
+                bunifuCheckBox19.Checked = bool.Parse(line[68]);
+                bunifuCheckBox20.Checked = bool.Parse(line[69]);
+                bunifuCheckBox30.Checked = bool.Parse(line[70]);
+                bunifuCheckBox18.Checked = bool.Parse(line[71]);
+                bunifuCheckBox31.Checked = bool.Parse(line[72]);
+                bunifuCheckBox22.Checked = bool.Parse(line[73]);
+                bunifuCheckBox23.Checked = bool.Parse(line[74]);
+                bunifuCheckBox32.Checked = bool.Parse(line[75]);
+                bunifuCheckBox33.Checked = bool.Parse(line[76]);
+                bunifuCheckBox21.Checked = bool.Parse(line[77]);
+                bunifuCheckBox24.Checked = bool.Parse(line[78]);
+                bunifuCheckBox25.Checked = bool.Parse(line[79]);
+                bunifuCheckBox36.Checked = bool.Parse(line[80]);
+                bunifuCheckBox37.Checked = bool.Parse(line[81]);
+                bunifuCheckBox34.Checked = bool.Parse(line[82]);
+                bunifuCheckBox38.Checked = bool.Parse(line[83]);
+                bunifuCheckBox26.Checked = bool.Parse(line[84]);
+                bunifuCheckBox27.Checked = bool.Parse(line[85]);
+                bunifuCheckBox39.Checked = bool.Parse(line[86]);
+                bunifuCheckBox40.Checked = bool.Parse(line[87]);
+                bunifuCheckBox41.Checked = bool.Parse(line[88]);
+                bunifuCheckBox42.Checked = bool.Parse(line[89]);
+                bunifuCheckBox43.Checked = bool.Parse(line[90]);
+                bunifuCheckBox44.Checked = bool.Parse(line[91]);
+                bunifuCheckBox45.Checked = bool.Parse(line[92]);
+                bunifuCheckBox46.Checked = bool.Parse(line[93]);
+                bunifuCheckBox47.Checked = bool.Parse(line[94]);
+                bunifuCheckBox48.Checked = bool.Parse(line[95]);
+                bunifuCheckBox49.Checked = bool.Parse(line[96]);
+                bunifuCheckBox50.Checked = bool.Parse(line[97]);
+                bunifuCheckBox51.Checked = bool.Parse(line[98]);
+                bunifuCheckBox52.Checked = bool.Parse(line[99]);
+                bunifuCheckBox53.Checked = bool.Parse(line[100]);
+                bunifuCheckBox54.Checked = bool.Parse(line[101]);
+                bunifuCheckBox55.Checked = bool.Parse(line[102]);
+                bunifuCheckBox56.Checked = bool.Parse(line[103]);
+                bunifuCheckBox57.Checked = bool.Parse(line[104]);
+                bunifuCheckBox58.Checked = bool.Parse(line[105]);
+                bunifuMaterialTextbox1.Text = line[106];
+                bunifuCheckBox59.Checked = bool.Parse(line[107]);
+                bunifuCheckBox60.Checked = bool.Parse(line[108]);
+                bunifuCheckBox61.Checked = bool.Parse(line[109]);
+                bunifuCheckBox62.Checked = bool.Parse(line[110]);
+                bunifuCheckBox63.Checked = bool.Parse(line[111]);
+                bunifuCheckBox64.Checked = bool.Parse(line[112]);
+                bunifuCheckBox65.Checked = bool.Parse(line[113]);
+                bunifuCheckBox66.Checked = bool.Parse(line[114]);
+                bunifuCheckBox67.Checked = bool.Parse(line[115]);
+                bunifuCheckBox68.Checked = bool.Parse(line[116]);
+                bunifuCheckBox69.Checked = bool.Parse(line[117]);
+                bunifuCheckBox70.Checked = bool.Parse(line[118]);
+                bunifuCheckBox71.Checked = bool.Parse(line[119]);
+                bunifuCheckBox75.Checked = bool.Parse(line[120]);
+                bunifuCheckBox74.Checked = bool.Parse(line[121]);
+                bunifuCheckBox76.Checked = bool.Parse(line[122]);
+                bunifuCheckBox78.Checked = bool.Parse(line[123]);
+                bunifuCheckBox77.Checked = bool.Parse(line[124]);
+                bunifuCheckBox73.Checked = bool.Parse(line[125]);
+                bunifuCheckBox81.Checked = bool.Parse(line[126]);
+                bunifuCheckBox82.Checked = bool.Parse(line[127]);
+                bunifuCheckBox83.Checked = bool.Parse(line[128]);
+                bunifuCheckBox72.Checked = bool.Parse(line[129]);
+                bunifuMaterialTextbox2.Text = line[130];
+                bunifuCheckBox79.Checked = bool.Parse(line[131]);
+                bunifuCheckBox80.Checked = bool.Parse(line[132]);
+                bunifuMaterialTextbox3.Text = line[133];
+                bunifuTextBox5.Text = line[134];
+                bunifuCheckBox87.Checked = bool.Parse(line[135]);
+                bunifuCheckBox86.Checked = bool.Parse(line[136]);
+                bunifuCheckBox88.Checked = bool.Parse(line[137]);
+                bunifuCheckBox90.Checked = bool.Parse(line[138]);
+                bunifuCheckBox89.Checked = bool.Parse(line[139]);
+                bunifuCheckBox85.Checked = bool.Parse(line[140]);
+                bunifuCheckBox84.Checked = bool.Parse(line[141]);
+                bunifuCheckBox91.Checked = bool.Parse(line[142]);
+                bunifuCheckBox93.Checked = bool.Parse(line[143]);
+                bunifuCheckBox94.Checked = bool.Parse(line[144]);
+                bunifuCheckBox92.Checked = bool.Parse(line[145]);
+                bunifuCheckBox95.Checked = bool.Parse(line[146]);
+                bunifuCheckBox97.Checked = bool.Parse(line[147]);
+                bunifuCheckBox101.Checked = bool.Parse(line[148]);
+                bunifuCheckBox100.Checked = bool.Parse(line[149]);
+                bunifuCheckBox102.Checked = bool.Parse(line[150]);
+                bunifuCheckBox104.Checked = bool.Parse(line[151]);
+                bunifuCheckBox103.Checked = bool.Parse(line[152]);
+                bunifuCheckBox99.Checked = bool.Parse(line[153]);
+                bunifuCheckBox98.Checked = bool.Parse(line[154]);
+                bunifuCheckBox105.Checked = bool.Parse(line[155]);
+                bunifuCheckBox106.Checked = bool.Parse(line[156]);
+                bunifuCheckBox107.Checked = bool.Parse(line[157]);
+                bunifuCheckBox108.Checked = bool.Parse(line[158]);
+                bunifuCheckBox109.Checked = bool.Parse(line[159]);
+                bunifuCheckBox96.Checked = bool.Parse(line[160]);
+                bunifuCheckBox110.Checked = bool.Parse(line[161]);
+                bunifuCheckBox111.Checked = bool.Parse(line[162]);
+                bunifuCheckBox112.Checked = bool.Parse(line[163]);
+                bunifuCheckBox113.Checked = bool.Parse(line[164]);
+                bunifuCheckBox114.Checked = bool.Parse(line[165]);
+                bunifuCheckBox115.Checked = bool.Parse(line[166]);
+                bunifuCheckBox116.Checked = bool.Parse(line[167]);
+                bunifuCheckBox117.Checked = bool.Parse(line[168]);
+                bunifuCheckBox439.Checked = bool.Parse(line[169]);
+                bunifuCheckBox440.Checked = bool.Parse(line[170]);
+                bunifuCheckBox118.Checked = bool.Parse(line[171]);
+                bunifuCheckBox119.Checked = bool.Parse(line[172]);
+                bunifuCheckBox120.Checked = bool.Parse(line[173]);
+                bunifuCheckBox124.Checked = bool.Parse(line[174]);
+                bunifuCheckBox122.Checked = bool.Parse(line[175]);
+                bunifuCheckBox125.Checked = bool.Parse(line[176]);
+                bunifuCheckBox121.Checked = bool.Parse(line[177]);
+                bunifuCheckBox126.Checked = bool.Parse(line[178]);
+                bunifuCheckBox127.Checked = bool.Parse(line[179]);
+                bunifuCheckBox123.Checked = bool.Parse(line[180]);
+                bunifuCheckBox128.Checked = bool.Parse(line[181]);
+                bunifuCheckBox129.Checked = bool.Parse(line[182]);
+                bunifuCheckBox130.Checked = bool.Parse(line[183]);
+                bunifuCheckBox131.Checked = bool.Parse(line[184]);
+                bunifuCheckBox132.Checked = bool.Parse(line[185]);
+                bunifuCheckBox133.Checked = bool.Parse(line[186]);
+                bunifuCheckBox134.Checked = bool.Parse(line[187]);
+                bunifuCheckBox135.Checked = bool.Parse(line[188]);
+                bunifuCheckBox136.Checked = bool.Parse(line[189]);
+                bunifuCheckBox137.Checked = bool.Parse(line[190]);
+                bunifuCheckBox138.Checked = bool.Parse(line[191]);
+                bunifuCheckBox140.Checked = bool.Parse(line[192]);
+                bunifuCheckBox141.Checked = bool.Parse(line[193]);
+                bunifuCheckBox436.Checked = bool.Parse(line[194]);
+                bunifuCheckBox433.Checked = bool.Parse(line[195]);
+                bunifuCheckBox437.Checked = bool.Parse(line[196]);
+                bunifuCheckBox438.Checked = bool.Parse(line[197]);
+                bunifuMaterialTextbox5.Text = line[198];
+                bunifuCheckBox139.Checked = bool.Parse(line[199]);
+                bunifuCheckBox142.Checked = bool.Parse(line[200]);
+                bunifuCheckBox143.Checked = bool.Parse(line[201]);
+                bunifuCheckBox144.Checked = bool.Parse(line[202]);
+                bunifuCheckBox167.Checked = bool.Parse(line[203]);
+                bunifuCheckBox168.Checked = bool.Parse(line[204]);
+                bunifuCheckBox165.Checked = bool.Parse(line[205]);
+                bunifuCheckBox166.Checked = bool.Parse(line[206]);
+                bunifuCheckBox163.Checked = bool.Parse(line[207]);
+                bunifuCheckBox164.Checked = bool.Parse(line[208]);
+                bunifuCheckBox157.Checked = bool.Parse(line[209]);
+                bunifuCheckBox158.Checked = bool.Parse(line[210]);
+                bunifuCheckBox161.Checked = bool.Parse(line[211]);
+                bunifuCheckBox162.Checked = bool.Parse(line[212]);
+                bunifuCheckBox159.Checked = bool.Parse(line[213]);
+                bunifuCheckBox160.Checked = bool.Parse(line[214]);
+                bunifuCheckBox155.Checked = bool.Parse(line[215]);
+                bunifuCheckBox156.Checked = bool.Parse(line[216]);
+                bunifuTextBox6.Text = line[217];
+                bunifuCheckBox15.Checked = bool.Parse(line[218]);
+
+                
+                
+                
+                
+                
+                //TABPAGE 3
+                bunifuCheckBox145.Checked = bool.Parse(line[219]);
+                bunifuCheckBox146.Checked = bool.Parse(line[220]);
+                bunifuCheckBox147.Checked = bool.Parse(line[221]);
+                bunifuCheckBox154.Checked = bool.Parse(line[222]);
+                bunifuCheckBox169.Checked = bool.Parse(line[223]);
+                bunifuCheckBox152.Checked = bool.Parse(line[224]);
+                bunifuCheckBox153.Checked = bool.Parse(line[225]);
+                bunifuCheckBox170.Checked = bool.Parse(line[226]);
+                bunifuCheckBox171.Checked = bool.Parse(line[227]);
+                bunifuCheckBox172.Checked = bool.Parse(line[228]);
+                bunifuCheckBox173.Checked = bool.Parse(line[229]);
+                bunifuCheckBox174.Checked = bool.Parse(line[230]);
+                bunifuCheckBox175.Checked = bool.Parse(line[231]);
+                bunifuCheckBox176.Checked = bool.Parse(line[232]);
+                bunifuCheckBox177.Checked = bool.Parse(line[233]);
+                bunifuCheckBox178.Checked = bool.Parse(line[234]);
+                bunifuCheckBox179.Checked = bool.Parse(line[235]);
+                bunifuCheckBox180.Checked = bool.Parse(line[236]);
+                bunifuCheckBox181.Checked = bool.Parse(line[237]);
+                bunifuCheckBox190.Checked = bool.Parse(line[238]);
+                bunifuCheckBox191.Checked = bool.Parse(line[239]);
+                bunifuCheckBox192.Checked = bool.Parse(line[240]);
+                bunifuCheckBox207.Checked = bool.Parse(line[241]);
+                bunifuCheckBox206.Checked = bool.Parse(line[242]);
+                bunifuCheckBox205.Checked = bool.Parse(line[243]);
+                bunifuCheckBox204.Checked = bool.Parse(line[244]);
+                bunifuCheckBox203.Checked = bool.Parse(line[245]);
+                bunifuCheckBox202.Checked = bool.Parse(line[246]);
+                bunifuCheckBox201.Checked = bool.Parse(line[247]);
+                bunifuCheckBox187.Checked = bool.Parse(line[248]);
+                bunifuCheckBox188.Checked = bool.Parse(line[249]);
+                bunifuCheckBox185.Checked = bool.Parse(line[250]);
+                bunifuCheckBox189.Checked = bool.Parse(line[251]);
+                bunifuCheckBox183.Checked = bool.Parse(line[252]);
+                bunifuCheckBox184.Checked = bool.Parse(line[253]);
+                bunifuCheckBox186.Checked = bool.Parse(line[254]);
+                bunifuMaterialTextbox7.Text = line[255];
+                bunifuMaterialTextbox4.Text = line[256];
+                bunifuTextBox7.Text = line[257];
+                bunifuMaterialTextbox8.Text = line[258];
+                bunifuMaterialTextbox6.Text = line[259];
+                bunifuMaterialTextbox9.Text = line[260];
+                bunifuCheckBox194.Checked = bool.Parse(line[261]);
+                bunifuCheckBox195.Checked = bool.Parse(line[262]);
+                bunifuCheckBox193.Checked = bool.Parse(line[263]);
+                bunifuMaterialTextbox10.Text = line[264];
+                bunifuCheckBox197.Checked = bool.Parse(line[265]);
+                bunifuCheckBox198.Checked = bool.Parse(line[266]);
+                bunifuCheckBox196.Checked = bool.Parse(line[267]);
+                bunifuMaterialTextbox35.Text = line[268];
+                bunifuCheckBox218.Checked = bool.Parse(line[269]);
+                bunifuCheckBox217.Checked = bool.Parse(line[270]);
+                bunifuCheckBox216.Checked = bool.Parse(line[271]);
+                bunifuCheckBox215.Checked = bool.Parse(line[272]);
+                bunifuCheckBox214.Checked = bool.Parse(line[273]);
+                bunifuCheckBox213.Checked = bool.Parse(line[274]);
+                bunifuCheckBox212.Checked = bool.Parse(line[275]);
+                bunifuCheckBox228.Checked = bool.Parse(line[276]);
+                bunifuCheckBox227.Checked = bool.Parse(line[277]);
+                bunifuCheckBox211.Checked = bool.Parse(line[278]);
+                bunifuCheckBox210.Checked = bool.Parse(line[279]);
+                bunifuCheckBox209.Checked = bool.Parse(line[280]);
+                bunifuCheckBox208.Checked = bool.Parse(line[281]);
+                bunifuCheckBox200.Checked = bool.Parse(line[282]);
+                bunifuCheckBox199.Checked = bool.Parse(line[283]);
+                bunifuCheckBox182.Checked = bool.Parse(line[284]);
+                bunifuCheckBox235.Checked = bool.Parse(line[285]);
+                bunifuCheckBox234.Checked = bool.Parse(line[286]);
+                bunifuCheckBox229.Checked = bool.Parse(line[287]);
+                bunifuCheckBox224.Checked = bool.Parse(line[288]);
+                bunifuCheckBox223.Checked = bool.Parse(line[289]);
+                bunifuCheckBox222.Checked = bool.Parse(line[290]);
+                bunifuCheckBox221.Checked = bool.Parse(line[291]);
+                bunifuCheckBox220.Checked = bool.Parse(line[292]);
+                bunifuCheckBox219.Checked = bool.Parse(line[293]);
+                bunifuCheckBox225.Checked = bool.Parse(line[294]);
+                bunifuCheckBox474.Checked = bool.Parse(line[295]);
+                bunifuCheckBox475.Checked = bool.Parse(line[296]);
+                bunifuCheckBox233.Checked = bool.Parse(line[297]);
+                bunifuCheckBox232.Checked = bool.Parse(line[298]);
+                bunifuCheckBox236.Checked = bool.Parse(line[299]);
+                bunifuCheckBox230.Checked = bool.Parse(line[300]);
+                bunifuCheckBox231.Checked = bool.Parse(line[301]);
+                bunifuCheckBox226.Checked = bool.Parse(line[302]);
+                bunifuCheckBox237.Checked = bool.Parse(line[303]);
+                bunifuCheckBox238.Checked = bool.Parse(line[304]);
+                bunifuCheckBox239.Checked = bool.Parse(line[305]);
+                bunifuCheckBox240.Checked = bool.Parse(line[306]);
+                bunifuCheckBox241.Checked = bool.Parse(line[307]);
+                bunifuCheckBox242.Checked = bool.Parse(line[308]);
+            }
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* private void BunifuButton1_Click(object sender, EventArgs e)
-{
-   double DBD = Math.Round((convertToNumber(CB_Demam.Checked) + convertToNumber(CB_Mual.Checked))/ 2.0 , 2);
-   double DB = Math.Round(convertToNumber(CB_Pegal.Checked) + convertToNumber(CB_SakitKepala.Checked) / 2.0, 2);
-   if (DBD >= 0.80)
-   {
-       Label TB = new Label();
-       TB.Name = "Tombol" + leftcontrol.ToString();
-       TB.Text = "DBD :" + DBD.ToString();
-       leftcontrol += 1;
-       flowLayoutPanel1.Controls.Add(TB);
-   }
-   if (DB >= 0.80)
-   {
-       Label TB = new Label();
-       TB.Name = "Tombol" + leftcontrol.ToString();
-       TB.Text = "DB :" + DB.ToString() ;
-       leftcontrol += 1;
-       flowLayoutPanel1.Controls.Add(TB);
-   }
-
-}
-*/
     }
 }

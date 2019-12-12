@@ -37,27 +37,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.B_Keluar = new System.Windows.Forms.Button();
             this.B_Mulai = new System.Windows.Forms.Button();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.P_NurseSmiling = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Timer_Loading = new System.Windows.Forms.Timer(this.components);
+            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.Timer_Loading = new System.Windows.Forms.Timer(this.components);
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
-            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).BeginInit();
+            this.P_NurseSmiling = new System.Windows.Forms.PictureBox();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -152,32 +152,6 @@
             this.B_Mulai.UseVisualStyleBackColor = false;
             this.B_Mulai.Click += new System.EventHandler(this.B_Mulai_Click);
             // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // bunifuDragControl2
-            // 
-            this.bunifuDragControl2.Fixed = true;
-            this.bunifuDragControl2.Horizontal = true;
-            this.bunifuDragControl2.TargetControl = this.P_NurseSmiling;
-            this.bunifuDragControl2.Vertical = true;
-            // 
-            // P_NurseSmiling
-            // 
-            this.P_NurseSmiling.BackColor = System.Drawing.Color.Transparent;
-            this.P_NurseSmiling.Dock = System.Windows.Forms.DockStyle.Right;
-            this.P_NurseSmiling.Image = global::SIM_Pengkajian_Pasien.Properties.Resources._5dbe5e1bf1bd2;
-            this.P_NurseSmiling.Location = new System.Drawing.Point(347, 0);
-            this.P_NurseSmiling.Name = "P_NurseSmiling";
-            this.P_NurseSmiling.Size = new System.Drawing.Size(373, 480);
-            this.P_NurseSmiling.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.P_NurseSmiling.TabIndex = 24;
-            this.P_NurseSmiling.TabStop = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -200,17 +174,23 @@
             this.panel1.Size = new System.Drawing.Size(347, 120);
             this.panel1.TabIndex = 37;
             // 
-            // bunifuDragControl3
-            // 
-            this.bunifuDragControl3.Fixed = true;
-            this.bunifuDragControl3.Horizontal = true;
-            this.bunifuDragControl3.TargetControl = this.panel1;
-            this.bunifuDragControl3.Vertical = true;
-            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuProgressBar1
+            // 
+            this.bunifuProgressBar1.BackColor = System.Drawing.Color.White;
+            this.bunifuProgressBar1.BorderRadius = 5;
+            this.bunifuProgressBar1.Location = new System.Drawing.Point(225, 446);
+            this.bunifuProgressBar1.MaximumValue = 1000;
+            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
+            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(191)))), ((int)(((byte)(124)))));
+            this.bunifuProgressBar1.Size = new System.Drawing.Size(483, 12);
+            this.bunifuProgressBar1.TabIndex = 38;
+            this.bunifuProgressBar1.Value = 0;
+            this.bunifuProgressBar1.Visible = false;
             // 
             // pictureBox2
             // 
@@ -274,18 +254,71 @@
             this.pictureBox5.TabIndex = 29;
             this.pictureBox5.TabStop = false;
             // 
-            // bunifuProgressBar1
+            // P_NurseSmiling
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.White;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(225, 446);
-            this.bunifuProgressBar1.MaximumValue = 1000;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(191)))), ((int)(((byte)(124)))));
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(483, 12);
-            this.bunifuProgressBar1.TabIndex = 38;
-            this.bunifuProgressBar1.Value = 0;
-            this.bunifuProgressBar1.Visible = false;
+            this.P_NurseSmiling.BackColor = System.Drawing.Color.Transparent;
+            this.P_NurseSmiling.Dock = System.Windows.Forms.DockStyle.Right;
+            this.P_NurseSmiling.Image = global::SIM_Pengkajian_Pasien.Properties.Resources._5dbe5e1bf1bd2;
+            this.P_NurseSmiling.Location = new System.Drawing.Point(347, 0);
+            this.P_NurseSmiling.Name = "P_NurseSmiling";
+            this.P_NurseSmiling.Size = new System.Drawing.Size(373, 480);
+            this.P_NurseSmiling.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.P_NurseSmiling.TabIndex = 24;
+            this.P_NurseSmiling.TabStop = false;
+            // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = false;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.5D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.P_NurseSmiling;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuDragControl2
+            // 
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.panel1;
+            this.bunifuDragControl2.Vertical = true;
             // 
             // Form1
             // 
@@ -310,13 +343,13 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.P_NurseSmiling)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,14 +369,14 @@
         private System.Windows.Forms.Button B_Keluar;
         private System.Windows.Forms.Button B_Mulai;
         private System.Windows.Forms.PictureBox P_NurseSmiling;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
         private System.Windows.Forms.Timer Timer_Loading;
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
     }
 }
 
